@@ -1,0 +1,5645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>Table_category</name>
+    <version>1.0</version>
+    <link>https://woo.zp.ua/opdoc/articles/view/id-83/</link>
+    <author>Denis_F</author>
+    <code>Table Product</code>
+   <file path="catalog/language/ru-ru/product/category.php">
+
+     <operation >
+				  <search><![CDATA[$_['text_product']      = 'Товары';]]></search>
+						   <add offset="0" position="before"><![CDATA[
+$_['text_o']          		= 'Ø';
+$_['text_oe']          		= 'ØE';
+$_['text_obd']         	 	= 'ØD';
+$_['text_osd']          	= 'Ød';
+$_['text_d1']          		= 'Ød₁';
+$_['text_w2']          		= 'W₂';	
+$_['text_l1']		        = 'L₁';	
+$_['text_l2']		        = 'L₂';	
+$_['text_l3']		        = 'L₃';	
+$_['text_l4']		        = 'L₄';	
+$_['text_l5']		        = 'L₅'; 	
+$_['text_l6']		        = 'L₆';	
+$_['text_h1']		        = 'H₁';	
+$_['text_h2']		        = 'H₂';
+$_['text_DD1']		        = 'D/D₁';
+$_['text_D1']		       	= 'D₁';
+$_['text_D2']		        = 'D₂';
+$_['text_D3']		        = 'D₃';
+$_['text_key']		        = 'Ключ';
+$_['text_dmax_cabel']		= 'Ø макс.<br>кабеля';
+$_['text_dmin_cabel']		= 'Ø мин.<br>кабеля';
+$_['text_specialization']   = 'Специализация<br>инструмента';
+$_['text_range_crim']       = 'Диапазон  <br>обжима,   <br>(мм²)';
+$_['text_viv_otv_sq']       = 'Выводные отв.<br>Кол-во *площ.<br>(мм²)';
+$_['text_vv_otv_sq']        = 'Вводные отв.<br>Кол-во *площ.<br>(мм²)';
+$_['text_razmer']		    = 'Размеры<br>без упак.<br>(мм)';
+$_['text_range']		    = 'Диапазон<br>сечения<br>(мм²)';
+$_['text_sech99']		    = 'Сечение<br>многожил.<br>пров., (мм²)';
+$_['text_sech1']		    = 'Сечение<br>одножил.<br>пров., (мм²)';
+$_['text_sech']		    	= 'Сечение<br>пров.,<br> (мм²)';
+$_['text_sech_max']		    = 'Сечение<br>провода<br>макс., (мм²)';
+$_['text_ddo']          	= 'Ød,<br>(до усадки)';
+$_['text_dposle']          	= 'Ød, (номин.<br> после усадки)';
+$_['text_w']       	 		= 'W';
+$_['text_e']          		= 'E';
+$_['text_sd']          		= 'd'; 
+$_['text_m']		        = 'M';	
+$_['text_mb']		        = 'Mb';	
+$_['text_s']		        = 'S';	
+$_['text_sb']		        = 'Sb';
+$_['text_bolt']		        = 'Болты';
+$_['text_dop_function']     = 'Дополнительные<br>функции';
+$_['text_dimens_box']       = 'Габариты<br>коробки,<br>(мм)';
+$_['text_dimensions']       = 'Габариты<br>инд.упак.,<br>(мм)';
+$_['text_stroke']        	= 'Ход<br>штока,<br>(мм)';
+$_['text_weight_w_ind']    	= 'Вес<br>инстр.<br>без инд.<br>упак.,<br>(гр)';
+$_['text_weight_ind']       = 'Вес<br>инстр.<br>с инд.<br>упак.,<br>(кг)';
+$_['text_weight']       	= 'Вес<br>инстр.,<br>(кг)';
+$_['text_pack_ind']        	= 'Индивид.<br>упаковка';
+$_['text_effort_ton']       = 'Усилие,<br>(тонн)';
+$_['text_effort_mton']      = 'Усилие<br>макс.,<br>(тонн)';
+$_['text_height_pr']        = 'Высота<br>проема';
+$_['text_length_sht']       = 'Длина<br>штыря,<br>(мм)';
+$_['text_length_z']       	= 'Длина<br>зажима,<br>(мм)';
+$_['text_length_otrez']     = 'Длина<br>отрезка';
+$_['text_length']       	= 'Длина,<br>(мм)';
+$_['text_length_without']   = 'Длина<br>без упак.,<br>(мм)';
+$_['text_draw']        		= 'См.<br>чертеж';
+$_['text_a']        		= 'A';
+$_['text_b']        		= 'B';
+$_['text_g']        		= 'G';
+$_['text_l']		        = 'L';
+$_['text_h']		        = 'H';
+$_['text_t']		       	= 'T';
+$_['text_norma']		    = 'Един. <br>измер.';
+$_['text_type_matrix']		= 'Тип<br>матриц';
+$_['text_press']			= 'Давление,<br>(кН)';
+$_['text_tube']				= 'Трубчатые<br>(сечение)';
+$_['text_tube1']			= 'Трубчатые<br>тип 1<br>(сечение)';
+$_['text_tube2']			= 'Трубчатые<br>тип 2<br>(сечение)';
+$_['text_isol']				= 'Изолиро-<br>ванные<br>(сечение)';
+$_['text_w_isol']			= 'Без<br>изоляции<br>(сечение)';
+$_['text_razrez']			= 'Разрезные<br>(сечение)';
+$_['text_norma_min']		= 'Минимал. <br>норма<br>отгрузки';
+$_['text_pack']		    	= 'Кол-во <br>в упак.';
+$_['text_vv_otv']		    = 'Кол-во<br>вводных<br>отверстий';
+$_['text_di_vv_otv']		= 'Кол-во и диаметры<br>вводных отверстий<br>(в каждой из шин)';
+$_['text_kv_shin']		    = 'Кол-во<br>шин в<br>модуле';
+$_['text_kr_otv']		    = 'Кол-во<br>отверстий<br>крепления';
+$_['text_kr_izol']		    = 'Кол-во изоляторов,<br>необходимое для<br>крепления шины';
+$_['text_kl_pol']		    = 'Кол-во<br>клемм в <br>полоске';
+$_['text_sh']		        = 'h';
+$_['text_otv']		    	= 'Кол-во<br>отвер.';
+$_['text_color']		    = 'Цвет <br>изоляции';
+$_['text_color_kl']		    = 'Цвет <br>клемм';
+$_['text_color_korp']		= 'Цвет <br>корпуса';
+$_['text_color1']		    = 'Цвет';
+$_['text_w_h']		    	= 'Шир.*<br>высота<br>бруска';
+$_['text_name_short']		= 'Наименование краткое';
+$_['text_thickness']		= 'Толщина,<br> (мм)';
+$_['text_matrix_max']		= 'Матрицы<br>в компл.<br>Ø,(мм)';
+$_['text_thick_max1']		= 'Толщина<br>макс.<br>ТУТ,<br>(мм)';
+$_['text_thick_max']		= 'Толщина<br>макс.<br>листа<br>(сталь),<br>(мм)';
+$_['text_th']		   		= 'Высота/<br>толщина*,<br> (мм)';
+$_['text_speed_max']		= 'Скорость<br>макс.,<br>(цикл/мин.)';
+$_['text_width_max']		= 'Ширина<br>макс.<br>ТУТ,<br>(мм)';
+$_['text_width_homut']		= 'Ширина<br>хомутов,<br> (мм)';
+$_['text_widthness']		= 'Ширина*,<br> (мм)';
+$_['text_power']			= 'Мощн.,<br>(Вт)';
+$_['text_width_height']		= 'Ширина*,<br>высота (мм)';
+$_['text_nomin']		   	= 'Номин.<br> ток,<br> (А)';
+$_['text_u_nom']          	= 'Напряж.<br>номин.,<br>(В)';
+$_['text_tm']          		= '<br>TM';
+$_['text_tml']         		= 'Артикул<br>ТМЛ и ТМ';
+$_['text_med']         		= 'Медный-<br>луженый<br>(Артикул)';
+$_['text_meds']         	= 'Медный<br>(';
+$_['text_standart']         = 'Стандарт';
+$_['text_polus']          	= 'Кол-во<br>полюсов';
+$_['text_tok']          	= 'Сила<br>тока<br>номин.,<br>(А)';
+$_['text_naznach']       	= 'Назнач.';
+$_['text_q']          		= 'Q*';
+$_['text_box1']          	= 'Кол-во в<br>коробке';
+$_['text_box']          	= 'Кол-во<br>в ящ.';
+$_['text_size']          	= 'Размер';
+$_['text_contacts']      	= 'Кол-во<br>контак.';
+$_['text_jil']      		= 'Количество<br>жил';
+$_['text_type_conn']      	= 'Типы<br>коннекторов';
+$_['text_type_instr']      	= 'Тип<br>инструмента';
+$_['text_razmer_prof']      = 'Размер<br>профиля<br>din-рейки';
+$_['text_thick_din']	    = 'Толщина<br>din-рейки';
+$_['text_type_jil']      	= 'Тип<br>жил';
+$_['text_function']      	= 'Функция';
+$_['text_function_instrum'] = 'Функции<br>инструмента';
+$_['text_c']          		= 'C';
+$_['text_d']          		= 'D';
+$_['text_f']          		= 'F';
+$_['text_modeles']      	= 'Артикул';
+$_['text_art_bl']       	= 'Артикул (ЗКС<br>с черной изол.)';
+$_['text_art_rd']       	= 'Артикул (ЗКС<br>с красной изол.)';
+$_['text_art_pa']       	= 'Артикул<br>"РА"';
+$_['text_art_pp']       	= 'Артикул<br>"РР"';
+$_['text_art_bolt']     	= 'Артикул<br>(изоляторы<br>с болтами)';
+$_['text_art_w_bolt']   	= 'Артикул<br>(изоляторы<br>без болтов)';
+$_['text_diametr_vint'] 	= 'Диаметр <br>винта (Е),<br> (мм)';
+$_['text_predel']       	= 'Предел прочн.<br>на разрыв,<br> (кг)';
+$_['tools_category']        = 'Инструменты для категории';
+$_['text_proboy']       	= 'Напряж.<br>пробоя,<br>(кВ)';
+						]]></add>
+	</operation>
+	</file>
+      
+    <file path="catalog/language/ua-ua/product/category.php">
+        <operation>          
+                <search><![CDATA[$_['text_product']      = 'Товари';]]></search>
+						<add offset="0" position="before"><![CDATA[
+$_['text_modeles']          = 'Артикул';
+$_['text_art_bl']         	= 'Артикул (ЗКС<br>з чорн. ізол.)';
+$_['text_art_rd']         	= 'Артикул (ЗКС<br>з черв. ізол.)';
+$_['text_art_pa']         	= 'Артикул<br>"РА"';
+$_['text_art_pp']         	= 'Артикул<br>"РР"';
+$_['text_art_bolt']         = 'Артикул<br>(изолятори<br>з болтами)';
+$_['text_art_w_bolt']       = 'Артикул<br>(изолятори<br>без болтів)';
+$_['text_diametr_vint']     = 'Діаметр <br>гвинта (Е),<br> (мм)';
+$_['text_predel']          	= 'Межа міцності<br>на розрив,<br> (кг)';
+$_['text_proboy']          	= 'Напруга<br>пробою,<br>(кВ)';
+$_['text_viv_otv_sq']       = 'Вивідні отв.<br>Кіл-ть *площ.<br>(мм²)';
+$_['text_vv_otv_sq']        = 'Упускні отв.<br>Кіл-ть *площ.<br>(мм²)';
+$_['text_u_nom']          	= 'Напруг.<br>номін.,<br>(В)';
+$_['text_dop_function']     = 'Додаткові<br>функції';
+$_['text_tm']   		    = '<br>TM';
+$_['text_tml']     			= 'Артикул<br>ТМЛ';
+$_['text_med']         		= 'Мідний-<br>луджений<br>(Артикул)';
+$_['text_meds']         	= 'Мідний<br>(';	
+$_['text_standart']         = 'Стандарт';
+$_['text_polus']          	= 'Кіл-ть<br>полюсів';
+$_['text_tok']          	= 'Сила стуму<br>номін., (А)';
+$_['text_naznach']       	= 'Признач.';
+$_['text_q']          		= 'Q*';
+$_['text_box']          	= 'Кіл-ть<br>у ящ.';
+$_['text_box1']          	= 'Кіл-ть<br>у коробці';
+$_['text_size']          	= 'Розмір';
+$_['text_contacts']      	= 'Кількість<br>контактів';
+$_['text_jil']      		= 'Кількість<br>жил';
+$_['text_type_jil']      	= 'Тип<br>жил';
+$_['text_type_conn']      	= 'Типи<br>конекторів';
+$_['text_function']      	= 'Функція';
+$_['text_function_instrum'] = 'Функції<br>інструменту';
+$_['text_speed_max']		= 'Швидкість<br>макс.,<br>(цикл/мін.)';
+$_['text_power']			= 'Потужн.,<br>(Вт)';
+$_['text_c']          		= 'C';
+$_['text_d']          		= 'D';
+$_['text_f']          		= 'F';
+$_['text_o']          		= 'Ø';
+$_['text_e']          		= 'E';
+$_['text_oe']          		= 'ØE';
+$_['text_obd']         	 	= 'ØD';
+$_['text_sd']        	  	= 'd';
+$_['text_osd']          	= 'Ød';
+$_['text_d1']          		= 'Ød₁';
+$_['text_w']       	 		= 'W';
+$_['text_w2']          		= 'W₂';
+$_['text_key']		        = 'Ключ';
+$_['text_dmin_cabel']		= 'Ø мін.<br>кабелю';
+$_['text_dmax_cabel']		= 'Ø макс.<br>кабелю';
+$_['text_matrix_max']		= 'Матриці<br>у компл.<br>Ø,(мм)';
+$_['text_thick_max']		= 'Товщина<br>макс.<br>листа<br>(сталь),<br>(мм)';
+$_['text_thick_max1']		= 'Товщина<br>макс.<br>ТУТ,<br>(мм)';
+$_['text_dimensions']       = 'Габарити <br>інд. пак.,<br> (мм)';
+$_['text_dimens_box']       = 'Габарити<br>коробки,<br>(мм)';
+$_['text_stroke']        	= 'Хід<br>штока,<br>(мм)';
+$_['text_weight']     	  	= 'Вага<br>інстр.,<br>(кг)';
+$_['text_weight_ind']       = 'Вага<br>інстр.<br>з інд. пак.,<br>(кг)';
+$_['text_weight_w_ind']    	= 'Вага<br>інстр.<br>без інд.<br>пак.,<br>(гр)';
+$_['text_range_crim']       = 'Діапазон<br>обтиску,<br>(мм²)';
+$_['text_pack_ind']        	= 'Індивід.<br>пакування';
+$_['text_effort_ton']       = 'Зусилля,<br> (тонн)';
+$_['text_effort_mton']      = 'Зусилля<br>макс.,<br> (тонн)';
+$_['text_height_pr']        = 'Висота<br>прорізу';
+$_['text_length_otrez']     = 'Довжина<br>відрізку';
+$_['text_length']       	= 'Довжина,<br>(мм)';
+$_['text_length_without']   = 'Довжина<br>без пак.,<br>(мм)';
+$_['text_length_sht']       = 'Довжина<br>штиря,<br>(мм)';
+$_['text_length_z']       	= 'Довжина<br>затискачу,<br>(мм)';
+$_['text_draw']        		= 'Див.<br>креслення';
+$_['text_type_matrix']		= 'Тип <br> матриць';
+$_['text_tube']				= 'Трубчасті<br>(переріз)';
+$_['text_press']			= 'Тиск,<br>(кН)';
+$_['text_tube1']			= 'Трубчасті<br>тип 1<br>(переріз)';
+$_['text_tube2']			= 'Трубчасті<br>тип 2<br>(переріз)';
+$_['text_isol']				= 'Ізольовані<br>(переріз)';
+$_['text_w_isol']			= 'Без<br>ізоляції<br>(переріз)';
+$_['text_razrez']			= 'Розрізні<br>(переріз)';
+$_['text_a']       	 		= 'A';
+$_['text_b']        		= 'B';
+$_['text_g']        		= 'G';
+$_['text_l']		        = 'L';	
+$_['text_l1']		        = 'L₁';	
+$_['text_l2']		        = 'L₂';	
+$_['text_l3']		        = 'L₃';	
+$_['text_l4']		        = 'L₄';	
+$_['text_l5']		        = 'L₅';	
+$_['text_l6']		        = 'L₆';	
+$_['text_h1']		        = 'H₁';	
+$_['text_h2']		        = 'H₂';	
+$_['text_m']		        = 'M';	
+$_['text_mb']		        = 'Mb';	
+$_['text_s']		        = 'S';	
+$_['text_sb']		        = 'Sb';
+$_['text_bolt']		        = 'Болти';
+$_['text_DD1']		        = 'D/D₁';
+$_['text_D1']		        = 'D₁';
+$_['text_D2']		        = 'D₂';
+$_['text_D3']		        = 'D₃';
+$_['text_h']		        = 'H';
+$_['text_t']		        = 'T';
+$_['text_specialization']   = 'Спеціалізація<br>інструменту';
+$_['text_norma']		    = 'Одиниця<br>виміру';
+$_['text_norma_min']		= 'Мінімал. <br>норма<br>відгрузки';
+$_['text_pack']		  		= 'Кіл-ть <br>в упак.';
+$_['text_razmer']		    = 'Розміри<br>без пакув.<br>(мм)';
+$_['text_range']		    = 'Діапазон <br>перерізу<br>(мм²)';
+$_['text_sh']		        = 'h';
+$_['text_kl_pol']		    = 'Кіл-ть<br>клем у<br>смужці';
+$_['text_otv']		  		= 'Кіл-ть<br>отворів';
+$_['text_vv_otv']		    = 'Кіл-ть<br>упускних<br>отворів';
+$_['text_kr_otv']		    = 'Кіл-ть<br>отворів<br>кріплення';
+$_['text_kr_izol']		    = 'Кіл-ть ізоляторів,<br>необхідно для<br>кріплення шини';
+$_['text_di_vv_otv']		= 'Кіл-ть та діаметри<br>упускних отворів<br>(в кожній з шин)';
+$_['text_kv_shin']		    = 'Кіл-ть<br>шин в<br>модулі';
+$_['text_sech99']		    = 'Переріз<br>багатожил.<br>дрот., (мм²)';
+$_['text_sech1']		    = 'Переріз<br>одножил.<br>дрот., (мм²)';
+$_['text_sech']			    = 'Переріз<br>дрот.,<br> (мм²)';
+$_['text_sech_max']			= 'Переріз<br>дротів<br>макс., (мм²)';
+$_['text_color']		    = 'Колір <br>ізоляції';
+$_['text_color_korp']		= 'Колір <br>корпусу';
+$_['text_color_kl']		    = 'Колір <br>клемм';
+$_['text_color1']		    = 'Колір';
+$_['text_w_h']		    	= 'Шир.*<br>висота<br>бруска';
+$_['text_name_short']		= 'Найменування скорочене';
+$_['text_thickness']		= 'Товщина,<br> (мм)';
+$_['text_type_instr']      	= 'Тип<br>інструменту';
+$_['text_razmer_prof']      = 'Розмір<br>профілю<br>din-рейки';
+$_['text_thick_din']	    = 'Товщина<br>din-рейки';
+$_['text_th']		   		= 'Висота/<br>товщина*,<br> (мм)';
+$_['text_widthness']		= 'Ширина*,<br> (мм)';
+$_['text_width_max']		= 'Ширина<br>макс.<br>ТУТ,<br>(мм)';
+$_['text_width_height']		= 'Ширина*,<br>висота (мм)';
+$_['text_width_homut']		= 'Ширина<br>хомутів,<br> (мм)';
+$_['text_nomin']		   	= 'Номін.<br> струм,<br> (А)';
+$_['text_ddo']          	= 'Ød,<br> (до усадки)';
+$_['tools_category']        = 'Інструменти для категорії';
+$_['text_dposle']          	= 'Ød, (номін.<br> після усадки)';
+			 			]]></add>
+		</operation>
+	</file>  
+  
+  	<file path="catalog/controller/product/category.php">
+        <operation>     
+                <search> <![CDATA[$data['text_empty'] = $this->language->get('text_empty');]]></search>
+                		<add offset="0" position="after"><![CDATA[
+				  
+$data['text_modeles']          	= $this->language->get('text_modeles');
+$data['text_di_vv_otv']        	= $this->language->get('text_di_vv_otv');
+$data['text_kv_shin']         	= $this->language->get('text_kv_shin');
+$data['tools_category']         = $this->language->get('tools_category');
+$data['text_proboy']         	= $this->language->get('text_proboy');
+$data['text_predel']         	= $this->language->get('text_predel');
+$data['text_diametr_vint']      = $this->language->get('text_diametr_vint');
+$data['text_art_w_bolt']        = $this->language->get('text_art_w_bolt');
+$data['text_art_bolt']         	= $this->language->get('text_art_bolt');
+$data['text_f']         		= $this->language->get('text_f');
+$data['text_d']         		= $this->language->get('text_d');
+$data['text_dmin_cabel'] 		= $this->language->get('text_dmin_cabel');
+$data['text_dmax_cabel']        = $this->language->get('text_dmax_cabel');
+$data['text_key']        		= $this->language->get('text_key');
+$data['text_c']         		= $this->language->get('text_c');
+$data['text_size']          	= $this->language->get('text_size');
+$data['text_contacts']         	= $this->language->get('text_contacts');
+$data['text_e']          		= $this->language->get('text_e');
+$data['text_length_otrez']      = $this->language->get('text_length_otrez');
+$data['text_length']       		= $this->language->get('text_length');
+$data['text_length_without']    = $this->language->get('text_length_without');
+$data['text_length_sht']       	= $this->language->get('text_length_sht');
+$data['text_length_z']       	= $this->language->get('text_length_z');
+$data['text_draw']          	= $this->language->get('text_draw');
+$data['text_width_max']     	= $this->language->get('text_width_max');
+$data['text_width_height']     	= $this->language->get('text_width_height');
+$data['text_art_pa']          	= $this->language->get('text_art_pa');
+$data['text_art_pp']          	= $this->language->get('text_art_pp');
+$data['text_art_bl']          	= $this->language->get('text_art_bl');
+$data['text_art_rd']          	= $this->language->get('text_art_rd');
+$data['text_oe']          		= $this->language->get('text_oe');
+$data['text_obd']         	 	= $this->language->get('text_obd');
+$data['text_sd']          		= $this->language->get('text_sd');
+$data['text_osd']          		= $this->language->get('text_osd');
+$data['text_w']       	 		= $this->language->get('text_w');
+$data['text_w2']       	 		= $this->language->get('text_w2');
+$data['text_dop_function']      = $this->language->get('text_dop_function');
+$data['text_dimens_box']       	= $this->language->get('text_dimens_box');
+$data['text_dimensions']       	= $this->language->get('text_dimensions');
+$data['text_razmer']    	    = $this->language->get('text_razmer');
+$data['text_press']    	    	= $this->language->get('text_press');
+$data['text_stroke']        	= $this->language->get('text_stroke');
+$data['text_weight_w_ind']      = $this->language->get('text_weight_w_ind');
+$data['text_weight']        	= $this->language->get('text_weight');
+$data['text_weight_ind']        = $this->language->get('text_weight_ind');
+$data['text_range_crim']       	= $this->language->get('text_range_crim');
+$data['text_pack_ind']        	= $this->language->get('text_pack_ind');
+$data['text_effort_mton']        = $this->language->get('text_effort_mton');
+$data['text_effort_ton']        = $this->language->get('text_effort_ton');
+$data['text_height_pr']       	= $this->language->get('text_height_pr');
+$data['text_jil']     		  	= $this->language->get('text_jil');
+$data['text_specialization']    = $this->language->get('text_specialization');
+$data['text_type_conn']     	= $this->language->get('text_type_conn');
+$data['text_type_jil']     		= $this->language->get('text_type_jil');
+$data['text_function']     		= $this->language->get('text_function');
+$data['text_function_instrum']  = $this->language->get('text_function_instrum');
+$data['text_a']        			= $this->language->get('text_a');
+$data['text_b']        			= $this->language->get('text_b');
+$data['text_g']        			= $this->language->get('text_g');
+$data['text_viv_otv_sq']		= $this->language->get('text_viv_otv_sq');
+$data['text_vv_otv_sq']		    = $this->language->get('text_vv_otv_sq');
+$data['text_u_nom']		      	= $this->language->get('text_u_nom');
+$data['text_l']		      		= $this->language->get('text_l');
+$data['text_l1']		      	= $this->language->get('text_l1');
+$data['text_l2']		      	= $this->language->get('text_l2');
+$data['text_l3']		      	= $this->language->get('text_l3');
+$data['text_l4']		      	= $this->language->get('text_l4');
+$data['text_l5']		      	= $this->language->get('text_l5');
+$data['text_l6']		      	= $this->language->get('text_l6');
+$data['text_sh']		      	= $this->language->get('text_sh');
+$data['text_h1']		      	= $this->language->get('text_h1');
+$data['text_h2']		      	= $this->language->get('text_h2');
+$data['text_m']		      		= $this->language->get('text_m');
+$data['text_mb']		      	= $this->language->get('text_mb');
+$data['text_s']		      		= $this->language->get('text_s');
+$data['text_sb']		      	= $this->language->get('text_sb');
+$data['text_bolt']		      	= $this->language->get('text_bolt');
+$data['text_DD1']		      	= $this->language->get('text_DD1');
+$data['text_D1']		      	= $this->language->get('text_D1');
+$data['text_D2']		      	= $this->language->get('text_D2');
+$data['text_h']		      	  	= $this->language->get('text_h');
+$data['text_D3']		      	= $this->language->get('text_D3');
+$data['text_t']		      	  	= $this->language->get('text_t');
+$data['text_standart']		    = $this->language->get('text_standart');
+$data['text_polus']		      	= $this->language->get('text_polus');
+$data['text_tok']		      	= $this->language->get('text_tok');
+$data['text_naznach']		    = $this->language->get('text_naznach');
+$data['text_q']		      	 	= $this->language->get('text_q');
+$data['text_box1']		      	= $this->language->get('text_box1');
+$data['text_box']		      	= $this->language->get('text_box');
+$data['text_t']		      	  	= $this->language->get('text_t');
+$data['text_kl_pol']		    = $this->language->get('text_kl_pol');
+$data['text_otv']		   		= $this->language->get('text_otv');
+$data['text_vv_otv']		    = $this->language->get('text_vv_otv');
+$data['text_kr_otv']		    = $this->language->get('text_kr_otv');
+$data['text_kr_izol']		    = $this->language->get('text_kr_izol');
+$data['text_sech99']		    = $this->language->get('text_sech99');
+$data['text_sech1']		      	= $this->language->get('text_sech1');
+$data['text_sech']		      	= $this->language->get('text_sech');
+$data['text_speed_max']		    = $this->language->get('text_speed_max');
+$data['text_sech_max']		    = $this->language->get('text_sech_max');
+$data['text_o']		      	 	= $this->language->get('text_o');
+$data['text_tml']		      	= $this->language->get('text_tml');
+$data['text_tm']		      	= $this->language->get('text_tm');
+$data['text_range']		      	= $this->language->get('text_range');
+$data['text_power']		      	= $this->language->get('text_power');
+$data['text_pack']		      	= $this->language->get('text_pack');
+$data['text_norma']		      	= $this->language->get('text_norma');
+$data['text_norma_min']		    = $this->language->get('text_norma_min');
+$data['text_color']		      	= $this->language->get('text_color');
+$data['text_color_korp']		= $this->language->get('text_color_korp');
+$data['text_color_kl']		    = $this->language->get('text_color_kl');
+$data['text_color1']		    = $this->language->get('text_color1');
+$data['text_d1']		      	= $this->language->get('text_d1');
+$data['text_w_h']		      	= $this->language->get('text_w_h');
+$data['text_med']		      	= $this->language->get('text_med');
+$data['text_meds']		      	= $this->language->get('text_meds');
+$data['text_thick_max1']		= $this->language->get('text_thick_max1');
+$data['text_thickness']		    = $this->language->get('text_thickness');
+$data['text_th']			    = $this->language->get('text_th');
+$data['text_width_homut']		= $this->language->get('text_width_homut');
+$data['text_widthness']		    = $this->language->get('text_widthness');
+$data['text_nomin']		   		= $this->language->get('text_nomin');
+$data['text_name_short']      	= $this->language->get('text_name_short');
+$data['text_ddo']		  		= $this->language->get('text_ddo');
+$data['text_razrez']		    = $this->language->get('text_razrez');
+$data['text_w_isol']		    = $this->language->get('text_w_isol');
+$data['text_isol']		    	= $this->language->get('text_isol');
+$data['text_tube']		    	= $this->language->get('text_tube');
+$data['text_tube1']		    	= $this->language->get('text_tube1');
+$data['text_tube2']		    	= $this->language->get('text_tube2');
+$data['text_type_instr']		= $this->language->get('text_type_instr');
+$data['text_razmer_prof']		= $this->language->get('text_razmer_prof');
+$data['text_thick_din']		    = $this->language->get('text_thick_din');
+$data['text_type_matrix']		= $this->language->get('text_type_matrix');
+$data['text_matrix_max']		= $this->language->get('text_matrix_max');
+$data['text_thick_max']			= $this->language->get('text_thick_max');
+$data['text_dposle']		    = $this->language->get('text_dposle');
+
+$table_items = $this->model_catalog_category->getTableCategory($category_id);
+	foreach ($table_items as $key=>$table_item) {
+		$table_items[$key]['href'] = $this->url->link('product/product', '&product_id=' . $table_item['product_id']);
+	}
+		$data['model'] =  $table_items;
+ 
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 94)){
+ 				$data['show_table94'] = true;
+			} else {
+				$data['show_table94'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 95)){
+ 				$data['show_table95'] = true;
+			} else {
+				$data['show_table95'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 96)){
+ 				$data['show_table96'] = true;
+			} else {
+				$data['show_table96'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 97)){
+ 				$data['show_table97'] = true;
+			} else {
+				$data['show_table97'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 98)){
+ 				$data['show_table98'] = true;
+			} else {
+				$data['show_table98'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 106)){
+ 				$data['show_table106'] = true;
+			} else {
+				$data['show_table106'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 108)){
+ 				$data['show_table108'] = true;
+			} else {
+				$data['show_table108'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 123)){
+ 				$data['show_table123'] = true;
+			} else {
+				$data['show_table123'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 138)){
+ 				$data['show_table138'] = true;
+			} else {
+				$data['show_table138'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 139)){
+ 				$data['show_table139'] = true;
+			} else {
+				$data['show_table139'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 140)){
+ 				$data['show_table140'] = true;
+			} else {
+				$data['show_table140'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 141)){
+ 				$data['show_table141'] = true;
+			} else {
+				$data['show_table141'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 142)){
+ 				$data['show_table142'] = true;
+			} else {
+				$data['show_table142'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 143)){
+ 				$data['show_table143'] = true;
+			} else {
+				$data['show_table143'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 144)){
+ 				$data['show_table144'] = true;
+			} else {
+				$data['show_table144'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 166)){
+ 				$data['show_table166'] = true;
+			} else {
+				$data['show_table166'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 167)){
+ 				$data['show_table167'] = true;
+			} else {
+				$data['show_table167'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 168)){
+ 				$data['show_table168'] = true;
+			} else {
+				$data['show_table168'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 169)){
+ 				$data['show_table169'] = true;
+			} else {
+				$data['show_table169'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 174)){
+ 				$data['show_table174'] = true;
+			} else {
+				$data['show_table174'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 175)){
+ 				$data['show_table175'] = true;
+			} else {
+				$data['show_table175'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 176)){
+ 				$data['show_table176'] = true;
+			} else {
+				$data['show_table176'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 181)){
+ 				$data['show_table181'] = true;
+			} else {
+				$data['show_table181'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 182)){
+ 				$data['show_table182'] = true;
+			} else {
+				$data['show_table182'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 183)){
+ 				$data['show_table183'] = true;
+			} else {
+				$data['show_table183'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 192)){
+ 				$data['show_table192'] = true;
+			} else {
+				$data['show_table192'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 196)){
+ 				$data['show_table196'] = true;
+			} else {
+				$data['show_table196'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 197)){
+ 				$data['show_table197'] = true;
+			} else {
+				$data['show_table197'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 198)){
+ 				$data['show_table198'] = true;
+			} else {
+				$data['show_table198'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 199)){
+ 				$data['show_table199'] = true;
+			} else {
+				$data['show_table199'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 200)){
+ 				$data['show_table200'] = true;
+			} else {
+				$data['show_table200'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 201)){
+ 				$data['show_table201'] = true;
+			} else {
+				$data['show_table201'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 202)){
+ 				$data['show_table202'] = true;
+			} else {
+				$data['show_table202'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 203)){
+ 				$data['show_table203'] = true;
+			} else {
+				$data['show_table203'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 204)){
+ 				$data['show_table204'] = true;
+			} else {
+				$data['show_table204'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 205)){
+ 				$data['show_table205'] = true;
+			} else {
+				$data['show_table205'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 208)){
+ 				$data['show_table208'] = true;
+			} else {
+				$data['show_table208'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 209)){
+ 				$data['show_table209'] = true;
+			} else {
+				$data['show_table209'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 210)){
+ 				$data['show_table210'] = true;
+			} else {
+				$data['show_table210'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 211)){
+ 				$data['show_table211'] = true;
+			} else {
+				$data['show_table211'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 212)){
+ 				$data['show_table212'] = true;
+			} else {
+				$data['show_table212'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 213)){
+ 				$data['show_table213'] = true;
+			} else {
+				$data['show_table213'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 214)){
+ 				$data['show_table214'] = true;
+			} else {
+				$data['show_table214'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 215)){
+ 				$data['show_table215'] = true;
+			} else {
+				$data['show_table215'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 216)){
+ 				$data['show_table216'] = true;
+			} else {
+				$data['show_table216'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 217)){
+ 				$data['show_table217'] = true;
+			} else {
+				$data['show_table217'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 218)){
+ 				$data['show_table218'] = true;
+			} else {
+				$data['show_table218'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 219)){
+ 				$data['show_table219'] = true;
+			} else {
+				$data['show_table219'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 220)){
+ 				$data['show_table220'] = true;
+			} else {
+				$data['show_table220'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 221)){
+ 				$data['show_table221'] = true;
+			} else {
+				$data['show_table221'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 222)){
+ 				$data['show_table222'] = true;
+			} else {
+				$data['show_table222'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 223)){
+ 				$data['show_table223'] = true;
+			} else {
+				$data['show_table223'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 224)){
+ 				$data['show_table224'] = true;
+			} else {
+				$data['show_table224'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 225)){
+ 				$data['show_table225'] = true;
+			} else {
+				$data['show_table225'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 226)){
+ 				$data['show_table226'] = true;
+			} else {
+				$data['show_table226'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 227)){
+ 				$data['show_table227'] = true;
+			} else {
+				$data['show_table227'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 228)){
+ 				$data['show_table228'] = true;
+			} else {
+				$data['show_table228'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 229)){
+ 				$data['show_table229'] = true;
+			} else {
+				$data['show_table229'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 230)){
+ 				$data['show_table230'] = true;
+			} else {
+				$data['show_table230'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 231)){
+ 				$data['show_table231'] = true;
+			} else {
+				$data['show_table231'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 232)){
+ 				$data['show_table232'] = true;
+			} else {
+				$data['show_table232'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 233)){
+ 				$data['show_table233'] = true;
+			} else {
+				$data['show_table233'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 234)){
+ 				$data['show_table234'] = true;
+			} else {
+				$data['show_table234'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 235)){
+ 				$data['show_table235'] = true;
+			} else {
+				$data['show_table235'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 236)){
+ 				$data['show_table236'] = true;
+			} else {
+				$data['show_table236'] = false;
+}
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 237)){
+ 				$data['show_table237'] = true;
+			} else {
+				$data['show_table237'] = false;
+}
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 238)){
+ 				$data['show_table238'] = true;
+			} else {
+				$data['show_table238'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 239)){
+ 				$data['show_table239'] = true;
+			} else {
+				$data['show_table239'] = false;
+}  
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 256)){
+ 				$data['show_table256'] = true;
+			} else {
+				$data['show_table256'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 257)){
+ 				$data['show_table257'] = true;
+			} else {
+				$data['show_table257'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 258)){
+ 				$data['show_table258'] = true;
+			} else {
+				$data['show_table258'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 259)){
+ 				$data['show_table259'] = true;
+			} else {
+				$data['show_table259'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 261)){
+ 				$data['show_table261'] = true;
+			} else {
+				$data['show_table261'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 262)){
+ 				$data['show_table262'] = true;
+			} else {
+				$data['show_table262'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 263)){
+ 				$data['show_table263'] = true;
+			} else {
+				$data['show_table263'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 293)){
+ 				$data['show_table293'] = true;
+			} else {
+				$data['show_table293'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 294)){
+ 				$data['show_table294'] = true;
+			} else {
+				$data['show_table294'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 296)){
+ 				$data['show_table296'] = true;
+			} else {
+				$data['show_table296'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 297)){
+ 				$data['show_table297'] = true;
+			} else {
+				$data['show_table297'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 298)){
+ 				$data['show_table298'] = true;
+			} else {
+				$data['show_table298'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 299)){
+ 				$data['show_table299'] = true;
+			} else {
+				$data['show_table299'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 300)){
+ 				$data['show_table300'] = true;
+			} else {
+				$data['show_table300'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 302)){
+ 				$data['show_table302'] = true;
+			} else {
+				$data['show_table302'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 303)){
+ 				$data['show_table303'] = true;
+			} else {
+				$data['show_table303'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 304)){
+ 				$data['show_table304'] = true;
+			} else {
+				$data['show_table304'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 305)){
+ 				$data['show_table305'] = true;
+			} else {
+				$data['show_table305'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 306)){
+ 				$data['show_table306'] = true;
+			} else {
+				$data['show_table306'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 307)){
+ 				$data['show_table307'] = true;
+			} else {
+				$data['show_table307'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 308)){
+ 				$data['show_table308'] = true;
+			} else {
+				$data['show_table308'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 309)){
+ 				$data['show_table309'] = true;
+			} else {
+				$data['show_table309'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 310)){
+ 				$data['show_table310'] = true;
+			} else {
+				$data['show_table310'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 311)){
+ 				$data['show_table311'] = true;
+			} else {
+				$data['show_table311'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 312)){
+ 				$data['show_table312'] = true;
+			} else {
+				$data['show_table312'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 313)){
+ 				$data['show_table313'] = true;
+			} else {
+				$data['show_table313'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 314)){
+ 				$data['show_table314'] = true;
+			} else {
+				$data['show_table314'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 315)){
+ 				$data['show_table315'] = true;
+			} else {
+				$data['show_table315'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 316)){
+ 				$data['show_table316'] = true;
+			} else {
+				$data['show_table316'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 317)){
+ 				$data['show_table317'] = true;
+			} else {
+				$data['show_table317'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 318)){
+ 				$data['show_table318'] = true;
+			} else {
+				$data['show_table318'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 319)){
+ 				$data['show_table319'] = true;
+			} else {
+				$data['show_table319'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 320)){
+ 				$data['show_table320'] = true;
+			} else {
+				$data['show_table320'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 321)){
+ 				$data['show_table321'] = true;
+			} else {
+				$data['show_table321'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 322)){
+ 				$data['show_table322'] = true;
+			} else {
+				$data['show_table322'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 323)){
+ 				$data['show_table323'] = true;
+			} else {
+				$data['show_table323'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 324)){
+ 				$data['show_table324'] = true;
+			} else {
+				$data['show_table324'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 325)){
+ 				$data['show_table325'] = true;
+			} else {
+				$data['show_table325'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 326)){
+ 				$data['show_table326'] = true;
+			} else {
+				$data['show_table326'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 327)){
+ 				$data['show_table327'] = true;
+			} else {
+				$data['show_table327'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 328)){
+ 				$data['show_table328'] = true;
+			} else {
+				$data['show_table328'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 329)){
+ 				$data['show_table329'] = true;
+			} else {
+				$data['show_table329'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 330)){
+ 				$data['show_table330'] = true;
+			} else {
+				$data['show_table330'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 331)){
+ 				$data['show_table331'] = true;
+			} else {
+				$data['show_table331'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 332)){
+ 				$data['show_table332'] = true;
+			} else {
+				$data['show_table332'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 333)){
+ 				$data['show_table333'] = true;
+			} else {
+				$data['show_table333'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 334)){
+ 				$data['show_table334'] = true;
+			} else {
+				$data['show_table334'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 336)){
+ 				$data['show_table336'] = true;
+			} else {
+				$data['show_table336'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 337)){
+ 				$data['show_table337'] = true;
+			} else {
+				$data['show_table337'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 338)){
+ 				$data['show_table338'] = true;
+			} else {
+				$data['show_table338'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 339)){
+ 				$data['show_table339'] = true;
+			} else {
+				$data['show_table339'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 340)){
+ 				$data['show_table340'] = true;
+			} else {
+				$data['show_table340'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 341)){
+ 				$data['show_table341'] = true;
+			} else {
+				$data['show_table341'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 342)){
+ 				$data['show_table342'] = true;
+			} else {
+				$data['show_table342'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 343)){
+ 				$data['show_table343'] = true;
+			} else {
+				$data['show_table343'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 344)){
+ 				$data['show_table344'] = true;
+			} else {
+				$data['show_table344'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 345)){
+ 				$data['show_table345'] = true;
+			} else {
+				$data['show_table345'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 346)){
+ 				$data['show_table346'] = true;
+			} else {
+				$data['show_table346'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 347)){
+ 				$data['show_table347'] = true;
+			} else {
+				$data['show_table347'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 348)){
+ 				$data['show_table348'] = true;
+			} else {
+				$data['show_table348'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 349)){
+ 				$data['show_table349'] = true;
+			} else {
+				$data['show_table349'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 350)){
+ 				$data['show_table350'] = true;
+			} else {
+				$data['show_table350'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 351)){
+ 				$data['show_table351'] = true;
+			} else {
+				$data['show_table351'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 352)){
+ 				$data['show_table352'] = true;
+			} else {
+				$data['show_table352'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 353)){
+ 				$data['show_table353'] = true;
+			} else {
+				$data['show_table353'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 354)){
+ 				$data['show_table354'] = true;
+			} else {
+				$data['show_table354'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 355)){
+ 				$data['show_table355'] = true;
+			} else {
+				$data['show_table355'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 356)){
+ 				$data['show_table356'] = true;
+			} else {
+				$data['show_table356'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 357)){
+ 				$data['show_table357'] = true;
+			} else {
+				$data['show_table357'] = false;
+}
+ 
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 358)){
+ 				$data['show_table358'] = true;
+			} else {
+				$data['show_table358'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 359)){
+ 				$data['show_table359'] = true;
+			} else {
+				$data['show_table359'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 360)){
+ 				$data['show_table360'] = true;
+			} else {
+				$data['show_table360'] = false;
+}
+	 ]]></add>
+	</operation>
+	</file>
+  
+    <file path="catalog/view/theme/oct_techstore/template/product/category.tpl">
+        <operation>          
+                <search><![CDATA[    <?php foreach ($products as $product) { ?>]]></search>
+                		<add offset="0" position="before" index="1"><![CDATA[
+							<div  class="table-responsive" id="table-category">
+								<table class=" table table-responsive table-bordered table-striped table-hover">
+	 								<tr>
+						
+<!-- 360-->
+
+<?php if ($show_table360) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_l2 ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_obd ?></th>
+	<th><?php echo $text_osd ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+
+<!-- 359 -->
+
+<?php if ($show_table359) { ?>
+	<th  ><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>	
+	<th ><?php echo $text_norma?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th  ><?php echo $text_l1 ?></th>
+	<th  ><?php echo $text_l2 ?></th>	
+	<th  ><?php echo $text_d ?></th>
+	<th  ><?php echo $text_D1 ?> </th>
+	<th  ><?php echo $text_h ?></th>
+	<th ><?php echo $text_key ?></th>
+	<th  ><?php echo $text_dmin_cabel ?></th>
+	<th ><?php echo $text_dmax_cabel ?></th>
+	<th  ><?php echo $text_pack ?></th>
+<?php } ?>	
+		
+<!-- 358 -->
+
+<?php if ($show_table358) { ?>
+	<th  ><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>	
+	<th ><?php echo $text_norma?></th>
+	<th  ><?php echo $text_range ?></th>
+	<th  ><?php echo $text_length_sht ?></th>	
+	<th  ><?php echo $text_l ?></th>
+	<th  ><?php echo $text_b ?> </th>
+	<th  ><?php echo $text_w ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_h ?></th>
+	<th  ><?php echo $text_t ?></th>
+<?php } ?>	
+																		
+<!-- 357-->
+
+<?php if ($show_table357) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_type_instr ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_norma ?></th>
+<?php } ?>	
+																			
+<!-- 356-->
+
+<?php if ($show_table356) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_thick_max ?></th>
+	<th><?php echo $text_matrix_max ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_effort_mton ?></th>
+	<th><?php echo $text_stroke ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_ind ?></th>
+	<th><?php echo $text_dimensions ?></th>
+<?php } ?>	
+																				
+<!-- 355-->
+
+<?php if ($show_table355) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_thick_max ?></th>
+	<th><?php echo $text_matrix_max ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_effort_mton ?></th>
+	<th><?php echo $text_stroke ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_ind ?></th>
+	<th><?php echo $text_dimensions ?></th>
+<?php } ?>	
+																						
+<!-- 354-->
+
+<?php if ($show_table354) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+<?php } ?>	
+																
+<!-- 353-->
+
+<?php if ($show_table353) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+	<th><?php echo $text_dimens_box ?></th>
+<?php } ?>	
+																			
+<!-- 352-->
+
+<?php if ($show_table352) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+	<th><?php echo $text_dimens_box ?></th>
+<?php } ?>	
+																			
+<!-- 351-->
+
+<?php if ($show_table351) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+<?php } ?>	
+																
+<!-- 350-->
+
+<?php if ($show_table350) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+	<th><?php echo $text_dimens_box ?></th>
+<?php } ?>	
+																
+<!-- 349-->
+
+<?php if ($show_table349) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+	<th><?php echo $text_dimens_box ?></th>
+<?php } ?>	
+																	
+<!-- 348-->
+
+<?php if ($show_table348) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+	<th><?php echo $text_dimens_box ?></th>
+<?php } ?>	
+																	
+<!-- 347-->
+
+<?php if ($show_table347) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+<?php } ?>	
+																
+<!-- 346-->
+
+<?php if ($show_table346) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+	<th><?php echo $text_dimens_box ?></th>
+<?php } ?>	
+																			
+<!-- 345-->
+
+<?php if ($show_table345) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+	<th><?php echo $text_dimens_box ?></th>
+<?php } ?>	
+													
+<!-- 344-->
+
+<?php if ($show_table344) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+<?php } ?>	
+																
+<!-- 343-->
+
+<?php if ($show_table343) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+	<th><?php echo $text_dimens_box ?></th>
+<?php } ?>	
+																
+<!-- 342-->
+
+<?php if ($show_table342) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+	<th><?php echo $text_dimens_box ?></th>
+<?php } ?>	
+															
+<!-- 341-->
+
+<?php if ($show_table341) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+	<th><?php echo $text_dimens_box ?></th>
+<?php } ?>	
+																
+<!-- 340-->
+
+<?php if ($show_table340) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+	<th><?php echo $text_dimens_box ?></th>
+<?php } ?>	
+													
+<!-- 339-->
+
+<?php if ($show_table339) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_ind ?></th>
+	<th><?php echo $text_dimensions ?></th>
+<?php } ?>	
+															
+<!-- 338-->
+
+<?php if ($show_table338) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_effort_ton ?></th>
+	<th><?php echo $text_stroke ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_ind ?></th>
+	<th><?php echo $text_dimensions ?></th>
+<?php } ?>	
+													
+<!-- 337-->
+
+<?php if ($show_table337) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_effort_ton ?></th>
+	<th><?php echo $text_stroke ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_ind ?></th>
+	<th><?php echo $text_dimensions ?></th>
+<?php } ?>	
+													
+<!-- 336-->
+
+<?php if ($show_table336) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_u_nom ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_color ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>	
+													
+<!-- 334-->
+
+<?php if ($show_table334) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_length_otrez ?></th>
+	<th><?php echo $text_thick_max1 ?></th>
+	<th><?php echo $text_width_max ?></th>
+	<th><?php echo $text_speed_max ?></th>
+	<th><?php echo $text_power ?></th>
+	<th><?php echo $text_norma ?></th>
+<?php } ?>	
+															
+<!-- 333-->
+
+<?php if ($show_table333) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_u_nom ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_color ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>	
+							
+<!-- 332-->
+
+<?php if ($show_table332) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_naznach ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_vv_otv ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+													
+<!-- 331-->
+
+<?php if ($show_table331) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_u_nom ?></th>
+	<th><?php echo $text_contacts ?></th>
+	<th><?php echo $text_color_korp ?></th>
+	<th><?php echo $text_sech_max ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_D1 ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>	
+													
+<!-- 330-->
+
+<?php if ($show_table330) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_u_nom ?></th>
+	<th><?php echo $text_contacts ?></th>
+	<th><?php echo $text_color_korp ?></th>
+	<th><?php echo $text_sech_max ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_l2 ?></th>
+	<th><?php echo $text_l3 ?></th>
+	<th><?php echo $text_l4 ?></th>
+	<th><?php echo $text_l5 ?></th>
+	<th><?php echo $text_l6 ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_D1 ?></th>
+	<th><?php echo $text_D2 ?></th>
+	<th><?php echo $text_D3 ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+				   
+<!-- 329-->
+
+<?php if ($show_table329) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_u_nom ?></th>
+	<th><?php echo $text_contacts ?></th>
+	<th><?php echo $text_color_korp ?></th>
+	<th><?php echo $text_sech_max ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_D1 ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+													
+<!-- 328-->
+
+<?php if ($show_table328) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_u_nom ?></th>
+	<th><?php echo $text_contacts ?></th>
+	<th><?php echo $text_color_korp ?></th>
+	<th><?php echo $text_sech_max ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_l2 ?></th>
+	<th><?php echo $text_l3 ?></th>
+	<th><?php echo $text_l4 ?></th>
+	<th><?php echo $text_l5 ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+												
+<!-- 327-->
+
+<?php if ($show_table327) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_u_nom ?></th>
+	<th><?php echo $text_contacts ?></th>
+	<th><?php echo $text_color_korp ?></th>
+	<th><?php echo $text_sech_max ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_l2 ?></th>
+	<th><?php echo $text_l3 ?></th>
+	<th><?php echo $text_l4 ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_D1 ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+													
+<!-- 326-->
+
+<?php if ($show_table326) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_u_nom ?></th>
+	<th><?php echo $text_contacts ?></th>
+	<th><?php echo $text_color_korp ?></th>
+	<th><?php echo $text_sech_max ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_D1 ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+												
+<!-- 325-->
+
+<?php if ($show_table325) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_u_nom ?></th>
+	<th><?php echo $text_contacts ?></th>
+	<th><?php echo $text_color_korp ?></th>
+	<th><?php echo $text_sech_max ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_l2 ?></th>
+	<th><?php echo $text_l3 ?></th>
+	<th><?php echo $text_l4 ?></th>
+	<th><?php echo $text_l5 ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+												
+<!-- 324-->
+
+<?php if ($show_table324) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_u_nom ?></th>
+	<th><?php echo $text_contacts ?></th>
+	<th><?php echo $text_color_korp ?></th>
+	<th><?php echo $text_sech_max ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_D1 ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+							
+<!-- 323-->
+
+<?php if ($show_table323) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_sech ?></th>
+	<th><?php echo $text_color1 ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_w ?></th>
+<?php } ?>
+								
+<!-- 322-->
+
+<?php if ($show_table322) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_sech ?></th>
+	<th><?php echo $text_color1 ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_w ?></th>
+<?php } ?>
+											
+<!-- 321-->
+
+<?php if ($show_table321) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_otv ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_color_korp ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+						
+<!-- 320-->
+
+<?php if ($show_table320) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_otv ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_color_korp ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+	
+<!-- 319-->
+
+<?php if ($show_table319) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+<?php } ?>	
+
+<!-- 318-->
+
+<?php if ($show_table318) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+<?php } ?>	
+
+<!-- 317-->
+
+<?php if ($show_table317) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_color_kl ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>	
+						
+<!-- 316-->
+
+<?php if ($show_table316) { ?>
+	<th><?php echo $text_art_pa ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_l2 ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_D1 ?></th>
+	<th><?php echo $text_sd ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+						
+<!-- 315-->
+
+<?php if ($show_table315) { ?>
+	<th><?php echo $text_art_pp ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_l2 ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_D1 ?></th>
+	<th><?php echo $text_sd ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+
+<!-- 314-->
+
+<?php if ($show_table314) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_u_nom ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_vv_otv_sq ?></th>
+	<th><?php echo $text_viv_otv_sq ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>	
+
+<!-- 313-->
+
+<?php if ($show_table313) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_u_nom ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_vv_otv_sq ?></th>
+	<th><?php echo $text_viv_otv_sq ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+	
+<!-- 312-->
+
+<?php if ($show_table312) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_u_nom ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_vv_otv_sq ?></th>
+	<th><?php echo $text_viv_otv_sq ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+					
+<!-- 311-->
+
+<?php if ($show_table311) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_naznach ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_vv_otv ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_t ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+					
+<!-- 310-->
+
+<?php if ($show_table310) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_naznach ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_vv_otv ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_t ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+				
+<!-- 309-->
+
+<?php if ($show_table309) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_kr_otv ?></th>
+	<th><?php echo $text_kr_izol ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+					
+<!-- 308-->
+
+<?php if ($show_table308) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_vv_otv ?></th>
+	<th><?php echo $text_kr_otv ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_t ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+				
+<!-- 307-->
+
+<?php if ($show_table307) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_vv_otv ?></th>
+	<th><?php echo $text_kr_otv ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_t ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+				
+<!-- 306-->
+
+<?php if ($show_table306) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_vv_otv ?></th>
+	<th><?php echo $text_kr_otv ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_t ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+
+<!-- 305-->
+
+<?php if ($show_table305) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_w ?></th>
+<?php } ?>
+				
+<!-- 304 -->
+
+<?php if ($show_table304) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_bolt ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_l2 ?></th>
+	<th><?php echo $text_l3 ?></th>
+	<th><?php echo $text_l4 ?></th>
+	<th><?php echo $text_l5 ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_h1 ?></th>
+	<th><?php echo $text_m ?></th>
+	<th><?php echo $text_s ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+					
+<!-- 303 -->
+
+<?php if ($show_table303) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_bolt ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_l2 ?></th>
+	<th><?php echo $text_l3 ?></th>
+	<th><?php echo $text_l4 ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_h1 ?></th>
+	<th><?php echo $text_h2 ?></th>
+	<th><?php echo $text_m ?></th>
+	<th><?php echo $text_mb ?></th>
+	<th><?php echo $text_s ?></th>
+	<th><?php echo $text_sb ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+			
+<!-- 302 -->
+
+<?php if ($show_table302) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_length ?></th>
+	<th><?php echo $text_thickness ?></th>
+	<th><?php echo $text_width_height ?></th>
+	<th><?php echo $text_draw ?></th>
+<?php } ?>
+		
+<!-- 300 -->
+
+<?php if ($show_table300) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_jil ?></th>
+	<th><?php echo $text_function ?></th>
+	<th><?php echo $text_standart ?></th>
+	<th><?php echo $text_type_jil ?></th>
+<?php } ?>
+		
+<!-- 299 -->
+
+<?php if ($show_table299) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_t ?></th>
+	<th><?php echo $text_thickness ?></th>
+	<th><?php echo $text_height_pr ?></th>
+	<th><?php echo $text_w2 ?></th>
+<?php } ?>
+		
+<!-- 298 -->
+
+<?php if ($show_table298) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_t ?></th>
+	<th><?php echo $text_obd ?> </th>
+	<th><?php echo $text_thickness ?></th>
+<?php } ?>
+		
+<!-- 297 -->
+
+<?php if ($show_table297) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_contacts ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_obd ?></th>
+	<th><?php echo $text_osd ?></th>
+<?php } ?>
+		
+<!-- 296 -->
+
+<?php if ($show_table296) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_t ?></th>
+	<th><?php echo $text_DD1 ?> </th>
+	<th><?php echo $text_D2?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_thickness ?></th>
+<?php } ?>
+				
+<!-- 294 -->
+
+<?php if ($show_table294) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_a ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_t ?> </th>
+	<th><?php echo $text_thickness ?></th>
+<?php } ?>
+		
+<!-- 293 -->
+
+<?php if ($show_table293) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_t ?>
+ 	</th><th><?php echo $text_obd ?></th>
+	<th><?php echo $text_thickness ?></th>
+<?php } ?>
+																			
+<!-- 263-->
+
+<?php if ($show_table263) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_type_matrix ?></th>
+	<th><?php echo $text_tube ?></th>
+	<th><?php echo $text_isol ?></th>
+	<th><?php echo $text_w_isol ?></th>
+	<th><?php echo $text_razrez ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+	<th><?php echo $text_dimens_box ?></th>
+<?php } ?>	
+																			
+<!-- 262-->
+
+<?php if ($show_table262) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_type_matrix ?></th>
+	<th><?php echo $text_tube1 ?></th>
+	<th><?php echo $text_tube2 ?></th>
+	<th><?php echo $text_isol ?></th>
+	<th><?php echo $text_w_isol ?></th>
+	<th><?php echo $text_razrez ?></th>
+	<th><?php echo $text_press ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight ?></th>
+	<th><?php echo $text_razmer ?></th>
+<?php } ?>	
+																					
+<!-- 261-->
+
+<?php if ($show_table261) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_type_conn ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+<?php } ?>	
+																		
+<!-- 259-->
+
+<?php if ($show_table259) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_type_instr ?></th>
+	<th><?php echo $text_razmer_prof ?></th>
+	<th><?php echo $text_thick_din ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_ind ?></th>
+	<th><?php echo $text_dimensions ?></th>
+<?php } ?>	
+																					
+<!-- 258-->
+
+<?php if ($show_table258) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_dmax_cabel ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_length ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_ind ?></th>
+<?php } ?>	
+																					
+<!-- 257-->
+
+<?php if ($show_table257) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_range_crim ?></th>
+	<th><?php echo $text_dop_function ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_box1 ?></th>
+<?php } ?>	
+																					
+<!-- 256-->
+
+<?php if ($show_table256) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_specialization ?></th>
+	<th><?php echo $text_width_homut ?></th>
+	<th><?php echo $text_function_instrum ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack_ind ?></th>
+	<th><?php echo $text_length_without ?></th>
+	<th><?php echo $text_weight_w_ind ?></th>
+	<th><?php echo $text_box1 ?></th>
+<?php } ?>	
+		
+<!-- 239 -->
+
+<?php if ($show_table239) { ?>
+	<th  ><?php echo $text_modeles ?></th>
+	<th><?php echo $text_standart ?></th>
+	<th><?php echo $text_size ?></th>
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_b ?> </th>
+	<th  ><?php echo $text_l ?></th>
+<?php } ?>
+
+<!-- 238 -->
+
+<?php if ($show_table238) { ?>
+	<th><?php echo $text_tml ?></th>
+<!--<th><?php echo $text_modeles . $text_tm ?></th>-->
+	<th><?php echo $text_size ?></th>
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_l2 ?></th>
+	<th  ><?php echo $text_b ?> </th>
+	<th  ><?php echo $text_l ?></th>
+<?php } ?>
+
+<!-- 237 -->
+
+<?php if ($show_table237) { ?>
+	<th><?php echo $text_med ?></th>
+	<th><?php echo $text_meds ?><?php echo $text_modeles ?><?php echo ')'  ?></th>
+	<th><?php echo $text_size ?></th>
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_b ?> </th>
+	<th  ><?php echo $text_l ?></th>
+<?php } ?>
+
+<!-- 236 -->	
+
+<?php if ($show_table236) { ?>
+	<th><?php echo $text_med ?></th>
+	<th><?php echo $text_meds ?><?php echo $text_modeles ?><?php echo ')'  ?></th>
+	<th><?php echo $text_size ?></th>
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_b ?> </th>
+	<th  ><?php echo $text_l ?></th>
+<?php } ?>
+<!-- 235 -->
+
+<?php if ($show_table235) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_o ?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th  ><?php echo $text_l1 ?></th>
+	<th  ><?php echo $text_b ?> </th>
+<?php } ?>
+
+
+<!-- 234 -->
+
+<?php if ($show_table234) { ?>
+	<th  ><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_b ?> </th>
+	<th  ><?php echo $text_l ?></th>
+<?php } ?>
+
+<!-- 233 -->
+
+<?php if ($show_table233) { ?>
+	<th  ><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_b ?> </th>
+	<th  ><?php echo $text_l ?></th>
+<?php } ?>
+
+<!-- 232 -->
+
+<?php if ($show_table232) { ?>
+	<th  ><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_b ?> </th>
+	<th  ><?php echo $text_l ?></th>
+<?php } ?>
+
+<!-- 231 -->
+
+<?php if ($show_table231) { ?>
+	<th  ><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_b ?> </th>
+	<th  ><?php echo $text_l ?></th>
+<?php } ?>
+
+<!-- 230 -->
+
+<?php if ($show_table230) { ?>
+	<th  ><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_b ?> </th>
+	<th  ><?php echo $text_l ?></th>
+	<th ><?php echo $text_h ?></th>
+<?php } ?>
+
+<!-- 229 -->
+
+<?php if ($show_table229) { ?>
+	<th  ><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th ><?php echo $text_oe?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_b ?> </th>
+	<th  ><?php echo $text_l ?></th>	
+	<th ><?php echo $text_t ?></th>
+<?php } ?>
+
+<!-- 228 -->
+
+<?php if ($show_table228) { ?>
+	<th  ><?php echo $text_modeles ?></th>
+	<th><?php echo $text_standart ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_o ?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th  ><?php echo $text_l1 ?></th>
+	<th  ><?php echo $text_b ?> </th>
+<?php } ?>
+
+<!-- 227 -->
+
+<?php if ($show_table227) { ?>
+	<th  ><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_o ?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th  ><?php echo $text_l1 ?></th>
+	<th  ><?php echo $text_b ?> </th>
+<?php } ?>
+
+<!-- 226 -->
+
+<?php if ($show_table226) { ?>
+ 	<th> <?php echo $text_modeles ?></th>
+	<th> <?php echo $text_size ?></th>
+	<th> <?php echo $text_oe?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_b ?> </th>
+	<th  ><?php echo $text_l ?></th>	
+<?php } ?>
+
+<!-- 225 -->
+
+<?php if ($show_table225) { ?>
+ 	<th  ><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th ><?php echo $text_osd ?></th>
+ 	<th ><?php echo $text_color ?></th >
+<?php } ?>
+
+<!-- 224 -->
+
+<?php if ($show_table224) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_d1 ?></th>
+	<th ><?php echo $text_color ?></th >
+<?php } ?>			 
+
+<!-- 223 -->
+
+<?php if ($show_table223) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_d1 ?></th>
+	<th ><?php echo $text_color ?></th >
+<?php } ?>
+
+<?php if ($show_table222) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th ><?php echo $text_a ?></th >
+	<th  ><?php echo $text_b ?> </th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_d1 ?></th>
+	<th ><?php echo $text_color ?></th >
+<?php } ?>
+
+<?php if ($show_table221) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th ><?php echo $text_a ?></th >
+	<th  ><?php echo $text_b ?> </th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_d1 ?></th>
+	<th ><?php echo $text_color ?></th >
+<?php } ?>
+
+<?php if ($show_table220) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th  ><?php echo $text_d1 ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_obd ?></th>
+<?php } ?>
+
+<?php if ($show_table219) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th  ><?php echo $text_d1 ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_obd ?></th>
+<?php } ?>
+
+<?php if ($show_table218) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th><?php echo $text_l1 ?></th>
+ 	<th ><?php echo $text_osd ?></th>
+	<th ><?php echo $text_color ?></th >
+<?php } ?>
+
+<?php if ($show_table217) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th><?php echo $text_l1 ?></th>
+ 	<th ><?php echo $text_osd ?></th>
+	<th ><?php echo $text_color ?></th >
+<?php } ?>
+
+<?php if ($show_table216) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th  ><?php echo $text_osd?></th>
+	<th><?php echo $text_w ?></th>
+ 	<th ><?php echo $text_l1 ?></th>
+	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_color ?></th >
+<?php } ?>
+
+<?php if ($show_table215) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_l?></th>
+ 	<th ><?php echo $text_l1 ?></th>
+	<th ><?php echo $text_osd ?></th>
+<?php } ?>
+
+<?php if ($show_table214) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th  ><?php echo $text_osd?></th>
+	<th><?php echo $text_w ?></th>
+ 	<th ><?php echo $text_l1 ?></th>
+	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table213) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_w ?></th>
+ 	<th ><?php echo $text_l1 ?></th>
+	<th ><?php echo $text_osd ?></th>
+<?php } ?>
+
+<?php if ($show_table212) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th ><?php echo $text_osd ?></th>
+ 	<th  ><?php echo $text_l?></th>
+  	<th ><?php echo $text_l1 ?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table211) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th ><?php echo $text_osd ?></th>
+ 	<th  ><?php echo $text_l?></th>
+  	<th ><?php echo $text_l1 ?></th>
+	<th  ><?php echo $text_w ?></th>
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table210) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_b ?></th>
+ 	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_l1 ?></th>
+<?php } ?>
+
+<?php if ($show_table209) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_b ?></th>
+ 	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_l1 ?></th>
+<?php } ?>
+
+<?php if ($show_table208) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th ><?php echo $text_oe?></th>
+	<th  ><?php echo $text_w ?></th>
+ 	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_osd ?></th>
+<?php } ?>
+
+<?php if ($show_table205) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th ><?php echo $text_l?></th>
+	<th  ><?php echo $text_l1 ?></th>
+ 	<th ><?php echo $text_l2 ?></th>
+	<th ><?php echo $text_obd ?></th>	
+	<th ><?php echo $text_w ?></th>	
+<?php } ?>
+
+<?php if ($show_table204) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th ><?php echo $text_widthness?></th>
+	<th  ><?php echo $text_th ?></th>
+ 	<th ><?php echo $text_b ?></th>
+	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_l1 ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th ><?php echo $text_nomin ?></th>	
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table203) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_l ?></th>
+ 	<th ><?php echo $text_t ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th ><?php echo $text_obd ?></th>
+	<th ><?php echo $text_b ?></th>
+	<th ><?php echo $text_nomin ?></th>	
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table202) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th ><?php echo $text_widthness?></th>
+	<th  ><?php echo $text_thickness ?></th>
+ 	<th ><?php echo $text_b ?></th>
+	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th ><?php echo $text_nomin ?></th>	
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table201) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th ><?php echo $text_obd ?></th>
+ 	<th ><?php echo $text_g ?></th>
+ 	<th ><?php echo $text_h ?></th>
+	<th ><?php echo $text_b ?></th>
+	<th ><?php echo $text_nomin ?></th>	
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table200) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th ><?php echo $text_widthness?></th>
+	<th  ><?php echo $text_thickness ?></th>
+ 	<th ><?php echo $text_b ?></th>
+	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th ><?php echo $text_nomin ?></th>	
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table199) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_norma ?></th>
+ 	<th ><?php echo $text_b ?></th>
+	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_l1 ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th ><?php echo $text_nomin ?></th>	
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table198) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th ><?php echo $text_widthness?></th>
+	<th  ><?php echo $text_thickness ?></th>
+	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_l1 ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th ><?php echo $text_nomin ?></th>	
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table197) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>
+	<th ><?php echo $text_t ?></th>
+	<th  ><?php echo $text_thickness ?></th>
+	<th ><?php echo $text_e ?></th>
+	<th ><?php echo $text_b ?></th>
+	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_l1 ?></th>
+<?php } ?>
+
+<?php if ($show_table196) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>
+	<th ><?php echo $text_b ?></th>
+	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_l1 ?></th>
+<?php } ?>
+						
+<!-- 192-->
+
+<?php if ($show_table192) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_sech ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_w ?></th>
+<?php } ?>
+
+<?php if ($show_table183) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th ><?php echo $text_widthness?></th>
+	<th  ><?php echo $text_thickness ?></th>
+	<th ><?php echo $text_osd ?></th>
+	<th ><?php echo $text_nomin ?></th>	
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table182) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_polus ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th ><?php echo $text_tok?></th>
+	<th  ><?php echo $text_q ?></th>
+	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_l1 ?></th>	
+	<th ><?php echo $text_h ?></th>
+	<th  ><?php echo $text_h1 ?></th>
+	<th ><?php echo $text_pack ?></th>
+	<th ><?php echo $text_box ?></th>
+<?php } ?>
+
+<?php if ($show_table181) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_polus ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th ><?php echo $text_tok?></th>
+	<th  ><?php echo $text_q ?></th>
+	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_l1 ?></th>	
+	<th ><?php echo $text_h ?></th>
+	<th  ><?php echo $text_h1 ?></th>
+	<th  ><?php echo $text_sd ?></th>
+	<th ><?php echo $text_pack ?></th>
+	<th ><?php echo $text_box ?></th>
+<?php } ?>
+					
+<!-- 176-->
+
+<?php if ($show_table176) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_color1 ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_vv_otv ?></th>
+	<th><?php echo $text_w_h ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_t ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+					
+<!-- 175-->
+
+<?php if ($show_table175) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_vv_otv ?></th>
+	<th><?php echo $text_w_h ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_t ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+					
+<!-- 174-->
+
+<?php if ($show_table174) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_kv_shin ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th colspan="3"><?php echo $text_di_vv_otv ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_h1 ?></th>
+	<th><?php echo $text_t ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+					
+<!-- 169-->
+
+<?php if ($show_table169) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_l ?></th>
+ 	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_l2 ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_D1 ?></th>
+	<th><?php echo $text_sd ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+						
+<!-- 168-->
+
+<?php if ($show_table168) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_kl_pol ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_sech ?></th>
+	<th><?php echo $text_l ?></th>
+ 	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_sd ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_sh ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+					
+<!-- 167-->
+
+<?php if ($show_table167) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_sech ?></th>
+	<th><?php echo $text_polus ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_l ?></th>
+ 	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_l2 ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_h1 ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_m ?></th>
+	<th><?php echo $text_sd ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+					
+<!-- 166-->
+
+<?php if ($show_table166) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_polus ?></th>
+	<th><?php echo $text_tok ?></th>
+	<th><?php echo $text_l ?></th>
+ 	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_l2 ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_h1 ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_m ?></th>
+	<th><?php echo $text_sd ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+					
+<!-- 144-->
+		
+<?php if ($show_table144) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th><?php echo $text_norma ?></th>
+	<th ><?php echo $text_ddo?></th>
+	<th  ><?php echo $text_dposle ?></th>
+ 	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_l1 ?></th>
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table143) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th><?php echo $text_norma ?></th>
+	<th ><?php echo $text_ddo?></th>
+	<th  ><?php echo $text_dposle ?></th>
+ 	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_l1 ?></th>
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table142) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th><?php echo $text_norma ?></th>
+	<th  ><?php echo $text_osd ?></th>
+ 	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_l1 ?></th>
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table141) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th><?php echo $text_norma ?></th>
+	<th  ><?php echo $text_osd ?></th>
+ 	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_l1 ?></th>
+	<th ><?php echo $text_color ?></th>
+<?php } ?>
+
+<?php if ($show_table140) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th ><?php echo $text_obd?></th>
+	<th  ><?php echo $text_osd ?></th>
+ 	<th ><?php echo $text_l ?></th>
+<?php } ?>
+
+<?php if ($show_table139) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack ?></th>
+ 	<th ><?php echo $text_l ?></th>
+	<th ><?php echo $text_l1?></th>
+	<th ><?php echo $text_l2 ?></th>
+	<th  ><?php echo $text_osd ?></th>
+	<th  ><?php echo $text_d1 ?></th>
+<?php } ?>
+
+<?php if ($show_table138) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack ?></th>
+ 	<th ><?php echo $text_l ?></th>
+	<th  ><?php echo $text_obd ?></th>
+	<th  ><?php echo $text_osd ?></th>
+<?php } ?>
+						
+<!-- 123-->
+
+<?php if ($show_table123) { ?>
+	<th><?php echo $text_art_bl ?></th>
+	<th><?php echo $text_art_rd ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_norma_min ?></th>
+	<th><?php echo $text_length_z ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+					
+<!-- 108 -->
+
+<?php if ($show_table108) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>	
+	<th><?php echo $text_u_nom ?></th>
+	<th><?php echo $text_tok ?></th>
+ 	<th ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_h ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th  ><?php echo $text_l1 ?></th>
+	<th  ><?php echo $text_pack ?></th>
+<?php } ?>
+		
+<!-- 106 -->
+
+<?php if ($show_table106) { ?>
+ 	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_range ?></th>
+	<th><?php echo $text_tok ?></th>
+ 	<th ><?php echo $text_w ?></th>
+	<th  ><?php echo $text_h ?></th>
+	<th  ><?php echo $text_l ?></th>
+	<th  ><?php echo $text_color_kl ?></th>
+	<th  ><?php echo $text_pack ?></th>
+<?php } ?>
+		
+<!-- 98 -->
+
+<?php if ($show_table98) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_length ?></th>
+	<th><?php echo $text_thickness ?></th>
+	<th><?php echo $text_width_height ?></th>
+	<th><?php echo $text_draw ?></th>
+<?php } ?>
+		
+<!-- 97 -->
+
+<?php if ($show_table97) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_length ?></th>
+	<th><?php echo $text_thickness ?></th>
+	<th><?php echo $text_width_height ?></th>
+	<th><?php echo $text_draw ?></th>
+<?php } ?>
+		
+<!-- 96 -->
+
+<?php if ($show_table96) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_length ?></th>
+	<th><?php echo $text_thickness ?></th>
+	<th><?php echo $text_width_height ?></th>
+	<th><?php echo $text_draw ?></th>
+<?php } ?>
+		
+<!-- 95 -->
+
+<?php if ($show_table95) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+		
+<!-- 94 -->
+
+<?php if ($show_table94) { ?>
+	<th><?php echo $text_art_bolt ?></th>
+	<th><?php echo $text_art_w_bolt ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_diametr_vint ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_a ?></th>
+	<th><?php echo $text_b ?></th>
+	<th><?php echo $text_c ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_f ?></th>
+	<th><?php echo $text_predel ?></th>
+	<th><?php echo $text_proboy ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+   </tr>
+
+<!-- Table fields -->
+
+   <?php foreach ($model as $models) {   ?>
+   
+	 <tr>
+
+<!--360-->
+
+<?php if ($show_table360) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['jan'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+<?php } ?>
+
+<!--359-->
+
+<?php if ($show_table359) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+ 	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['jan'];?></td>
+	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['isbn'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--358-->
+
+<?php if ($show_table358) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+ 	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+<?php } ?>
+
+<!--357-->
+
+<?php if ($show_table357) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['l'];?></td>
+<?php } ?>
+
+<!--356-->
+
+<?php if ($show_table356) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['jan'];?></td>
+	<td><?php echo $models['isbn'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--355-->
+
+<?php if ($show_table355) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['jan'];?></td>
+	<td><?php echo $models['isbn'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--354-->
+
+<?php if ($show_table354) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+<?php } ?>
+
+<!--353-->
+
+<?php if ($show_table353) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--352-->
+
+<?php if ($show_table352) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--351-->
+
+<?php if ($show_table351) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+<?php } ?>
+
+<!--350-->
+
+<?php if ($show_table350) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--349-->
+
+<?php if ($show_table349) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--348-->
+
+<?php if ($show_table348) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--347-->
+
+<?php if ($show_table347) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+<?php } ?>
+
+<!--346-->
+
+<?php if ($show_table346) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--345-->
+
+<?php if ($show_table345) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>	
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--344-->
+
+<?php if ($show_table344) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+<?php } ?>
+
+<!--343-->
+
+<?php if ($show_table343) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--342-->
+
+<?php if ($show_table342) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--341-->
+
+<?php if ($show_table341) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--340-->
+
+<?php if ($show_table340) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--339-->
+
+<?php if ($show_table339) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--338-->
+
+<?php if ($show_table338) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--337-->
+
+<?php if ($show_table337) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--336-->
+
+<?php if ($show_table336) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['color'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--334-->
+
+<?php if ($show_table334) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+<?php } ?>
+
+<!--333-->
+
+<?php if ($show_table333) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['color'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--332-->
+
+<?php if ($show_table332) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--331-->
+
+<?php if ($show_table331) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--330-->
+
+<?php if ($show_table330) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['jan'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+ 	<td><?php echo $models['articul_dop'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--329-->
+
+<?php if ($show_table329) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--328-->
+
+<?php if ($show_table328) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['jan'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--327-->
+
+<?php if ($show_table327) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['jan'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--326-->
+
+<?php if ($show_table326) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--325-->
+
+<?php if ($show_table325) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['jan'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--324-->
+
+<?php if ($show_table324) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--323-->
+
+<?php if ($show_table323) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['w'];?></td>
+<?php } ?>
+
+<!--322-->
+
+<?php if ($show_table322) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['w'];?></td>
+<?php } ?>
+
+<!--321-->
+
+<?php if ($show_table321) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['b'];?></td>
+<?php } ?>
+
+<!--320-->
+
+<?php if ($show_table320) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['b'];?></td>
+<?php } ?>
+
+<!--319-->
+
+<?php if ($show_table319) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+<?php } ?>
+
+<!--318-->
+
+<?php if ($show_table318) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+<?php } ?>
+
+<!--317-->
+
+<?php if ($show_table317) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['color'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--316-->
+
+<?php if ($show_table316) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['jan'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['d1'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+<?php } ?>
+
+<!--315-->
+
+<?php if ($show_table315) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['jan'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['d1'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+<?php } ?>
+
+<!--314-->
+
+<?php if ($show_table314) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--313-->
+
+<?php if ($show_table313) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--312-->
+
+<?php if ($show_table312) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--311-->
+
+<?php if ($show_table311) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--310-->
+
+<?php if ($show_table310) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--309-->
+
+<?php if ($show_table309) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['articul_dop'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--308-->
+
+<?php if ($show_table308) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--307-->
+
+<?php if ($show_table307) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--306-->
+
+<?php if ($show_table306) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--305-->
+
+<?php if ($show_table305) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['w'];?></td>
+<?php } ?>
+
+<!--304-->
+
+<?php if ($show_table304) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['articul_dop'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+ 	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['jan'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--303-->
+
+<?php if ($show_table303) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['articul_dop'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+ 	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['jan'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--302-->
+
+<?php if ($show_table302) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['thickness'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--300-->
+
+<?php if ($show_table300) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['articul_dop'];?></td>
+<?php } ?>
+
+<!--299-->
+
+<?php if ($show_table299) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['mpn'];?></td>
+ 	<td><?php echo $models['thickness'];?></td>
+	<td><?php echo $models['isbn'];?></td>
+	<td><?php echo $models['jan'];?></td>
+<?php } ?>
+
+<!--298-->
+
+<?php if ($show_table298) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['thickness'];?></td>
+<?php } ?>
+
+<!--297-->
+
+<?php if ($show_table297) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['d1'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+<?php } ?>
+
+<!--296-->
+
+<?php if ($show_table296) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['thickness'];?></td>
+<?php } ?>
+	 
+<!--294-->
+
+<?php if ($show_table294) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['mpn'];?></td>
+ 	<td><?php echo $models['thickness'];?></td>
+<?php } ?>
+	 
+<!--293-->
+
+<?php if ($show_table293) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['thickness'];?></td>
+<?php } ?>
+
+<!--263-->
+
+<?php if ($show_table263) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['jan'];?></td>
+	<td><?php echo $models['isbn'];?></td>
+	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--262-->
+
+<?php if ($show_table262) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['jan'];?></td>
+	<td><?php echo $models['isbn'];?></td>
+	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--261-->
+
+<?php if ($show_table261) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+<?php } ?>
+
+<!--259-->
+
+<?php if ($show_table259) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--258-->
+
+<?php if ($show_table258) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+<?php } ?>
+
+<!--257-->
+
+<?php if ($show_table257) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--256-->
+
+<?php if ($show_table256) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--239-->
+
+<?php if ($show_table239) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+<?php } ?>
+
+<!--238-->
+
+<?php if ($show_table238) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">	
+	<?php echo $models['model'];?></a></td>	
+<!--<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['articul_dop'];?></td>-->
+ 	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php   echo $models['w'];?></td>
+	<td><?php echo $models['jan'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php   echo $models['l'];?></td>
+<?php } ?>
+
+<!--237-->
+
+<?php if ($show_table237) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['articul_dop'];?></td>
+ 	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php   echo $models['w'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php   echo $models['l'];?></td>
+<?php } ?>
+
+<!--236-->
+
+<?php if ($show_table236) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['articul_dop'];?></td>
+ 	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php   echo $models['w'];?></td>
+	<td><?php echo $models['b'];?></td>
+	 <td><?php echo $models['l'];?></td>
+<?php } ?>
+
+<!--235-->
+
+<?php if ($show_table235) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+ 	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['b'];?></td>
+<?php } ?>
+
+<!--234-->
+
+<?php if ($show_table234) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+ 	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+<?php } ?>
+
+<!--233-->
+
+<?php if ($show_table233) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+ 	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+<?php } ?>
+
+<!--232-->
+
+<?php if ($show_table232) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+ 	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+<?php } ?>
+
+<!--231-->
+
+<?php if ($show_table231) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+ 	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+<?php } ?>
+
+<!--230-->
+
+<?php if ($show_table230) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+ 	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['isbn'];?></td>
+<?php } ?>
+
+<!--229-->
+
+<?php if ($show_table229) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+ 	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['mpn'];?></td>
+<?php } ?>
+
+<!--228-->
+
+<?php if ($show_table228) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['b'];?></td>
+<?php } ?>
+
+<!--227-->
+
+<?php if ($show_table227) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['b'];?></td>
+<?php } ?>
+
+<!--226-->
+
+<?php if ($show_table226) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+<?php } ?>
+
+<!--225-->
+
+<?php if ($show_table225) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['l'];?></td> 	
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['color'];?></td >
+<?php } ?>
+
+<!--224-->
+
+<?php if ($show_table224) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['d1']; ?></td>
+	<td><?php echo $models['color'];?></td >
+<?php } ?>
+ 
+<!--223-->
+
+<?php if ($show_table223) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['d1']; ?></td>
+	<td><?php echo $models['color'];?></td >
+<?php } ?>
+ 
+<!--222-->
+
+<?php if ($show_table222) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['a'];?></td >
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['d1']; ?></td>
+	<td><?php echo $models['color'];?></td >
+<?php } ?>
+
+<?php if ($show_table221) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['a'];?></td >
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['d1']; ?></td>
+	<td><?php echo $models['color'];?></td >
+<?php } ?>
+
+<?php if ($show_table220) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['d1']; ?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['obd'];?></td>
+<?php } ?>
+
+<?php if ($show_table219) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['d1']; ?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['obd'];?></td>
+<?php } ?>
+
+<?php if ($show_table218) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['color'];?></td >
+<?php } ?>
+
+<?php if ($show_table217) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['color'];?></td >
+<?php } ?>
+
+<?php if ($show_table216) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	 <td><?php echo $models['l'];?></td>
+	<td><?php echo $models['color'];?></td>
+<?php } ?>
+
+<?php if ($show_table215) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	 <td><?php echo $models['osd'];?></td>
+<?php } ?>
+
+<?php if ($show_table214) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	 <td><?php echo $models['l'];?></td>
+	<td><?php echo $models['color'];?></td>
+<?php } ?>
+
+<?php if ($show_table213) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	 <td><?php echo $models['osd'];?></td>
+<?php } ?>
+
+<?php if ($show_table212) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['color'];?></td >
+<?php } ?>
+
+<?php if ($show_table211) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['color'];?></td >
+<?php } ?>
+
+<?php if ($show_table210) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['b'];?></td>
+	 <td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+<?php } ?>
+
+<?php if ($show_table209) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['b'];?></td>
+	 <td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+<?php } ?>
+
+<?php if ($show_table208) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['w'];?></td>
+	 <td><?php echo $models['l'];?></td>
+	<td><?php echo $models['osd'];?></td>
+<?php } ?>
+
+<?php if ($show_table205) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	 <td><?php echo $models['jan'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['w'];?></td>
+<?php } ?>
+
+<?php if ($show_table204) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['thickness'];?></td>
+	 <td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	 <td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['color'];?></td>
+<?php } ?>
+
+<?php if ($show_table203) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['l'];?></td>
+	 <td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	 <td><?php echo $models['b'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['color'];?></td>
+<?php } ?>
+
+<?php if ($show_table202) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['thickness'];?></td>
+	 <td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+	 <td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['color'];?></td>
+<?php } ?>
+
+<?php if ($show_table201) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	 <td><?php echo $models['a'];?></td>
+	 <td><?php echo $models['isbn'];?></td>
+	 <td><?php echo $models['b'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['color'];?></td>
+<?php } ?>
+
+<?php if ($show_table200) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['thickness'];?></td>
+	 <td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+	 <td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['color'];?></td>
+<?php } ?>
+
+<?php if ($show_table199) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['color'];?></td>
+<?php } ?>
+
+<?php if ($show_table198) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['thickness'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['color'];?></td>
+<?php } ?>
+
+<?php if ($show_table197) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['thickness'];?></td>
+	<td><?php echo $models['oe'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+<?php } ?>
+
+<?php if ($show_table196) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+<?php } ?>
+
+<!--192-->
+
+<?php if ($show_table192) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['w'];?></td>
+<?php } ?>
+
+<?php if ($show_table183) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['thickness'];?></td>
+	 <td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['color'];?></td>
+<?php } ?>
+
+<?php if ($show_table182) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['b'];?></td>
+	 <td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['isbn'];?></td>
+	 <td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['a'];?></td>
+<?php } ?>
+
+<?php if ($show_table181) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['b'];?></td>
+	 <td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['isbn'];?></td>
+	 <td><?php echo $models['mpn'];?></td>
+	 <td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['a'];?></td>
+<?php } ?>
+
+<!--176-->
+
+<?php if ($show_table176) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--175-->
+
+<?php if ($show_table175) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--174-->
+
+<?php if ($show_table174) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['d1'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--169-->
+
+<?php if ($show_table169) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['jan'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--168-->
+
+<?php if ($show_table168) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--167-->
+
+<?php if ($show_table167) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['jan'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--166-->
+
+<?php if ($show_table166) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['jan'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--144-->
+
+<?php if ($show_table144) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	 <td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['color'];?></td>
+<?php } ?>
+
+<?php if ($show_table143) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	 <td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['color'];?></td >
+<?php } ?>
+
+<?php if ($show_table142) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	 <td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['color'];?></td >
+<?php } ?>
+
+<?php if ($show_table141) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	 <td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['color'];?></td >
+<?php } ?>
+
+<?php if ($show_table140) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['l'];?></td>
+<?php } ?>
+
+<?php if ($show_table139) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['jan'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+ 	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--138-->
+
+<?php if ($show_table138) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['l'];?></td>
+<?php } ?>
+
+<!--123-->
+
+<?php if ($show_table123) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['articul_dop'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['d1'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--108-->
+
+<?php if ($show_table108) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['ean'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--106-->
+
+<?php if ($show_table106) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['a'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['color'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--98-->
+
+<?php if ($show_table98) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['thickness'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--97-->
+
+<?php if ($show_table97) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['thickness'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--96-->
+
+<?php if ($show_table96) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['thickness'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['size'];?></td>
+<?php } ?>
+
+<!--95-->
+
+<?php if ($show_table95) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+<!--94-->
+
+<?php if ($show_table94) { ?>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['model'];?></a></td>
+	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<?php echo $models['articul_dop'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['osd'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+	<td><?php echo $models['upc'];?></td>
+ 	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['jan'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
+			</tr>
+		<?php } ?>
+	</table>
+</div>
+<?php if($_SERVER["REMOTE_ADDR"]=='146.120.248.1'){ ?>
+<?php echo var_dump($tools); ?><br>
+<?php //echo var_dump($model_tools); ?>
+<?php $arr = explode(",",$model_tools['0']['models_tools']); ?>
+<?php echo var_dump($arr); ?><br><br>
+<?php  foreach ($model_products as $product_id){ foreach ($product_id as $model){ echo "$model\n";}}; ?><br><br><br>
+<?php //echo var_dump($model); ?><br>
+
+
+<br>
+<?php } ?>
+	 ]]></add>
+	</operation>
+	</file>
+  
+  <file path="catalog/model/catalog/category.php">
+
+        <operation>
+          
+                <search><![CDATA[public function getCategoryFilters($category_id) {]]></search>
+                <add offset="0" position="before" index="1"><![CDATA[
+
+	 public function getTableCategory($category_id) {
+$query = $this->db->query(" SELECT p.product_id, p.model,p.size,p.oe,p.obd,p.osd,p.w,p.a,p.b,p.l,p.upc,p.ean,p.jan,p.isbn,p.mpn,p.o,p.articul_dop, p.d1, p.range,p.norma,p.color,p.name_short,p.thickness
+FROM " . DB_PREFIX . "product p 
+LEFT JOIN " . DB_PREFIX . "product_to_category ptc ON (p.product_id = ptc.product_id)
+LEFT JOIN " . DB_PREFIX . "category c  ON (ptc.category_id = c.category_id)
+LEFT JOIN " . DB_PREFIX . "category_description cd ON (c.category_id = cd.category_id) 
+LEFT JOIN " . DB_PREFIX . "category_to_store c2s ON (c.category_id = c2s.category_id) 
+WHERE 
+c.category_id = '" . (int)$category_id . "' AND cd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND c2s.store_id = '" . (int)$this->config->get('config_store_id') . "' AND p.status = '1'
+ORDER BY 
+model");
+
+       return $query->rows;
+    }
+
+
+	 ]]></add>
+	</operation>
+	</file>
+  
+  
+  
+
+  </modification>
