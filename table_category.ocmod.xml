@@ -1987,7 +1987,6 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 	<th><?php echo $text_w ?></th>
 	<th><?php echo $text_h ?></th>
 	<th><?php echo $text_d ?></th>
-	<th><?php echo $text_D1 ?></th>
 	<th><?php echo $text_sd ?></th>
 	<th><?php echo $text_pack ?></th>
 	<th><?php echo $text_box ?></th>
@@ -4106,7 +4105,6 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
  	<td><?php echo $models['jan'];?></td>
  	<td><?php echo $models['w'];?></td>
  	<td><?php echo $models['isbn'];?></td>
- 	<td><?php echo $models['obd'];?></td>
  	<td><?php echo $models['d1'];?></td>
  	<td><?php echo $models['osd'];?></td>
 	<td><?php echo $models['norma'];?></td>
