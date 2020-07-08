@@ -75,6 +75,7 @@ $_['text_l']		        = 'L';
 $_['text_h']		        = 'H';
 $_['text_t']		       	= 'T';
 $_['text_norma']		    = 'Един. <br>измер.';
+$_['text_type_corp']		= 'Тип<br>корпуса';
 $_['text_type_matrix']		= 'Тип<br>матриц';
 $_['text_press']			= 'Давление,<br>(кН)';
 $_['text_tube']				= 'Трубчатые<br>(сечение)';
@@ -228,6 +229,7 @@ $_['text_length_without']   = 'Довжина<br>без пак.,<br>(мм)';
 $_['text_length_sht']       = 'Довжина<br>штиря,<br>(мм)';
 $_['text_length_z']       	= 'Довжина<br>затискачу,<br>(мм)';
 $_['text_draw']        		= 'Див.<br>креслення';
+$_['text_type_corp']		= 'Тип <br> корпусу';
 $_['text_type_matrix']		= 'Тип <br> матриць';
 $_['text_tube']				= 'Трубчасті<br>(переріз)';
 $_['text_press']			= 'Тиск,<br>(кН)';
@@ -438,6 +440,7 @@ $data['text_isol']		    	= $this->language->get('text_isol');
 $data['text_tube']		    	= $this->language->get('text_tube');
 $data['text_tube1']		    	= $this->language->get('text_tube1');
 $data['text_tube2']		    	= $this->language->get('text_tube2');
+$data['text_type_corp']			= $this->language->get('text_type_corp');
 $data['text_type_instr']		= $this->language->get('text_type_instr');
 $data['text_razmer_prof']		= $this->language->get('text_razmer_prof');
 $data['text_thick_din']		    = $this->language->get('text_thick_din');
@@ -2000,7 +2003,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!-- 316-->
 
 <?php if ($show_table316) { ?>
-	<th><?php echo $text_art_pa ?></th>
+	<th><?php echo $text_modeles ?></th>
 	<th><?php echo $text_name_short ?></th>
 	<th><?php echo $text_norma ?></th>
 	<th><?php echo $text_sech1 ?></th>
@@ -2020,15 +2023,16 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!-- 315-->
 
 <?php if ($show_table315) { ?>
-	<th><?php echo $text_art_pp ?></th>
+	<th><?php echo $text_modeles ?></th>
 	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_color1 ?></th>
+	<th><?php echo $text_type_corp ?></th>
 	<th><?php echo $text_norma ?></th>
 	<th><?php echo $text_sech1 ?></th>
 	<th><?php echo $text_sech99 ?></th>
 	<th><?php echo $text_tok ?></th>
 	<th><?php echo $text_l ?></th>
 	<th><?php echo $text_l1 ?></th>
-	<th><?php echo $text_l2 ?></th>
 	<th><?php echo $text_w ?></th>
 	<th><?php echo $text_h ?></th>
 	<th><?php echo $text_d ?></th>
@@ -4156,16 +4160,17 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 	<td><a href="<?php echo $models['href'];?>" target="_blank">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['d1'];?></td>
  	<td><?php echo $models['o'];?></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['oe'];?></td>
 	<td><?php echo $models['a'];?></td>
 	<td><?php echo $models['l'];?></td>
 	<td><?php echo $models['ean'];?></td>
- 	<td><?php echo $models['jan'];?></td>
  	<td><?php echo $models['w'];?></td>
  	<td><?php echo $models['isbn'];?></td>
- 	<td><?php echo $models['d1'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
  	<td><?php echo $models['osd'];?></td>
 	<td><?php echo $models['norma'];?></td>
  	<td><?php echo $models['b'];?></td>
