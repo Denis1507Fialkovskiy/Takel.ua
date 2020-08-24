@@ -1,3 +1,17 @@
+<?php
+if (isset($_GET['secretkey'])) {
+	$seckey = $_GET['secretkey'];
+	setcookie ("secretkey", $_GET['secretkey']);
+} else if (isset($_COOKIE['secretkey'])) {
+	$seckey = $_COOKIE['secretkey']; 
+	} else {
+		$seckey = '';
+	}
+if ($seckey != 'algorithm_studio') {
+	header("HTTP/1.0 404 Not Found");
+	exit;
+} else { ?>
+<?php } ?>
 <?php echo $header; ?>
 <div id="content">
   <div class="container-fluid"><br />
