@@ -124,10 +124,46 @@ input[type="tel"].form-control {
 	font-size: 12px;
 	height: 30px;
 }
-.clearfix:after {
+.clearfix:after {a
     content: '';
     display: block
 }
+.block_newrec {
+	
+}
+.novinki-row {
+	height: 312px;
+	background: url(../image/catalog/novinki.jpg) center / cover no-repeat #fff;
+    overflow: visible;
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ Рё Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
+}
+.recommend-row {
+	height: 312px;
+	background: url(../image/catalog/recommend.jpg) center / cover no-repeat #fff;
+    overflow: visible;
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ Рё Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
+}
+#text_block {	
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#text_block h2{
+	font-size: 24px;
+	margin-top: 0px;
+}
+#text_block h3{
+	font-size: 24px;
+	margin-top: 0px;
+	color: #3a6094;
+}
+
 /* Fix some bootstrap issues */
 span.hidden-xs, span.hidden-sm, span.hidden-md, span.hidden-lg {
 	display: inline;
@@ -2131,7 +2167,7 @@ header .dropdown-menu {
 /* /Button */
 /* Advantages */
 .main-advantage-row {
-	margin-top: 32px;
+	/*margin-top: 32px;*/
 	margin-bottom: 16px;
 }
 .main-advantage-item {
