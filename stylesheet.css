@@ -163,7 +163,29 @@ input[type="tel"].form-control {
 	margin-top: 0px;
 	color: #3a6094;
 }
-
+#text_block .button-more {
+	height: 32px;
+    width: 110px;
+	color: #343434;
+	border: solid 0px #fff;
+	background: #b5b5b5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#b4b4b4));
+	background: -moz-linear-gradient(top,  #e4e4e4,  #b4b4b4);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4e4e4', endColorstr='#b4b4b4');
+}
+#text_block .button-more:hover {
+	background: #343434;
+	color: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b5b5b5), to(#343434));
+	background: -moz-linear-gradient(top,  #b5b5b5,  #343434);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#b5b5b5', endColorstr='#343434');
+}
+#text_block .button-more:active {
+	color: #343434;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b4b4b4), to(#e4e4e4));
+	background: -moz-linear-gradient(top,  #b4b4b4,  #e4e4e4);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4b4b4', endColorstr='#e4e4e4');
+}
 /* Fix some bootstrap issues */
 span.hidden-xs, span.hidden-sm, span.hidden-md, span.hidden-lg {
 	display: inline;
