@@ -1,7 +1,27 @@
+<div class="block_newrec row">
+	<div class="col-md-6 col-sm-12 novinki-row">
+		<div id="text_block">
+			<h2><? echo $text_novinki; ?></h2>
+			<h3><? echo $text_company; ?></h3>
+				<button class="button-more" type="button" data-effect="mfp-zoom-out" onclick="window.location='https://www.takel.ua';">
+					<span><?php echo $text_more; ?></span>
+				</button>
+		</div>
+	</div>
+	<div class="col-md-6 col-sm-12 recommend-row">
+		<div id="text_block">
+			<h2><? echo $text_recommend; ?></h2>
+			<h3><? echo $text_company; ?></h3>
+				<button class="button-more" type="button" data-effect="mfp-zoom-out" onclick="window.location='https://www.takel.ua';">
+					<span><?php echo $text_more; ?></span>
+				</button>	
+		</div>
+	</div>
+</div>
 <div class="row main-advantage-row cat-wall-row">
 	<div class="oct-carousel-header"><?php echo $heading_title; ?></div>
   <?php foreach ($categories as $category) { ?>
-  	<div class="col-sm-4" style="height: 100px;">
+  	<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
   		<div class="main-advantage-item oct-category-item-box">
   			<?php if ($category['thumb']) { ?>
   			<div class="main-advantage-item-icon oct-category-item-icon col-md-4 hidden-sm hidden-xs">
