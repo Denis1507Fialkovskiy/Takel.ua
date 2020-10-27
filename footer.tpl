@@ -214,7 +214,7 @@
 		    </div>
 		  </div>
 	  <?php } ?>
-	  <?php if ($oct_techstore_data['foot_show_copy_and_payment'] == 'on') { ?>
+	  <?php if ($oct_techstore_data['foot_show_copy_and_payment'] == 'off') { ?>
     <div class="row last-row" style="">
 	    <div class="col-sm-4 col-xs-12" style="display: none">
   			<span class="oct-copy"><?php echo $oct_powered; ?></span>
