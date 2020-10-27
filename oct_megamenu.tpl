@@ -56,7 +56,7 @@
               </li>
               <?php } else { ?>
               <li class="dropdown oct-mm-simplecat">
-                <a href="<?php echo $item['href']; ?>" class="dropdown-toggle" data-toggle="dropdown" <?php echo ($item['open_link_type']) ? 'target="_blank"' : ''; ?>><?php echo $item['title']; ?></a><?php if(count($item['children'])){ ?><a class="parent-title-toggle dropdown-toggle dropdown-img megamenu-toggle-a" data-toggle="dropdown"></a><?php } ?>
+                <a href="<?php echo $item['href']; ?>" class="dropdown-toggle" data-toggle="dropdown" <?php echo ($item['open_link_type']) ? 'target="_blank"' : ''; ?>><i class="fas fa-cog"></i><?php echo " ".$item['title']; ?></a><?php if(count($item['children'])){ ?><a class="parent-title-toggle dropdown-toggle dropdown-img megamenu-toggle-a" data-toggle="dropdown"></a><?php } ?>
                 <div class="dropdown-menu">
                   <div class="dropdown-inner">
                     <ul class="list-unstyled">
@@ -144,7 +144,7 @@
               <?php if ($item['item_type'] == 5) { ?>
               <?php #start menu type - information ?>
               <li class="dropdown oct-mm-info">
-                <a href="<?php echo $item['href']; ?>" class="dropdown-toggle" data-toggle="dropdown" <?php echo ($item['open_link_type']) ? 'target="_blank"' : ''; ?>><?php echo $item['title']; ?></a><?php if(count($item['children'])){ ?><a class="parent-title-toggle dropdown-toggle dropdown-img megamenu-toggle-a" data-toggle="dropdown"></a><?php } ?>
+                <a href="<?php echo $item['href']; ?>" class="dropdown-toggle" data-toggle="dropdown" <?php echo ($item['open_link_type']) ? 'target="_blank"' : ''; ?>><i class="fas fa-building"></i><?php echo " ".$item['title']; ?></a><?php if(count($item['children'])){ ?><a class="parent-title-toggle dropdown-toggle dropdown-img megamenu-toggle-a" data-toggle="dropdown"></a><?php } ?>
                 <div class="dropdown-menu">
                   <div class="dropdown-inner">
                     <ul class="list-unstyled">
@@ -171,7 +171,7 @@
               <?php #end menu type - custom html ?>     
               <?php } else { ?>
               <?php #start menu type - link ?>
-              <li><a href="<?php echo $item['href']; ?>" <?php echo ($item['open_link_type']) ? 'target="_blank"' : ''; ?>><?php echo $item['title']; ?></a></li>
+              <li><a href="<?php echo $item['href']; ?>" <?php echo ($item['open_link_type']) ? 'target="_blank"' : ''; ?>><i class="fas fa-map-marked-alt"></i><?php echo " ".$item['title']; ?></a></li>
               <?php #end menu type - link ?>
               <?php } ?>
               <?php } ?>	
