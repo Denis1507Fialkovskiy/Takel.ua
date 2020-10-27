@@ -93,7 +93,8 @@ if (!isset($oct_techstore_status) || !$oct_techstore_status) {
 	<?php echo $analytic; ?>
 	<?php } ?>
 <?php } ?>
-<link href="catalog/view/theme/oct_techstore/stylesheet/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<link href="catalog/view/theme/oct_techstore/stylesheet/font-awesome/css/all.min.css" rel="stylesheet" />
+<!--<link href="catalog/view/theme/oct_techstore/stylesheet/font-awesome/css/font-awesome.min.css" rel="stylesheet" />-->
 <?php foreach ($links as $link) { ?>
 <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
 <?php } ?>
@@ -238,15 +239,41 @@ if (!isset($oct_techstore_status) || !$oct_techstore_status) {
 					  <?php } ?>
 					</div>
 				  </div>
-				  <div class="col-sm-2 phones-top-box">
+				  
+				  <div class="col-sm-2 top-box hidden-xs hidden-sm">
+				  </div>
+				  
+				  <div class="col-sm-3 top-box hidden-xs hidden-sm">
+						<ul class="list-inline">
+							<div class="callback-phones">
+							<a class="field-tip show-phones" onclick="get_oct_popup_call_phone();"><i class="fa fa-headset"></i>						
+								<span style="color: #666;font-size: 15px;"><?php echo $popup_call_phone_text['call_back']; ?></span></a>
+							</div>
+						  <?php if ($oct_techstore_cont_clock) { ?>
+<!--Отключаем время работы  <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-hover="dropdown" style="color:#666"><i class="fa fa-clock-o" style="font-size: 26px; color: #CECECE" aria-hidden="true"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_clock; ?></span> <i class="fa fa-caret-down"></i></a>
+							<ul class="dropdown-menu">
+							  <?php foreach ($oct_techstore_cont_clock as $clock) { ?>
+								<li><span><?php echo $clock; ?></span></li>
+							  <?php } ?>
+							</ul>
+						  </li>-->
+						  <?php } ?>
+						</ul>
+				  </div>
+				  <div class="col-sm-4 ts-search-box"><?php echo $search; ?></div>
+		<!-- Cart off -->		  
+				  <!--<div class="col-sm-3 buttons-top-box" style="display:none;" ><?php //echo $cart; ?></div>-->
+		<!-- Cart off -->
+				  <div class="col-sm-1 phones-top-box">
 					<?php if ($oct_techstore_cont_phones) { ?>
 						<div class="dropdown phones-dropdown" style="text-align:center;">
 						  <?php if (count($oct_techstore_cont_phones) >= 1) { ?>
-							<a href="tel:+38 <?php echo $oct_techstore_cont_phones[0]; ?>" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-hover="dropdown"><i class="fa fa-phone"></i> <span><?php echo $oct_techstore_cont_phones[0]; ?></span> <i class="fa fa-caret-down"></i></a>
+							<a href="tel:+38 <?php echo $oct_techstore_cont_phones[0]; ?>" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-hover="dropdown"><i class="fa fa-phone"></i> <span><?php //echo $oct_techstore_cont_phones[0]; ?></span> <i class="fa fa-caret-down"></i></a>
 							  <?php if (isset($oct_popup_call_phone_data['status']) && $oct_popup_call_phone_data['status'] == 1) { ?>
-								<a class="field-tip show-phones" onclick="get_oct_popup_call_phone();"><?php echo $popup_call_phone_text['call_back']; ?></a>
+								<!--<a class="field-tip show-phones" onclick="get_oct_popup_call_phone();"><?php echo $popup_call_phone_text['call_back']; ?></a>-->
 							  <?php } else { ?>
-								<a href="#" class="show-phones"><?php echo $text_see_more; ?></a>
+								<!--<a href="#" class="show-phones"><?php echo $text_see_more; ?></a>-->
 							  <?php } ?>
 							  <ul class="dropdown-menu">
 								<?php foreach($oct_techstore_cont_phones as $element) { ?>
@@ -259,24 +286,6 @@ if (!isset($oct_techstore_status) || !$oct_techstore_status) {
 						</div>
 					<?php } ?>
 				  </div>
-				  <div class="col-sm-3 top-box hidden-xs hidden-sm">
-						<ul class="list-inline">
-						  <?php if ($oct_techstore_cont_clock) { ?>
-						  <li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-hover="dropdown" style="color:#666"><i class="fa fa-clock-o" style="font-size: 26px; color: #CECECE" aria-hidden="true"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_clock; ?></span> <i class="fa fa-caret-down"></i></a>
-							<ul class="dropdown-menu">
-							  <?php foreach ($oct_techstore_cont_clock as $clock) { ?>
-								<li><span><?php echo $clock; ?></span></li>
-							  <?php } ?>
-							</ul>
-						  </li>
-						  <?php } ?>
-						</ul>
-				  </div>
-				  <div class="col-sm-4 ts-search-box"><?php echo $search; ?></div>
-		<!-- Cart off -->		  
-				  <!--<div class="col-sm-3 buttons-top-box" style="display:none;" ><?php //echo $cart; ?></div>-->
-		<!-- Cart off -->
 				  <div id="top-right-links" class="pull-right col-sm-1">
 						<?php if (!empty($language) && $language != "" OR !empty($currency) && $currency != "") { ?>
 						<div class="language-currency">
@@ -309,8 +318,11 @@ if (!isset($oct_techstore_status) || !$oct_techstore_status) {
 		          <div class="collapse navbar-collapse navbar-ex1-collapse">
 		            <ul class="nav navbar-nav flex menu" style="width: 100%">
 		              <?php foreach ($categories as $item) { ?>
-			              <li class="dropdown oct-mm-simplecat">
-			                <a href="<?php echo $item['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $item['name']; ?></a><?php if(count($item['children'])){ ?><a class="parent-title-toggle dropdown-toggle dropdown-img megamenu-toggle-a" data-toggle="dropdown"></a><?php } ?>
+			              <li class="dropdown oct-mm-simplecat"><a href="<?php echo $item['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $item['name']; ?></a>
+							<?php if(count($item['children'])){ ?>
+							<a class="parent-title-toggle dropdown-toggle dropdown-img megamenu-toggle-a" data-toggle="dropdown">
+							</a>
+							<?php } ?>
 			                <div class="dropdown-menu">
 			                  <div class="dropdown-inner">
 			                    <ul class="list-unstyled">
