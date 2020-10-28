@@ -46,7 +46,12 @@ a, #search .btn-lg, .phones-dropdown a, #menu .nav > li > a, .oct-carousel-heade
 	background-color: #2E578E;
 }
 header, .menu-row {
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
+	background-image: url(../image/catalog/silver-min.jpg);	
+    background-repeat: no-repeat;	
+	overflow: visible;	
+    height: 56px;	
+	padding-top: 5px;
 }
 #top #top-left-links ul li a, #top #top-left-links ul li a:visited, #top .btn-link.btn-language, #top .btn-link.btn-currency, #top #top-right-links > ul > li a, #top #top-right-links > ul > li a:visited, #top #top-right-links > ul > li a:hover {
 	color: #FFFFFF;
@@ -76,7 +81,7 @@ header, .menu-row {
 	color: #566072;
 }
 .phones-dropdown a i.fa-phone, .phones-dropdown a.show-phones {
-	color: #CECECE;
+	color: #666;
 }
 #cart {
 	background-color: #F7F9FA;
