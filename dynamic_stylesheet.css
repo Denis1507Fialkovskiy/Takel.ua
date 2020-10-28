@@ -46,12 +46,7 @@ a, #search .btn-lg, .phones-dropdown a, #menu .nav > li > a, .oct-carousel-heade
 	background-color: #2E578E;
 }
 header, .menu-row {
-/**background-color: #FFFFFF;**/
-	background-image: url(../image/catalog/silver-min.jpg);
-    background-repeat: no-repeat;
-	overflow: visible;
-    height: 56px;
-	padding-top: 5px;
+	background-color: #FFFFFF;
 }
 #top #top-left-links ul li a, #top #top-left-links ul li a:visited, #top .btn-link.btn-language, #top .btn-link.btn-currency, #top #top-right-links > ul > li a, #top #top-right-links > ul > li a:visited, #top #top-right-links > ul > li a:hover {
 	color: #FFFFFF;
@@ -66,7 +61,7 @@ header, .menu-row {
 	background-color: #2E578E;
 }
 #top #top-left-links ul li a:hover, #top #top-right-links > ul > li:hover {
-	border-bottom-color: #00D4FB;
+	border-bottom-color: #000000;
 }
 #top .dropdown-menu, header .dropdown-menu {
 	background-color: #FFFFFF;
@@ -75,13 +70,13 @@ header, .menu-row {
 	color: #000000!important;
 }
 #top #form-currency .currency-select:hover, #top #form-language .language-select:hover, #top #top-right-links .dropdown-menu li a:hover, header .dropdown-menu li a:hover {
-	color: #00D4FB;
+	color: #001E24;
 }
 .phones-dropdown a {
 	color: #566072;
 }
 .phones-dropdown a i.fa-phone, .phones-dropdown a.show-phones {
-	color: #666;
+	color: #CECECE;
 }
 #cart {
 	background-color: #F7F9FA;
@@ -96,7 +91,7 @@ header, .menu-row {
 	color: #00D4FB;
 }
 #menu .nav > li:hover {
-	background-color: #59C2E6;
+	background-color: #000000;
 }
 #menu .nav > li:hover {
 	border-color: #647382;
@@ -114,13 +109,13 @@ header, .menu-row {
 	color: #333333;
 }
 #menu .oct-mm-info .dropdown-menu .has-child a:hover, #menu .dropdown-inner a:hover, #menu .megamenu-full-width .megamenu-parent-title:hover, #menu .megamenu-full-width a.megamenu-parent-img:hover + a {
-	color: #59C2E6 !important;
+	color: #000000 !important;
 }
 @media only screen and (min-width: 992px) {#menu .second-level-li.has-child:hover > a, #menu .second-level-li.has-child:hover > a:visited, #menu .oct-mm-info .dropdown-menu ul li.second-level-li:hover a, #menu .oct-mm-simplecat .dropdown-menu ul li.second-level-li:hover > a, #menu .has-child:hover i {
 	color: #FFFFFF !important;
 }}
 #menu .dropdown-menu li.second-level-li:hover {
-	background-color: #59C2E6;
+	background-color: #000000;
 }
 #menu .sale-ul > div .megamenu-sale-item .dropprice {
 	color: #34BBE3;
