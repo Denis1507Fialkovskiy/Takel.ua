@@ -239,15 +239,42 @@ if (!isset($oct_techstore_status) || !$oct_techstore_status) {
 					  <?php } ?>
 					</div>
 				  </div>
-				  
+<!-- create menu products -->				  
 				  <div class="col-sm-2 top-box hidden-xs hidden-sm">
+					<p id="products-top" class="menu-prod-hide">
+						<a class="field-tip show-phones" onclick="#"><i class="fas fa-cog" aria-hidden="true"></i>						
+								<span style="color: #666;font-size: 14px;"><?php echo "Продукция"; ?></span></a>
+<!--					 	<li class="dropdown oct-mm-simplecat">
+								<a href="<?php echo $item['href']; ?>" class="dropdown-toggle" data-toggle="dropdown" <?php echo ($item['open_link_type']) ? 'target="_blank"' : ''; ?>><i class="fas fa-cog"></i><?php echo " ".$item['title']; ?></a><?php if(count($item['children'])){ ?><a class="parent-title-toggle dropdown-toggle dropdown-img megamenu-toggle-a" data-toggle="dropdown"></a><?php } ?>
+								<div class="dropdown-menu">
+								  <div class="dropdown-inner">
+									<ul class="list-unstyled">
+									  <?php foreach ($item['children'] as $children) { ?>
+									  <?php if ($children['children']) { ?>
+									  <li class="second-level-li has-child">
+										<a href="<?php echo $children['href']; ?>"><?php echo $children['name']; ?></a> <span class="angle-right"><i class="fa fa-angle-right" aria-hidden="true"></i></span><?php if(count($children['children'])){ ?><a class="parent-title-toggle"></a><?php } ?>
+											<ul class="megamenu-ischild">
+											  <?php foreach ($children['children'] as $child) { ?>
+											  <li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a>
+												<?php } ?>
+											</ul>
+									  </li>
+									  <?php } else { ?>
+									  <li class="second-level-li"><a href="<?php echo $children['href']; ?>"><?php echo $children['name']; ?></a></li>
+									  <?php } ?>
+									  <?php } ?>
+									</ul>
+								  </div>
+								</div>
+							</li>	-->							
+					</p>
 				  </div>
 				  
-				  <div class="col-sm-3 top-box hidden-xs hidden-sm">
+				  <div class="col-sm-2 top-box hidden-xs hidden-sm">
 						<ul class="list-inline">
 							<div class="callback-phones">
 							<a class="field-tip show-phones" onclick="get_oct_popup_call_phone();"><i class="fa fa-headset"></i>						
-								<span style="color: #666;font-size: 15px;"><?php echo $popup_call_phone_text['call_back']; ?></span></a>
+								<span style="color: #666;font-size: 14px;"><?php echo $popup_call_phone_text['call_back']; ?></span></a>
 							</div>
 						  <?php if ($oct_techstore_cont_clock) { ?>
 <!--Отключаем время работы  <li class="dropdown">
@@ -290,10 +317,10 @@ if (!isset($oct_techstore_status) || !$oct_techstore_status) {
 						<?php if (!empty($language) && $language != "" OR !empty($currency) && $currency != "") { ?>
 						<div class="language-currency">
 						  <?php echo $language; ?>
-						  <?php echo $currency; ?>
+						  <?php //echo $currency; ?>
 						</div>
 						<?php } ?>	            
-					  </div>
+				  </div>
 				  <div class="col-sm-6 mobile-icons-box">
 					<a href="<?php echo $link_wishlist; ?>" id="m-wishlist"><i class="fa fa-heart" aria-hidden="true"></i></a>
 					<a href="<?php echo $link_compare; ?>" id="m-compare"><i class="fa fa-sliders" aria-hidden="true"></i></a>
