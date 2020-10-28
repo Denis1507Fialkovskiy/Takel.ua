@@ -462,6 +462,16 @@ $(document).ready(function () {
 			}, 800), !1
 		})
 	});
+//create menu products	
+		$("#products-top").hide(), $(function () {
+		$(window).scroll(function () {
+			$(this).scrollTop() > 45 ? $("#products-top").fadeIn() : $("#products-top").fadeOut()
+		}), $("#back-top a").click(function () {
+			return $("body,html").animate({
+				scrollTop: 0
+			}, 800), !1
+		})
+	});
 	
 	$("#search").find("[name=search]").first().keyup(function (a) {
 		doLiveSearch(a, this.value)
