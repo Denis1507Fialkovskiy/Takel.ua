@@ -503,8 +503,9 @@ header {
 	border: none;
 }
 #menu .dropdown-inner ul li.second-level-li {
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding: 0px 25px;
+	/*padding-top: 0px;
+	padding-bottom: 0px;*/
 	min-width: 200px;
 }
 #menu .dropdown-inner a {
