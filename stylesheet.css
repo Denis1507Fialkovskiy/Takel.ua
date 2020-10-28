@@ -39,6 +39,10 @@ h1, h2, h3, h4, h5, h6 {
 .fa {
 	font-size: 14px;
 }
+.fa, .fa-headset {
+	color: #666!important;
+	font-size: 18px;
+}
 /* Override the bootstrap defaults */
 h1 {
 	font-size: 33px;
@@ -131,6 +135,7 @@ input[type="tel"].form-control {
 .block_newrec {
 	padding-right: 0px;
     padding-left: 0px;
+    margin-top: -15px;
 }
 .novinki {
 	height: calc(37vw*(9/16));
@@ -433,9 +438,9 @@ header {
 /* menu */
 
 #oct-menu-box .col-sm-12 {
-	/**background-image: url(../image/catalog/silver-min.jpg);
+	/background-image: url(../image/catalog/silver-min.jpg);
     background-repeat: no-repeat;
-	overflow: visible;**/
+	overflow: visible;
 }
 .menu-row {
 	background: #fff;
@@ -458,7 +463,7 @@ header {
 	padding-left: 0;
 }
 #menu .nav > li {
-	width: 18%;
+	width: 16%;
 	margin-top: 0;
 	margin-bottom: 0;
 	/**border-top: 1px solid transparent;**/
@@ -4354,10 +4359,25 @@ textarea.form-control {
 	border: 1px solid #d5d9dd;
     border-radius: 3px;
     box-shadow: none;
-    width: 80%;
+    width: 90%;
     height: 40px;
     line-height: 20px;
 	padding-top: 8px;
+}
+.menu-prod-hide {
+	border: 1px solid #d5d9dd;
+    border-radius: 3px;
+    box-shadow: none;
+    width: 60%;
+    height: 40px;
+    line-height: 20px;
+	padding-top: 8px;
+	text-align: center;
+	margin: -14px 0 10px 47px;
+}
+.menu-prod-hide, .fas, .fa-cog {
+    color: #666!important;
+    font-size: 18px;
 }
 @-webkit-keyframes uptocallphone{0%,100%,50%{-ms-transform:rotate(0);-webkit-transform:rotate(0);transform:rotate(0)}25%{-ms-transform:rotate(30deg);-webkit-transform:rotate(30deg);transform:rotate(30deg)}75%{-ms-transform:rotate(-30deg);-webkit-transform:rotate(-30deg);transform:rotate(-30deg)}}@-moz-keyframes uptocallphone{0%,100%,50%{-ms-transform:rotate(0);-webkit-transform:rotate(0);transform:rotate(0)}25%{-ms-transform:rotate(30deg);-webkit-transform:rotate(30deg);transform:rotate(30deg)}75%{-ms-transform:rotate(-30deg);-webkit-transform:rotate(-30deg);transform:rotate(-30deg)}}@keyframes uptocallphone{0%,100%,50%{-ms-transform:rotate(0);-webkit-transform:rotate(0);transform:rotate(0)}25%{-ms-transform:rotate(30deg);-webkit-transform:rotate(30deg);transform:rotate(30deg)}75%{-ms-transform:rotate(-30deg);-webkit-transform:rotate(-30deg);transform:rotate(-30deg)}}
 #back-top {
