@@ -121,6 +121,8 @@ header, .menu-row {
 }}
 #menu .dropdown-menu li.second-level-li:hover {
 	background-color: #000000;
+	padding: 0px 25px;
+    min-width: 200px;
 }
 #menu .sale-ul > div .megamenu-sale-item .dropprice {
 	color: #34BBE3;
