@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     top: 0;
-	height:86px;
+	height:68px;
     width: 100%;
     background: #fff;
     z-index: 1000;
@@ -42,6 +42,9 @@ h1, h2, h3, h4, h5, h6 {
 .fa, .fa-headset {
 	color: #666!important;
 	font-size: 18px;
+}
+.fa, .fa-angle-right {
+	font-size: 14px;
 }
 /* Override the bootstrap defaults */
 h1 {
@@ -322,11 +325,11 @@ div.required .control-label:before {
 header {
 	padding-top: 20px;
 	background: #fff;	
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 /* logo */
 #logo {
-	margin: 0 0 18px 0;
+	margin: 0 0 25px 0;
 }
 /* search */
 #search {
@@ -508,6 +511,12 @@ header {
 	border: none;
 }
 #menu .dropdown-inner ul li.second-level-li {
+	padding: 0px 25px;
+	/*padding-top: 0px;
+	padding-bottom: 0px;*/
+	min-width: 200px;
+}
+#menu .dropdown-inner ul li.second-level-li:hover {
 	padding: 0px 25px;
 	/*padding-top: 0px;
 	padding-bottom: 0px;*/
@@ -788,7 +797,7 @@ header {
 	#menu .has-child .angle-right {
 		position: absolute;
 	    top: 0px;
-	    right: 0px;
+	    right: -7px;
 	    color: #333333;
 	    display: block;
 	    padding: 5px 20px;
@@ -804,7 +813,7 @@ header {
 		opacity: 0;
 		visibility: hidden;
 		position: absolute;
-		left: 103%;
+		left: 107%;
 		top: 0;
 		background: #fff;
 		list-style: none;
@@ -819,7 +828,7 @@ header {
 	#menu .has-child:hover .megamenu-ischild {
 		visibility: visible;
 		transition: all 500ms;
-		left: 100%;
+		left: 107%;
 		opacity: 1;
 
 	}
@@ -1033,6 +1042,10 @@ footer .first-row .socials-box {
 }
 footer .third-row {
 	height: 180px;
+}
+footer .img-footer {
+	width: 180px;
+    padding-top: 10px;
 }
 .payment-box {
 	display: table;
@@ -1949,7 +1962,7 @@ margin:0;}
 .phones-top-box {
 	/*width: 21.66666667%;
 	margin-bottom: 38px;*/
-	margin-bottom: 28px;
+	margin-bottom: 24px;
 }
 .buttons-top-box div {
 	display: table-cell;
@@ -1995,9 +2008,9 @@ margin:0;}
 }
 .phones-dropdown a i.fa-phone {
 	color: #cecece;
-	font-size: 26px;
+	font-size: 18px;
 	position: relative;
-	top: 4px;
+	/*top: 4px;*/
 	margin-right: 4px;
 }
 .phones-dropdown a i.fa-caret-down {
@@ -2018,8 +2031,8 @@ margin:0;}
 #top .dropdown-menu, header .dropdown-menu {
 	margin: 3px 0 0;
 	border-radius: 0 !important;
-	padding: 10px;
-	min-width: 160px;
+	/*padding: 10px;*/
+	min-width: 140px;
 	left: 0;
 	right: 0;
 }
@@ -2170,10 +2183,12 @@ header .dropdown-menu {
 .oct-slideshow-box .owl-controls .owl-buttons .owl-prev {
 	/*left: 6%;*/
 	left: -3%;
+	display: none;
 }
 .oct-slideshow-box .owl-controls .owl-buttons .owl-next {
 	/*right: 6%;*/
 	right: -3%;
+	display: none;
 }
 /* /Slideshow */
 /* Button */
@@ -4373,10 +4388,10 @@ textarea.form-control {
     line-height: 20px;
 	padding-top: 8px;
 	text-align: center;
-	margin: -14px 0 10px 47px;
+	margin: -15px 0 10px 47px;
 }
 .menu-prod-hide, .fas, .fa-cog {
-    color: #666!important;
+    color: #666;
     font-size: 18px;
 }
 @-webkit-keyframes uptocallphone{0%,100%,50%{-ms-transform:rotate(0);-webkit-transform:rotate(0);transform:rotate(0)}25%{-ms-transform:rotate(30deg);-webkit-transform:rotate(30deg);transform:rotate(30deg)}75%{-ms-transform:rotate(-30deg);-webkit-transform:rotate(-30deg);transform:rotate(-30deg)}}@-moz-keyframes uptocallphone{0%,100%,50%{-ms-transform:rotate(0);-webkit-transform:rotate(0);transform:rotate(0)}25%{-ms-transform:rotate(30deg);-webkit-transform:rotate(30deg);transform:rotate(30deg)}75%{-ms-transform:rotate(-30deg);-webkit-transform:rotate(-30deg);transform:rotate(-30deg)}}@keyframes uptocallphone{0%,100%,50%{-ms-transform:rotate(0);-webkit-transform:rotate(0);transform:rotate(0)}25%{-ms-transform:rotate(30deg);-webkit-transform:rotate(30deg);transform:rotate(30deg)}75%{-ms-transform:rotate(-30deg);-webkit-transform:rotate(-30deg);transform:rotate(-30deg)}}
@@ -4639,7 +4654,7 @@ textarea.form-control {
     display: inline-block;
 }
 #top-right-links .language-currency .dropdown-menu {
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 }
 .cats-button {
 	text-overflow:ellipsis;
@@ -5244,7 +5259,7 @@ html.noscroll body {
 }
 .phones-dropdown .dropdown-menu {
 	padding: 10px;
-	min-width: 150px;
+	min-width: 140px;
 }
 .phones-dropdown .dropdown-menu li a {
 	display: inline-block;
