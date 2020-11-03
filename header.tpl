@@ -321,11 +321,11 @@ if (!isset($oct_techstore_status) || !$oct_techstore_status) {
 						</div>
 						<?php } ?>	            
 				  </div>
-				  <div class="col-sm-6 mobile-icons-box">
+<!--				  <div class="col-sm-6 mobile-icons-box">
 					<a href="<?php echo $link_wishlist; ?>" id="m-wishlist"><i class="fa fa-heart" aria-hidden="true"></i></a>
 					<a href="<?php echo $link_compare; ?>" id="m-compare"><i class="fa fa-sliders" aria-hidden="true"></i></a>
 					<a onclick="javascript:get_oct_popup_cart(); return false;" href="#" id="m-cart"><i class="fa fa-shopping-cart"></i></a>
-				  </div>
+				  </div>-->
 				</div>
 			</div>
 		</div>
