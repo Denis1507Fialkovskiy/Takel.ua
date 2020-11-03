@@ -123,6 +123,7 @@ header, .menu-row {
 	background-color: #000000;
 	padding: 0px 25px;
     min-width: 200px;
+	margin-left: 20px;
 }
 #menu .sale-ul > div .megamenu-sale-item .dropprice {
 	color: #34BBE3;
