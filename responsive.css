@@ -58,6 +58,7 @@
 	.oct-category-item-box {
     height: calc(17vw*(10/15));
 }
+}
 @media (min-width: 1790px){
 	#header-fix.fixed {
     height: 82px;
