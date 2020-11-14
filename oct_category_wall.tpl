@@ -1,5 +1,6 @@
-<div class="block_newrec row">
-	<div class="col-md-6 col-sm-12 novinki-row">
+<!-- Отключено до лучших времен
+<div class="block_newrec container-fluid">
+	<div class="col-md-6 col-sm-12 novinki">
 		<div id="text_block">
 			<h2><? echo $text_novinki; ?></h2>
 			<h3><? echo $text_company; ?></h3>
@@ -8,7 +9,7 @@
 				</button>
 		</div>
 	</div>
-	<div class="col-md-6 col-sm-12 recommend-row">
+	<div class="col-md-6 col-sm-12 recommend">
 		<div id="text_block">
 			<h2><? echo $text_recommend; ?></h2>
 			<h3><? echo $text_company; ?></h3>
@@ -17,18 +18,18 @@
 				</button>	
 		</div>
 	</div>
-</div>
+</div>-->
 <div class="row main-advantage-row cat-wall-row">
-	<div class="oct-carousel-header"><?php echo $heading_title; ?></div>
+	<!--<div class="oct-carousel-header"><?php echo $heading_title; ?></div>-->
   <?php foreach ($categories as $category) { ?>
-  	<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  	<div class="wall col-lg-3 col-md-3 col-sm-4 col-xs-6">
   		<div class="main-advantage-item oct-category-item-box">
   			<?php if ($category['thumb']) { ?>
-  			<div class="main-advantage-item-icon oct-category-item-icon col-md-4 hidden-sm hidden-xs">
+  			<div class="main-advantage-item-icon oct-category-item-icon col-md-12">
   				<a href="<?php echo $category['href']; ?>"><img class="img-responsive" src="<?php echo $category['thumb']; ?>" alt="<?php echo $category['name']; ?>" title="<?php echo $category['name']; ?>" /></a>
   			</div>
 		    <?php } ?>
-		    <div class="main-advantage-item-text oct-category-item-text col-md-8 col-sm-12 col-xs-12">
+		    <div class="main-advantage-item-text oct-category-item-text col-md-12 col-sm-12 col-xs-12">
 		    		<a href="<?php echo $category['href']; ?>" class="oct-category-item-header"><?php echo $category['name']; ?></a>
 		    		<?php if ($category['children']) { ?>
 		    		<ul>
