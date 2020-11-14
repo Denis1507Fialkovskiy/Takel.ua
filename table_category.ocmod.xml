@@ -16,7 +16,7 @@ $_['text_obd']         	 	= 'ØD';
 $_['text_osd']          	= 'Ød';
 $_['text_d1']          		= 'Ød₁';
 $_['text_w2']          		= 'W₂';	
-$_['text_l1']		        = 'L₁';	
+$_['text_l1']		        = 'L₁,<br>(мм)';	
 $_['text_l2']		        = 'L₂';	
 $_['text_l3']		        = 'L₃';	
 $_['text_l4']		        = 'L₄';	
@@ -39,17 +39,19 @@ $_['text_razmer']		    = 'Размеры<br>без упак.<br>(мм)';
 $_['text_range']		    = 'Диапазон<br>сечения<br>(мм²)';
 $_['text_sech99']		    = 'Сечение<br>многожил.<br>пров., (мм²)';
 $_['text_sech1']		    = 'Сечение<br>одножил.<br>пров., (мм²)';
+$_['text_sech_nom']		    = 'Сечение<br>номин.,<br> (мм²)';
 $_['text_sech']		    	= 'Сечение<br>пров.,<br> (мм²)';
 $_['text_sech_max']		    = 'Сечение<br>провода<br>макс., (мм²)';
 $_['text_ddo']          	= 'Ød,<br>(до усадки)';
 $_['text_dposle']          	= 'Ød, (номин.<br> после усадки)';
-$_['text_w']       	 		= 'W';
+$_['text_w']       	 		= 'W,<br>(мм)';
 $_['text_e']          		= 'E';
-$_['text_sd']          		= 'd'; 
+$_['text_sd']          		= 'd,<br>(мм)'; 
 $_['text_m']		        = 'M';	
 $_['text_mb']		        = 'Mb';	
 $_['text_s']		        = 'S';	
 $_['text_sb']		        = 'Sb';
+$_['text_n_bolt']		    = 'Кол-во<br>болтов';
 $_['text_bolt']		        = 'Болты';
 $_['text_dop_function']     = 'Дополнительные<br>функции';
 $_['text_dimens_box']       = 'Габариты<br>коробки,<br>(мм)';
@@ -139,6 +141,7 @@ $_['text_function_instrum'] = 'Функции<br>инструмента';
 $_['text_c']          		= 'C';
 $_['text_d']          		= 'D';
 $_['text_f']          		= 'F';
+$_['text_AF']			    = 'AF,<br> (мм)';
 $_['text_modeles']      	= 'Артикул';
 $_['text_art_bl']       	= 'Артикул (ЗКС<br>с черной изол.)';
 $_['text_art_rd']       	= 'Артикул (ЗКС<br>с красной изол.)';
@@ -201,7 +204,7 @@ $_['text_o']          		= 'Ø';
 $_['text_e']          		= 'E';
 $_['text_oe']          		= 'ØE';
 $_['text_obd']         	 	= 'ØD';
-$_['text_sd']        	  	= 'd';
+$_['text_sd']        	  	= 'd,<br>(мм)';
 $_['text_osd']          	= 'Ød';
 $_['text_d1']          		= 'Ød₁';
 $_['text_w']       	 		= 'W';
@@ -213,6 +216,7 @@ $_['text_matrix_max']		= 'Матриці<br>у компл.<br>Ø,(мм)';
 $_['text_thick_max']		= 'Товщина<br>макс.<br>листа<br>(сталь),<br>(мм)';
 $_['text_thick_max1']		= 'Товщина<br>макс.<br>ТУТ,<br>(мм)';
 $_['text_dimensions']       = 'Габарити <br>інд. пак.,<br> (мм)';
+$_['text_AF']			    = 'AF,<br> (мм)';
 $_['text_dimens_box']       = 'Габарити<br>коробки,<br>(мм)';
 $_['text_stroke']        	= 'Хід<br>штока,<br>(мм)';
 $_['text_weight']     	  	= 'Вага<br>інстр.,<br>(кг)';
@@ -254,6 +258,7 @@ $_['text_m']		        = 'M';
 $_['text_mb']		        = 'Mb';	
 $_['text_s']		        = 'S';	
 $_['text_sb']		        = 'Sb';
+$_['text_n_bolt']		    = 'Кіл-ть<br>болтів';
 $_['text_bolt']		        = 'Болти';
 $_['text_DD1']		        = 'D/D₁';
 $_['text_D1']		        = 'D₁';
@@ -277,6 +282,7 @@ $_['text_di_vv_otv']		= 'Кіл-ть та діаметри<br>упускних �
 $_['text_kv_shin']		    = 'Кіл-ть<br>шин в<br>модулі';
 $_['text_sech99']		    = 'Переріз<br>багатожил.<br>дрот., (мм²)';
 $_['text_sech1']		    = 'Переріз<br>одножил.<br>дрот., (мм²)';
+$_['text_sech_nom']		    = 'Переріз<br>номін.,<br> (мм²)';
 $_['text_sech']			    = 'Переріз<br>дрот.,<br> (мм²)';
 $_['text_sech_max']			= 'Переріз<br>дротів<br>макс., (мм²)';
 $_['text_color']		    = 'Колір <br>ізоляції';
@@ -343,6 +349,7 @@ $data['text_sd']          		= $this->language->get('text_sd');
 $data['text_osd']          		= $this->language->get('text_osd');
 $data['text_w']       	 		= $this->language->get('text_w');
 $data['text_w2']       	 		= $this->language->get('text_w2');
+$data['text_AF']       	 		= $this->language->get('text_AF');
 $data['text_dop_function']      = $this->language->get('text_dop_function');
 $data['text_dimens_box']       	= $this->language->get('text_dimens_box');
 $data['text_dimensions']       	= $this->language->get('text_dimensions');
@@ -383,6 +390,7 @@ $data['text_m']		      		= $this->language->get('text_m');
 $data['text_mb']		      	= $this->language->get('text_mb');
 $data['text_s']		      		= $this->language->get('text_s');
 $data['text_sb']		      	= $this->language->get('text_sb');
+$data['text_n_bolt']		    = $this->language->get('text_n_bolt');
 $data['text_bolt']		      	= $this->language->get('text_bolt');
 $data['text_DD1']		      	= $this->language->get('text_DD1');
 $data['text_D1']		      	= $this->language->get('text_D1');
@@ -405,6 +413,7 @@ $data['text_kr_otv']		    = $this->language->get('text_kr_otv');
 $data['text_kr_izol']		    = $this->language->get('text_kr_izol');
 $data['text_sech99']		    = $this->language->get('text_sech99');
 $data['text_sech1']		      	= $this->language->get('text_sech1');
+$data['text_sech_nom']		    = $this->language->get('text_sech_nom');
 $data['text_sech']		      	= $this->language->get('text_sech');
 $data['text_speed_max']		    = $this->language->get('text_speed_max');
 $data['text_sech_max']		    = $this->language->get('text_sech_max');
@@ -1341,6 +1350,12 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 				$data['show_table366'] = false;
 }
 
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 391)){
+ 				$data['show_table391'] = true;
+			} else {
+				$data['show_table391'] = false;
+}
+
 	 ]]></add>
 	</operation>
 	</file>
@@ -1352,6 +1367,20 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 							<div  class="table-responsive" id="table-category">
 								<table class=" table table-responsive table-bordered table-striped table-hover">
 	 								<tr>
+						
+<!-- 391-->
+
+<?php if ($show_table391) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_sech_nom ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_sd ?></th>
+	<th><?php echo $text_n_bolt ?></th>
+	<th><?php echo $text_AF ?></th>
+<?php } ?>
 						
 <!-- 366-->
 
@@ -2656,7 +2685,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php if ($show_table235) { ?>
 	<th><?php echo $text_modeles ?></th>
 	<th><?php echo $text_size ?></th>
-	<th><?php echo $text_o ?></th>
+	<th><?php echo $text_oe ?></th>
 	<th  ><?php echo $text_obd ?></th>
 	<th ><?php echo $text_osd ?></th>
 	<th  ><?php echo $text_l ?></th>
@@ -3565,10 +3594,25 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
    
 	 <tr>
 
+<!--391-->
+
+<?php if ($show_table391) { ?>
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+ 	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['a'];?></td>
+<?php } ?>
+
 <!--366-->
 
 <?php if ($show_table366) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3582,7 +3626,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--365-->
 
 <?php if ($show_table365) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3601,7 +3645,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--364-->
 
 <?php if ($show_table364) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3620,7 +3664,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--363-->
 
 <?php if ($show_table363) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3639,7 +3683,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--362-->
 
 <?php if ($show_table362) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3658,7 +3702,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--361-->
 
 <?php if ($show_table361) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['l'];?></td>
@@ -3672,7 +3716,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--360-->
 
 <?php if ($show_table360) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -3693,7 +3737,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--359-->
 
 <?php if ($show_table359) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
  	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['d1'];?></td>
@@ -3712,7 +3756,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--358-->
 
 <?php if ($show_table358) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
  	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['a'];?></td>
@@ -3730,7 +3774,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--357-->
 
 <?php if ($show_table357) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3741,7 +3785,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--356-->
 
 <?php if ($show_table356) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3758,7 +3802,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--355-->
 
 <?php if ($show_table355) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3775,7 +3819,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--354-->
 
 <?php if ($show_table354) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3790,7 +3834,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--353-->
 
 <?php if ($show_table353) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3806,7 +3850,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--352-->
 
 <?php if ($show_table352) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3822,7 +3866,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--351-->
 
 <?php if ($show_table351) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3837,7 +3881,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--350-->
 
 <?php if ($show_table350) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3853,7 +3897,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--349-->
 
 <?php if ($show_table349) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3869,7 +3913,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--348-->
 
 <?php if ($show_table348) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3885,7 +3929,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--347-->
 
 <?php if ($show_table347) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3899,7 +3943,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--346-->
 
 <?php if ($show_table346) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3915,7 +3959,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--345-->
 
 <?php if ($show_table345) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>	
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3931,7 +3975,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--344-->
 
 <?php if ($show_table344) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3946,7 +3990,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--343-->
 
 <?php if ($show_table343) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3962,7 +4006,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--342-->
 
 <?php if ($show_table342) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3978,7 +4022,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--341-->
 
 <?php if ($show_table341) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -3994,7 +4038,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--340-->
 
 <?php if ($show_table340) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -4010,7 +4054,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--339-->
 
 <?php if ($show_table339) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -4023,7 +4067,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--338-->
 
 <?php if ($show_table338) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -4037,7 +4081,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--337-->
 
 <?php if ($show_table337) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -4052,7 +4096,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--336-->
 
 <?php if ($show_table336) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4069,7 +4113,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--334-->
 
 <?php if ($show_table334) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -4084,7 +4128,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--333-->
 
 <?php if ($show_table333) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4101,7 +4145,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--332-->
 
 <?php if ($show_table332) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['osd'];?></td>
@@ -4120,7 +4164,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--331-->
 
 <?php if ($show_table331) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['a'];?></td>
@@ -4139,7 +4183,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--330-->
 
 <?php if ($show_table330) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['a'];?></td>
@@ -4166,7 +4210,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--329-->
 
 <?php if ($show_table329) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['a'];?></td>
@@ -4185,7 +4229,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--328-->
 
 <?php if ($show_table328) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['a'];?></td>
@@ -4209,7 +4253,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--327-->
 
 <?php if ($show_table327) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['a'];?></td>
@@ -4232,7 +4276,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--326-->
 
 <?php if ($show_table326) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['a'];?></td>
@@ -4251,7 +4295,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--325-->
 
 <?php if ($show_table325) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['a'];?></td>
@@ -4275,7 +4319,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--324-->
 
 <?php if ($show_table324) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['a'];?></td>
@@ -4294,7 +4338,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--323-->
 
 <?php if ($show_table323) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4308,7 +4352,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--322-->
 
 <?php if ($show_table322) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4322,7 +4366,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--321-->
 
 <?php if ($show_table321) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4340,7 +4384,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--320-->
 
 <?php if ($show_table320) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4358,7 +4402,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--319-->
 
 <?php if ($show_table319) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4367,7 +4411,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--318-->
 
 <?php if ($show_table318) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4376,7 +4420,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--317-->
 
 <?php if ($show_table317) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4392,7 +4436,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--316-->
 
 <?php if ($show_table316) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['color'];?></td>
@@ -4415,7 +4459,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--315-->
 
 <?php if ($show_table315) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['color'];?></td>
@@ -4437,7 +4481,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--314-->
 
 <?php if ($show_table314) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4454,7 +4498,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--313-->
 
 <?php if ($show_table313) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4471,7 +4515,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--312-->
 
 <?php if ($show_table312) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4488,7 +4532,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--311-->
 
 <?php if ($show_table311) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['osd'];?></td>
@@ -4507,7 +4551,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--310-->
 
 <?php if ($show_table310) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['osd'];?></td>
@@ -4525,7 +4569,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--309-->
 
 <?php if ($show_table309) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4537,7 +4581,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--308-->
 
 <?php if ($show_table308) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4555,7 +4599,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--307-->
 
 <?php if ($show_table307) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4573,7 +4617,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--306-->
 
 <?php if ($show_table306) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4591,7 +4635,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--305-->
 
 <?php if ($show_table305) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4602,7 +4646,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--304-->
 
 <?php if ($show_table304) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4625,7 +4669,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--303-->
 
 <?php if ($show_table303) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4650,7 +4694,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--302-->
 
 <?php if ($show_table302) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4664,7 +4708,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--300-->
 
 <?php if ($show_table300) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['norma'];?></td>
@@ -4678,7 +4722,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--299-->
 
 <?php if ($show_table299) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['norma'];?></td>
@@ -4694,7 +4738,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--298-->
 
 <?php if ($show_table298) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['norma'];?></td>
@@ -4709,7 +4753,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--297-->
 
 <?php if ($show_table297) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['d1'];?></td>
@@ -4724,7 +4768,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--296-->
 
 <?php if ($show_table296) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4742,7 +4786,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--294-->
 
 <?php if ($show_table294) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['norma'];?></td>
@@ -4757,7 +4801,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--293-->
 
 <?php if ($show_table293) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['norma'];?></td>
@@ -4772,7 +4816,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--263-->
 
 <?php if ($show_table263) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -4792,7 +4836,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--262-->
 
 <?php if ($show_table262) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -4811,7 +4855,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--261-->
 
 <?php if ($show_table261) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -4826,7 +4870,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--259-->
 
 <?php if ($show_table259) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -4841,7 +4885,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--258-->
 
 <?php if ($show_table258) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -4856,7 +4900,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--257-->
 
 <?php if ($show_table257) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -4872,7 +4916,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--256-->
 
 <?php if ($show_table256) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -4888,7 +4932,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--239-->
 
 <?php if ($show_table239) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['upc'];?></td>
  	<td><?php echo $models['size'];?></td>
@@ -4903,9 +4947,9 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--238-->
 
 <?php if ($show_table238) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">	
+	<td class="link_model"><a href="<?php echo $models['href'];?>">	
 	<?php echo $models['model'];?></a></td>	
-<!--<td><a href="<?php echo $models['href'];?>" target="_blank">
+<!--<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['articul_dop'];?></td>-->
  	<td><?php echo $models['size'];?></td>
  	<td><?php echo $models['oe'];?></td>
@@ -4920,9 +4964,9 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--237-->
 
 <?php if ($show_table237) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['articul_dop'];?></td>
  	<td><?php echo $models['size'];?></td>
  	<td><?php echo $models['oe'];?></td>
@@ -4936,9 +4980,9 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--236-->
 
 <?php if ($show_table236) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['articul_dop'];?></td>
  	<td><?php echo $models['size'];?></td>
  	<td><?php echo $models['oe'];?></td>
@@ -4952,7 +4996,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--235-->
 
 <?php if ($show_table235) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
  	<td><?php echo $models['size'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -4966,7 +5010,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--234-->
 
 <?php if ($show_table234) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
  	<td><?php echo $models['size'];?></td>
  	<td><?php echo $models['oe'];?></td>
@@ -4980,7 +5024,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--233-->
 
 <?php if ($show_table233) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
  	<td><?php echo $models['size'];?></td>
  	<td><?php echo $models['oe'];?></td>
@@ -4994,7 +5038,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--232-->
 
 <?php if ($show_table232) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
  	<td><?php echo $models['size'];?></td>
  	<td><?php echo $models['oe'];?></td>
@@ -5008,7 +5052,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--231-->
 
 <?php if ($show_table231) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
  	<td><?php echo $models['size'];?></td>
  	<td><?php echo $models['oe'];?></td>
@@ -5022,7 +5066,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--230-->
 
 <?php if ($show_table230) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
  	<td><?php echo $models['size'];?></td>
  	<td><?php echo $models['oe'];?></td>
@@ -5037,7 +5081,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--229-->
 
 <?php if ($show_table229) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
  	<td><?php echo $models['size'];?></td>
  	<td><?php echo $models['oe'];?></td>
@@ -5051,7 +5095,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--228-->
 
 <?php if ($show_table228) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['upc'];?></td>
 	<td><?php echo $models['size'];?></td>
@@ -5066,7 +5110,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--227-->
 
 <?php if ($show_table227) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -5080,7 +5124,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--226-->
 
 <?php if ($show_table226) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
  	<td><?php echo $models['oe'];?></td>
@@ -5094,7 +5138,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--225-->
 
 <?php if ($show_table225) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5110,7 +5154,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--224-->
 
 <?php if ($show_table224) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5125,7 +5169,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--223-->
 
 <?php if ($show_table223) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5140,7 +5184,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--222-->
 
 <?php if ($show_table222) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5154,7 +5198,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table221) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5168,7 +5212,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table220) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5179,7 +5223,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table219) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5190,7 +5234,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table218) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5204,7 +5248,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table217) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5218,7 +5262,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table216) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5233,7 +5277,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table215) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5246,7 +5290,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table214) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5261,7 +5305,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table213) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5273,7 +5317,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table212) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5286,7 +5330,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table211) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5299,7 +5343,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table210) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5311,7 +5355,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table209) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5323,7 +5367,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table208) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5335,7 +5379,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table205) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5348,7 +5392,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table204) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5364,7 +5408,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table203) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5380,7 +5424,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table202) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5395,7 +5439,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table201) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5412,7 +5456,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table200) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5427,7 +5471,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table199) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5441,7 +5485,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table198) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5456,7 +5500,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table197) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5470,7 +5514,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table196) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['norma'];?></td>
@@ -5483,7 +5527,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--192-->
 
 <?php if ($show_table192) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -5494,7 +5538,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table183) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5507,7 +5551,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table182) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['d1'];?></td>
@@ -5523,7 +5567,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table181) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['d1'];?></td>
@@ -5542,7 +5586,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--176-->
 
 <?php if ($show_table176) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['color'];?></td>
@@ -5562,7 +5606,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--175-->
 
 <?php if ($show_table175) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -5582,7 +5626,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--174-->
 
 <?php if ($show_table174) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -5601,7 +5645,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--169-->
 
 <?php if ($show_table169) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -5623,7 +5667,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--168-->
 
 <?php if ($show_table168) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['b'];?></td>
@@ -5642,7 +5686,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--167-->
 
 <?php if ($show_table167) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -5663,7 +5707,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--166-->
 
 <?php if ($show_table166) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -5683,7 +5727,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--163-->
 
 <?php if ($show_table163) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -5702,7 +5746,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--162-->
 
 <?php if ($show_table162) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['upc'];?></td>
@@ -5721,7 +5765,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--144-->
 
 <?php if ($show_table144) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5734,7 +5778,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table143) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5747,7 +5791,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table142) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5759,7 +5803,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table141) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5771,7 +5815,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table140) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5783,7 +5827,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php } ?>
 
 <?php if ($show_table139) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5799,7 +5843,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--138-->
 
 <?php if ($show_table138) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['size'];?></td>
 	<td><?php echo $models['range'];?></td>
@@ -5813,9 +5857,9 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--123-->
 
 <?php if ($show_table123) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['articul_dop'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -5827,7 +5871,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--108-->
 
 <?php if ($show_table108) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['o'];?></td>
@@ -5844,7 +5888,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--106-->
 
 <?php if ($show_table106) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['o'];?></td>
@@ -5860,7 +5904,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--98-->
 
 <?php if ($show_table98) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -5874,7 +5918,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--97-->
 
 <?php if ($show_table97) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -5888,7 +5932,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--96-->
 
 <?php if ($show_table96) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -5902,7 +5946,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--95-->
 
 <?php if ($show_table95) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
@@ -5912,9 +5956,9 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <!--94-->
 
 <?php if ($show_table94) { ?>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
-	<td><a href="<?php echo $models['href'];?>" target="_blank">
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['articul_dop'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
 	<td><?php echo $models['osd'];?></td>
