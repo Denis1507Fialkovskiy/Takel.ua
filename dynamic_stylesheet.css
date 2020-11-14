@@ -5,7 +5,7 @@
 	background-color: #2E578E !important;
 }
 a, #search .btn-lg, .phones-dropdown a, #menu .nav > li > a, .oct-carousel-header, .oct-category-item-text ul li a, .oct-category-item-text ul li a:visited, .oct-category-item-text ul li.oct-category-see-more a:hover, .oct-product-tab .owl-carousel .owl-item .name a, .oct-carousel-row .owl-carousel .owl-item .name a, .oct-day-goods-box .owl-carousel .owl-wrapper-outer .item .oct-day-goods-item .name a, .news-carousel-box .owl-carousel .owl-wrapper-outer .item .oct-news-item .name a, .oct-product-tab .owl-carousel .owl-buttons div, .oct-carousel-row .owl-carousel .owl-buttons div, .oct-day-goods-box .owl-carousel .owl-buttons div, .news-carousel-box .owl-carousel .owl-buttons div, .brands-carousel-box .owl-carousel .owl-buttons div, .news-carousel-box .owl-carousel .owl-wrapper-outer .item .oct-news-item .news-date, .news-carousel-box .owl-carousel .owl-wrapper-outer .item .oct-news-item .news-date span, .breadcrumb > li a, h1.cat-header, .sort-row .input-group-addon, .appearance .btn-group button, .box-heading, a.list-group-item, button.list-group-item, input[type='text'].form-control, select.form-control, input[type='password'].form-control, .filtered .link i, .filtered .checkbox input[type=checkbox]+label, .filtered .checkbox-inline input[type=checkbox]+label, .filtered .radio input[type=radio]+label, .filtered .radio-inline input[type=radio]+label, #sstore-3-level ul ul ul li a, .product-thumb h4 a, .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover, .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover, .product-header, .after-header-item, .found-cheaper a, .found-cheaper a:visited, .product-price h3, .number .btn-minus button i, .number .btn-plus button i, .product-info-li span, .product-info-li a, .product-info-li a:visited, .product-advantages-box a span, h2.popup-header, .popup-form-box input[type='text'], .popup-form-box input[type='tel'], .popup-form-box input[type='email'], #auth-popup .auth-popup-links a.reg-popup-link, .popup-text, .popup-text a, #product .control-label, .popup-form-box textarea, .oct-bottom-cart-in-cart p, .account-content .buttons div .button-back, .account-content .table-div table .button-back, .popup-text a:hover, .oct-carousel-header a:hover, #column-left .panel-default>.panel-heading, .oct-news-panel>.panel-heading, #column-right .panel-default>.panel-heading, #oneclick-popup #main-price {
- color: #2E578E;
+ color: #434242;
 }
 #menu .nav > li:hover, .oct-slideshow-box .owl-controls .owl-page span {
 	border-color: #2E578E;
@@ -47,7 +47,7 @@ a, #search .btn-lg, .phones-dropdown a, #menu .nav > li > a, .oct-carousel-heade
 }
 header, .menu-row {
 	/*background-color: #FFFFFF;*/
-	background-image: url(../image/catalog/silver-min.jpg);	
+	background-image: url(../image/catalog/silver-min1.jpg);	
     background-repeat: no-repeat;	
 	overflow: visible;	
     height: 56px;	
@@ -102,7 +102,7 @@ header, .menu-row {
 	border-color: #647382;
 }
 #menu .nav > li > a {
-	color: #4F5F6F;
+	color: #434242;
 }
 #menu .nav > li:hover > a {
 	color: #FFFFFF;
