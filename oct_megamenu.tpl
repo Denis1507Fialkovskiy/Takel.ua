@@ -173,6 +173,23 @@
               <?php #start menu type - link ?>
               <li><a href="<?php echo $item['href']; ?>" <?php echo ($item['open_link_type']) ? 'target="_blank"' : ''; ?>><i class="fas fa-map-marked-alt"></i><?php echo " ".$item['title']; ?></a></li>
               <?php #end menu type - link ?>
+			  <?php #start menu type -support ?>
+              <li class="dropdown oct-mm-info">
+                <a href="<?php //echo $item['href']; ?>" class="dropdown-toggle" data-toggle="dropdown" <?php //echo ($item['open_link_type']) ? 'target="_blank"' : ''; ?>><i class="fas fa-wrench"></i><?php echo $text_support; ?></a><?php //if(count($item['children'])){ ?><!--<a class="parent-title-toggle dropdown-toggle dropdown-img megamenu-toggle-a" data-toggle="dropdown"></a>--><?php //} ?>
+                <div class="dropdown-menu">
+                  <div class="dropdown-inner">
+                    <ul class="list-unstyled">
+                      <?php //foreach ($item['children'] as $children) { ?>
+                      <li class="second-level-li"><a href="#<?php //echo $children['href']; ?>">Submenu_1<?php //echo $children['title']; ?></a></li>
+					  <li class="second-level-li"><a href="#<?php //echo $children['href']; ?>">Submenu_2<?php //echo $children['title']; ?></a></li>
+					  <li class="second-level-li"><a href="#<?php //echo $children['href']; ?>">Submenu_3<?php //echo $children['title']; ?></a></li>
+					  <li class="second-level-li"><a href="#<?php //echo $children['href']; ?>">Submenu_4<?php //echo $children['title']; ?></a></li>
+                      <?php //} ?>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <?php #end menu type - suport ?>
               <?php } ?>
               <?php } ?>	
               <?php } ?>
