@@ -24,6 +24,7 @@ class ControllerExtensionModuleOctMegamenu extends Controller {
         $data['text_back']         = $this->language->get('text_back');
         $data['text_info']         = $this->language->get('text_info');
         $data['text_acc']          = $this->language->get('text_acc');
+        $data['text_support']     = $this->language->get('text_support');
         $data['text_contacts']     = $this->language->get('text_contacts');
         $data['text_settings']     = $this->language->get('text_settings');
         $data['text_all_category'] = $this->language->get('text_all_category');
