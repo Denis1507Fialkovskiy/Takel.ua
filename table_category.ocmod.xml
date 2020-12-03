@@ -25,9 +25,9 @@ $_['text_l6']		        = 'L₆,<br>(мм)';
 $_['text_h1']		        = 'H₁,<br>(мм)';	
 $_['text_h2']		        = 'H₂,<br>(мм)';
 $_['text_DD1']		        = 'D/D₁';
-$_['text_D1']		       	= 'D₁';
-$_['text_D2']		        = 'D₂';
-$_['text_D3']		        = 'D₃';
+$_['text_D1']		       	= 'D₁,<br>(мм)';
+$_['text_D2']		        = 'D₂,<br>(мм)';
+$_['text_D3']		        = 'D₃,<br>(мм)';
 $_['text_key']		        = 'Ключ';
 $_['text_material']		    = 'Материал';
 $_['text_coating']		    = 'Покрытие';
@@ -82,7 +82,7 @@ $_['text_b']        		= 'B,<br>(мм)';
 $_['text_g']        		= 'G';
 $_['text_l']		        = 'L,<br>(мм)';
 $_['text_h']		        = 'H,<br>(мм)';
-$_['text_t']		       	= 'T';
+$_['text_t']		       	= 'T,<br>(мм)';
 $_['text_n_buhta']  	    = 'Кол-во в <br>бухте, (м)';
 $_['text_koef_usad']  	    = 'Коэф. <br>усадки';
 $_['text_layer_glue']  	    = 'Слой <br>клея ';
@@ -101,6 +101,12 @@ $_['text_isol']				= 'Изолиро-<br>ванные<br>(сечение)';
 $_['text_w_isol']			= 'Без<br>изоляции<br>(сечение)';
 $_['text_razrez']			= 'Разрезные<br>(сечение)';
 $_['text_norma_min']		= 'Минимал. <br>норма<br>отгрузки';
+$_['text_norma_pack']		= 'Норма<br>упак.';
+$_['text_width_homuta']		= 'Ширина<br>хомута,<br> (мм)';
+$_['text_length_homuta']	= 'Длина<br>хомута,<br> (мм)';
+$_['text_min_predel']		= 'Мин.<br>предел<br>проч.,<br> (кг)';
+$_['text_min_obhvat']		= 'Мин. Ø<br>обхвата,<br> (мм)';
+$_['text_max_obhvat']		= 'Макс. Ø<br>обхвата,<br> (мм)';
 $_['text_pack']		    	= 'Кол-во <br>в упак.';
 $_['text_vv_otv']		    = 'Кол-во<br>вводных<br>отверстий';
 $_['text_di_vv_otv']		= 'Кол-во и диаметры<br>вводных отверстий<br>(в каждой из шин)';
@@ -160,6 +166,7 @@ $_['text_AF']			    = 'AF,<br> (мм)';
 $_['text_modeles']      	= 'Артикул';
 $_['text_art_bl']       	= 'Артикул (ЗКС<br>с черной изол.)';
 $_['text_art_rd']       	= 'Артикул (ЗКС<br>с красной изол.)';
+$_['text_for_bolt']       	= 'Для болтов<br>размером';
 $_['text_art_pa']       	= 'Артикул<br>"РА"';
 $_['text_art_pp']       	= 'Артикул<br>"РР"';
 $_['text_art_bolt']     	= 'Артикул<br>(изоляторы<br>с болтами)';
@@ -237,7 +244,14 @@ $_['text_d1']          		= 'Ød₁,<br>(мм)';
 $_['text_w']       	 		= 'W,<br>(мм)';
 $_['text_w2']          		= 'W₂,<br>(мм)';
 $_['text_key']		        = 'Ключ';
+$_['text_norma_pack']		= 'Норма<br>пак.';
+$_['text_width_homuta']		= 'Ширина<br>хомута,<br> (мм)';
+$_['text_length_homuta']	= 'Довжина<br>хомута,<br> (мм)';
+$_['text_min_predel']		= 'Мін.<br>межа<br>міцн.,<br> (кг)';
+$_['text_min_obhvat']		= 'Мін. Ø<br>обхвату,<br> (мм)';
+$_['text_max_obhvat']		= 'Макс. Ø<br>обхвату,<br> (мм)';
 $_['text_thickness_sh']     = 'Товщина шини<br>макс., (мм)';
+$_['text_for_bolt']       	= 'Для болтів<br>розміром';
 $_['text_width_sh']       	= 'Ширина шини<br>макс., (мм)';
 $_['text_pressure']       	= 'Тиск,<br>(т)';
 $_['text_dmin_cabel']		= 'Ø мін.<br>кабелю';
@@ -292,11 +306,11 @@ $_['text_sb']		        = 'Sb';
 $_['text_n_bolt']		    = 'Кіл-ть<br>болтів';
 $_['text_bolt']		        = 'Болти';
 $_['text_DD1']		        = 'D/D₁';
-$_['text_D1']		        = 'D₁';
-$_['text_D2']		        = 'D₂';
-$_['text_D3']		        = 'D₃';
+$_['text_D1']		        = 'D₁,<br>(мм)';
+$_['text_D2']		        = 'D₂,<br>(мм)';
+$_['text_D3']		        = 'D₃,<br>(мм)';
 $_['text_h']		        = 'H,<br>(мм)';
-$_['text_t']		        = 'T';
+$_['text_t']		        = 'T,<br>(мм)';
 $_['text_specialization']   = 'Спеціалізація<br>інструменту';
 $_['text_norma']		    = 'Одиниця<br>виміру';
 $_['text_norma_min']		= 'Мінімал. <br>норма<br>відгрузки';
@@ -349,6 +363,7 @@ $_['text_size_key'] 		= 'Розмір <br>&quot;під ключ &quot; ,<br> (м
                 		<add offset="0" position="after"><![CDATA[
 				  
 $data['text_modeles']          	= $this->language->get('text_modeles');
+$data['text_for_bolt']     		= $this->language->get('text_for_bolt');
 $data['text_diametr_cable']     = $this->language->get('text_diametr_cable');
 $data['text_rezba_shag']        = $this->language->get('text_rezba_shag');
 $data['text_size_key']        	= $this->language->get('text_size_key');
@@ -376,6 +391,12 @@ $data['text_contacts']         	= $this->language->get('text_contacts');
 $data['text_e']          		= $this->language->get('text_e');
 $data['text_length_otrez']      = $this->language->get('text_length_otrez');
 $data['text_length']       		= $this->language->get('text_length');
+$data['text_norma_pack']       	= $this->language->get('text_norma_pack');
+$data['text_width_homuta']      = $this->language->get('text_width_homuta');
+$data['text_length_homuta']     = $this->language->get('text_length_homuta');
+$data['text_min_predel']       	= $this->language->get('text_min_predel');
+$data['text_min_obhvat']       	= $this->language->get('text_min_obhvat');
+$data['text_max_obhvat']       	= $this->language->get('text_max_obhvat');
 $data['text_length_without']    = $this->language->get('text_length_without');
 $data['text_length_sht']       	= $this->language->get('text_length_sht');
 $data['text_length_z']       	= $this->language->get('text_length_z');
@@ -1399,16 +1420,28 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 				$data['show_table364'] = false;
 }
 
-if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 365)){
- 				$data['show_table365'] = true;
-			} else {
-				$data['show_table365'] = false;
-}
-
 if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 366)){
  				$data['show_table366'] = true;
 			} else {
 				$data['show_table366'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 367)){
+ 				$data['show_table367'] = true;
+			} else {
+				$data['show_table367'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 368)){
+ 				$data['show_table368'] = true;
+			} else {
+				$data['show_table368'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 369)){
+ 				$data['show_table369'] = true;
+			} else {
+				$data['show_table369'] = false;
 }
 
 if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 388)){
@@ -1459,10 +1492,28 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 				$data['show_table401'] = false;
 }
 
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 407)){
+ 				$data['show_table407'] = true;
+			} else {
+				$data['show_table407'] = false;
+}
+
 if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 409)){
  				$data['show_table409'] = true;
 			} else {
 				$data['show_table409'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 410)){
+ 				$data['show_table410'] = true;
+			} else {
+				$data['show_table410'] = false;
+}
+
+if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_id !== 411)){
+ 				$data['show_table411'] = true;
+			} else {
+				$data['show_table411'] = false;
 }
 
 	 ]]></add>
@@ -1476,7 +1527,44 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 							<div  class="table-responsive" id="table-category">
 								<table class=" table table-responsive table-bordered table-striped table-hover">
 	 								<tr>
-						
+					
+<!-- 411-->
+
+<?php if ($show_table411) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_naznach ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_vv_otv ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_w ?></th>
+	<th><?php echo $text_pack ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+					
+<!-- 410-->
+
+<?php if ($show_table410) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_color1 ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_vv_otv ?></th>
+	<th><?php echo $text_w_h ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_sech99 ?></th>
+	<th><?php echo $text_sech1 ?></th>
+	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_h ?></th>
+	<th><?php echo $text_t ?></th>
+	<th><?php echo $text_pack ?></th>
+<?php } ?>
+									
 <!-- 409 -->
 
 <?php if ($show_table409) { ?>
@@ -1490,6 +1578,20 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 	<th><?php echo $text_h ?></th>
 	<th><?php echo $text_w ?></th>
 	<th><?php echo $text_w1 ?></th>
+<?php } ?>
+						
+<!-- 407-->
+
+<?php if ($show_table407) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_color1 ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_diametr_cable ?></th>
+	<th><?php echo $text_l1 ?></th>
+	<th><?php echo $text_d ?></th>
+	<th><?php echo $text_size_key ?></th>
+	<th><?php echo $text_pack ?></th>
 <?php } ?>
 							
 <!-- 401 -->
@@ -1605,6 +1707,54 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 	<th><?php echo $text_AF ?></th>
 <?php } ?>
 							
+<!-- 369-->
+
+<?php if ($show_table369) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_color1 ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_norma_pack ?></th>
+	<th><?php echo $text_width_homuta ?></th>
+	<th><?php echo $text_length_homuta ?></th>
+	<th><?php echo $text_min_predel ?></th>
+	<th><?php echo $text_min_obhvat ?></th>	
+	<th><?php echo $text_max_obhvat ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+					
+<!-- 368-->
+
+<?php if ($show_table368) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_color1 ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_norma_pack ?></th>
+	<th><?php echo $text_width_homuta ?></th>
+	<th><?php echo $text_length_homuta ?></th>
+	<th><?php echo $text_min_predel ?></th>
+	<th><?php echo $text_min_obhvat ?></th>	
+	<th><?php echo $text_max_obhvat ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+						
+<!-- 367-->
+
+<?php if ($show_table367) { ?>
+	<th><?php echo $text_modeles ?></th>
+	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_color1 ?></th>
+	<th><?php echo $text_norma ?></th>
+	<th><?php echo $text_norma_pack ?></th>
+	<th><?php echo $text_width_homuta ?></th>
+	<th><?php echo $text_length_homuta ?></th>
+	<th><?php echo $text_min_predel ?></th>
+	<th><?php echo $text_min_obhvat ?></th>	
+	<th><?php echo $text_max_obhvat ?></th>
+	<th><?php echo $text_box ?></th>
+<?php } ?>
+							
 <!-- 366-->
 
 <?php if ($show_table366) { ?>
@@ -1617,25 +1767,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 	<th><?php echo $text_D1 ?></th>
 	<th><?php echo $text_pack ?></th>
 <?php } ?>
-						
-<!-- 365-->
-
-<?php if ($show_table365) { ?>
-	<th><?php echo $text_modeles ?></th>
-	<th><?php echo $text_name_short ?></th>
-	<th><?php echo $text_norma ?></th>
-	<th><?php echo $text_h ?></th>
-	<th><?php echo $text_l ?></th>
-	<th><?php echo $text_l1 ?></th>
-	<th><?php echo $text_l2 ?></th>
-	<th><?php echo $text_d ?></th>
-	<th><?php echo $text_D1 ?></th>
-	<th><?php echo $text_size_key ?></th>
-	<th><?php echo $text_dmin_cabel ?></th>
-	<th><?php echo $text_dmax_cabel ?></th>
-	<th><?php echo $text_pack ?></th>
-<?php } ?>
-						
+					
 <!-- 364-->
 
 <?php if ($show_table364) { ?>
@@ -1659,6 +1791,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php if ($show_table363) { ?>
 	<th><?php echo $text_modeles ?></th>
 	<th><?php echo $text_name_short ?></th>
+	<th><?php echo $text_color1 ?></th>
 	<th><?php echo $text_norma ?></th>
 	<th><?php echo $text_h ?></th>
 	<th><?php echo $text_l ?></th>
@@ -2698,15 +2831,16 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 	<th><?php echo $text_modeles ?></th>
 	<th><?php echo $text_name_short ?></th>
 	<th><?php echo $text_norma ?></th>
-	<th><?php echo $text_pack ?></th>
 	<th><?php echo $text_range ?></th>
-	<th><?php echo $text_l ?></th>
+	<th><?php echo $text_oe ?></th>
 	<th><?php echo $text_w ?></th>
-	<th><?php echo $text_t ?></th>
-	<th><?php echo $text_e ?> </th>
-<!--<th><?php echo $text_D2?></th>-->
+	<th><?php echo $text_l ?></th>
 	<th><?php echo $text_l1 ?></th>
-	<th><?php echo $text_thickness ?></th>
+	<th><?php echo $text_l2 ?></th>
+	<th><?php echo $text_t ?> </th>
+	<th><?php echo $text_material ?></th>
+	<th><?php echo $text_for_bolt ?></th>
+	<th><?php echo $text_pack ?></th>
 <?php } ?>
 				
 <!-- 294 -->
@@ -3470,26 +3604,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 	<th ><?php echo $text_pack ?></th>
 	<th ><?php echo $text_box ?></th>
 <?php } ?>
-					
-<!-- 176-->
-
-<?php if ($show_table176) { ?>
-	<th><?php echo $text_modeles ?></th>
-	<th><?php echo $text_name_short ?></th>
-	<th><?php echo $text_color1 ?></th>
-	<th><?php echo $text_norma ?></th>
-	<th><?php echo $text_vv_otv ?></th>
-	<th><?php echo $text_w_h ?></th>
-	<th><?php echo $text_d ?></th>
-	<th><?php echo $text_sech99 ?></th>
-	<th><?php echo $text_sech1 ?></th>
-	<th><?php echo $text_l ?></th>
-	<th><?php echo $text_l1 ?></th>
-	<th><?php echo $text_h ?></th>
-	<th><?php echo $text_t ?></th>
-	<th><?php echo $text_pack ?></th>
-<?php } ?>
-					
+		
 <!-- 175-->
 
 <?php if ($show_table175) { ?>
@@ -3839,6 +3954,45 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
    
 	 <tr>
 
+<!--411-->
+
+<?php if ($show_table411) { ?>
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['norma'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--410-->
+
+<?php if ($show_table410) { ?>
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['o'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['w'];?></td>
+	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['a'];?></td>
+	<td><?php echo $models['b'];?></td>
+ 	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['isbn'];?></td>
+ 	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['norma'];?></td>
+<?php } ?>
+
 <!--409-->
 
 <?php if ($show_table409) { ?>
@@ -3853,6 +4007,21 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 	<td><?php echo $models['isbn'];?></td>
 	<td><?php echo $models['w'];?></td>
 	<td><?php echo $models['oe'];?></td>
+<?php } ?>
+
+<!--407-->
+
+<?php if ($show_table407) { ?>
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['color'];?></td>
+ 	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['range'];?></td>
+	<td><?php echo $models['ean'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['size'];?></td>
+	<td><?php echo $models['norma'];?></td>
 <?php } ?>
 
 <!--401-->
@@ -3976,6 +4145,57 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 	<td><?php echo $models['a'];?></td>
 <?php } ?>
 
+<!--369-->
+
+<?php if ($show_table369) { ?>
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['color'];?></td>
+	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--368-->
+
+<?php if ($show_table368) { ?>
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['color'];?></td>
+	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
+<!--367-->
+
+<?php if ($show_table367) { ?>
+	<td class="link_model"><a href="<?php echo $models['href'];?>">
+	<?php echo $models['model'];?></a></td>
+	<td><?php echo $models['name_short'];?></td>
+	<td><?php echo $models['color'];?></td>
+	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['norma'];?></td>
+ 	<td><?php echo $models['b'];?></td>
+	<td><?php echo $models['l'];?></td>
+ 	<td><?php echo $models['oe'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+	<td><?php echo $models['osd'];?></td>
+	<td><?php echo $models['d1'];?></td>
+<?php } ?>
+
 <!--366-->
 
 <?php if ($show_table366) { ?>
@@ -3987,25 +4207,6 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 	<td><?php echo $models['ean'];?></td>
  	<td><?php echo $models['obd'];?></td>
  	<td><?php echo $models['d1'];?></td>
-	<td><?php echo $models['norma'];?></td>
-<?php } ?>
-
-<!--365-->
-
-<?php if ($show_table365) { ?>
-	<td class="link_model"><a href="<?php echo $models['href'];?>">
-	<?php echo $models['model'];?></a></td>
-	<td><?php echo $models['name_short'];?></td>
- 	<td><?php echo $models['upc'];?></td>
-	<td><?php echo $models['isbn'];?></td>
-	<td><?php echo $models['l'];?></td>
-	<td><?php echo $models['ean'];?></td>
- 	<td><?php echo $models['jan'];?></td>
- 	<td><?php echo $models['obd'];?></td>
- 	<td><?php echo $models['d1'];?></td>
- 	<td><?php echo $models['size'];?></td>
-	<td><?php echo $models['a'];?></td>
-	<td><?php echo $models['b'];?></td>
 	<td><?php echo $models['norma'];?></td>
 <?php } ?>
 
@@ -4034,6 +4235,7 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
+ 	<td><?php echo $models['color'];?></td>
  	<td><?php echo $models['upc'];?></td>
 	<td><?php echo $models['isbn'];?></td>
 	<td><?php echo $models['l'];?></td>
@@ -5138,15 +5340,16 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 	<?php echo $models['model'];?></a></td>
 	<td><?php echo $models['name_short'];?></td>
  	<td><?php echo $models['o'];?></td>
- 	<td><?php echo $models['norma'];?></td>
  	<td><?php echo $models['range'];?></td>
+ 	<td><?php echo $models['obd'];?></td>
+ 	<td><?php echo $models['w'];?></td>
 	<td><?php echo $models['l'];?></td>
-	<td><?php echo $models['w'];?></td>
-	<td><?php echo $models['mpn'];?></td>
-	<td><?php echo $models['obd'];?></td>
-<!--<td><?php echo $models['osd'];?></td>-->
 	<td><?php echo $models['ean'];?></td>
- 	<td><?php echo $models['thickness'];?></td>
+	<td><?php echo $models['jan'];?></td>
+	<td><?php echo $models['mpn'];?></td>
+	<td><?php echo $models['upc'];?></td>
+	<td><?php echo $models['size'];?></td>
+ 	<td><?php echo $models['norma'];?></td>
 <?php } ?>
 	 
 <!--294-->
@@ -5968,26 +6171,6 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 	 <td><?php echo $models['osd'];?></td>
 	<td><?php echo $models['norma'];?></td>
 	<td><?php echo $models['a'];?></td>
-<?php } ?>
-
-<!--176-->
-
-<?php if ($show_table176) { ?>
-	<td class="link_model"><a href="<?php echo $models['href'];?>">
-	<?php echo $models['model'];?></a></td>
-	<td><?php echo $models['name_short'];?></td>
- 	<td><?php echo $models['color'];?></td>
- 	<td><?php echo $models['o'];?></td>
-	<td><?php echo $models['osd'];?></td>
-	<td><?php echo $models['w'];?></td>
-	<td><?php echo $models['obd'];?></td>
-	<td><?php echo $models['a'];?></td>
-	<td><?php echo $models['b'];?></td>
- 	<td><?php echo $models['l'];?></td>
- 	<td><?php echo $models['ean'];?></td>
- 	<td><?php echo $models['isbn'];?></td>
- 	<td><?php echo $models['mpn'];?></td>
-	<td><?php echo $models['norma'];?></td>
 <?php } ?>
 
 <!--175-->
