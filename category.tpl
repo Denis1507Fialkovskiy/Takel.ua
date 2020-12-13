@@ -31,7 +31,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <h1 class="cat-header"><?php echo $heading_title; ?></h1>		
+        <h1 class="cat-header"><?php echo $heading_title; ?></h1>
       </div>
     </div>
     <div class="row">
@@ -40,61 +40,31 @@
       </div>
     </div>
     <div class="row">
-     <!-- <?php echo $column_left; ?> -->
+      <?php echo $column_left; ?>
       <?php if ($column_left && $column_right) { ?>
       <?php $class = 'col-sm-6'; ?>
       <?php } elseif ($column_left || $column_right) { ?>
-	  <?php $class = 'col-sm-12'; ?>
-      <?php // Changed $class = 'col-sm-9'; ?>
+      <?php $class = 'col-sm-9'; ?>
       <?php } else { ?>
       <?php $class = 'col-sm-12'; ?>
       <?php } ?>
       <div id="content" class="<?php echo $class; ?>">
         <?php if ($categories && $oct_techstore_data['cat_show_subcat'] == 'on') { ?>
-<!--   <h3 class="subcat-header"><?php echo $oct_choose_subcategory; ?></h3> -->
+        <h3 class="subcat-header"><?php echo $oct_choose_subcategory; ?></h3>
         <div class="subcats-row">
           <div id="subcats">
             <?php foreach ($categories as $category) { ?>
-			<div class="ih-item square effect16 colored col-lg-2 col-md-3 col-sm-4 col-xs-6" style="padding-right:0px;
-    padding-left:0px;">
+            <div class="item subcat-box col-md-2 col-sm-3 col-xs-6">
               <a href="<?php echo $category['href']; ?>" title="<?php echo $category['name']; ?>">
               <img class="img-responsive" src="<?php echo $category['thumb']; ?>" alt="<?php echo $category['name']; ?>" />
-              <div class="card-prod hidden-md hidden-lg" style="height:50px;width:100%;">
-			  <span class="hidden-md hidden-lg" style="display:flex;text-align:center;"><?php echo $category['name']; ?></span>
-			  </div>
-                 <div class="info">
-                      <div class="info-back">
-						<table style="height: 100%">
-							<tr>
-								<td style="vertical-align: middle;"><p><?php echo $category['name']; ?></p></td>
-							</tr>
-                        </table>
-                      </div>
-                 </div></a>
+              <span><?php echo $category['name']; ?></span>
+              </a>
             </div>
             <?php } ?>
           </div>
           <div class="clearfix"></div>
         </div>
         <?php } ?>
-<!-- Insert description of category by line 125-->
-		<div class="col-md-12 col-xs-12 " id="res-products">
-			<div class="row">
-			<?php if ($thumb || $description) { ?>
-				<div class="row">
-					<div class="col-sm-12 cat-desc-box">
-						<?php if ($thumb) { ?>
-							<img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="img-thumbnail" />
-						<?php } ?>
-						<?php if ($description) { ?>
-						<?php echo $description; ?>
-						<?php } ?>
-					</div>
-				</div>
-			<?php } ?> 
-			</div>
-		</div>	
-<!-- Insert description of category -->
         <div id="oct-filter-tag"></div>
         <?php if ($products) { ?>
         <div class="row sort-row" <?php if ($oct_techstore_data['cat_sorttype'] != 'on') { ?>style="display:none !important;"<?php } ?>>
@@ -112,7 +82,7 @@
               </select>
               <div class="clearfix"></div>
             </div>
-            <!-- off limits 18 <div class="form-group input-group input-group-sm input-limit-div">
+            <div class="form-group input-group input-group-sm input-limit-div">
               <select id="input-limit" onchange="location = this.value;">
                 <?php foreach ($limits as $limits) { ?>
                 <?php if ($limits['value'] == $limit) { ?>
@@ -122,7 +92,7 @@
                 <?php } ?>
                 <?php } ?>
               </select>
-            </div>-->
+            </div>
           </div>
           <div class="text-right right-sort-row">
             <div class="hidden-xs text-right appearance">
@@ -134,25 +104,24 @@
             </div>
           </div>
         </div>
-        <!--  <div class="col-md-12 col-xs-12 " id="res-products">
+        <div class="col-md-12 col-xs-12 " id="res-products">
           <div class="row">
-		 
-         <?php if ($thumb || $description) { ?>
-        <div class="row">
-          <div class="col-sm-12 cat-desc-box">
-           <?php if ($thumb) { ?>
-            <img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="img-thumbnail" />
-            <?php } ?>
-              <?php if ($description) { ?>
-            <?php echo $description; ?>
-       <?php } ?>
-          </div>
-        </div>
-        <?php } ?> -->
+           
         
             <?php foreach ($products as $product) { ?>
-                 
-            <div class="product-layout product-grid <?php if (!$column_left && !$column_right) { ?> <?php echo 'col-lg-3'; ?> <?php } ?> col-md-4 col-sm-6 col-xs-6" style="display:none;">
+                  <?php if ($thumb || $description) { ?>
+        <div class="row">
+          <div class="col-sm-12 cat-desc-box">
+            <?php if ($thumb) { ?>
+            <img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="img-thumbnail" />
+            <?php } ?>
+            <?php if ($description) { ?>
+            <?php echo $description; ?>
+            <?php } ?>
+          </div>
+        </div>
+        <?php } ?>
+            <div class="product-layout product-grid <?php if (!$column_left && !$column_right) { ?> <?php echo 'col-lg-3'; ?> <?php } ?> col-md-4 col-sm-6 col-xs-6">
               <div class="product-thumb<?php echo (isset($product['product_preorder_status']) && $product['product_preorder_status'] != 1 && $product['quantity'] <= 0) ? ' no_quantity' : ''?>">
                 <div class="image">
                   <?php if (isset($oct_popup_view_data['status']) && $oct_popup_view_data['status'] && $product['quantity'] > 0) { ?>
@@ -284,16 +253,9 @@
             </div>
             <?php } ?>
           </div>
-<!-- Insert module "Tools for category"	-->	  
-		  <?php if ($tools['0']['tools_id']==1){ ?>
-			<h2 style="text-align: center;"><?php echo $tools_category; ?></h2>
-				<div class="tools-category col-lg-2 col-md-3 col-sm-4 col-xs-6">
-				
-				</div>
-		  <?php } ?>		
-<!-- off pagination          <div class="row pagination-row">
-			<div class="col-sm-12 text-center"><?php echo $pagination; ?></div>
-          </div>-->
+          <div class="row pagination-row">
+            <div class="col-sm-12 text-center"><?php echo $pagination; ?></div>
+          </div>
         </div>
         <?php } ?>
         <?php if (!$categories && !$products) { ?>
