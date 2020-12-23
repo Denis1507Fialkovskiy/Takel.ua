@@ -34,6 +34,55 @@
         <h1 class="cat-header"><?php echo $heading_title; ?></h1>
       </div>
     </div>
+<!-- Create block Contacts data -->
+    <div class="row">
+        <div class="col-sm-4 col-xs-12 contacts-data map-address">
+            <div class="icon-contact">
+                <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <div class="text-address">
+                <p><?php echo $text_city; ?></p>
+                <p><?php echo $text_street; ?></p>
+                <p></p>
+            </div>
+            <div class="text-bottom">
+                <a><?php echo $text_show_map; ?></a>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 contacts-data phone-number">
+            <div class="icon-contact">
+                <i class="far fa-address-book"></i>
+            </div>
+            <div class="text-address">
+                <p><?php echo $text_phone_1; ?></p>
+                <p><?php echo $text_phone_2; ?></p>
+                <p><?php echo $text_phone_3; ?></p>
+            </div>
+            <div class="text-bottom">
+                <a><?php echo $text_call_site; ?></a>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 contacts-data letter-mail">
+            <div class="icon-contact">
+                <i class="far fa-envelope"></i>
+            </div>
+            <div class="text_address">
+                <p><?php echo $text_mail_contact; ?></p>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="text-bottom">
+                <a><?php echo $text_e_mail; ?></a>
+            </div>
+        </div>
+    </div>
+<!-- Create title Feedback -->
+    <div class="row">
+      <div class="col-sm-12">
+          <h1 class="cat-header"><?php echo $text_feedback; ?></h1>
+      </div>
+    </div>
+<!-- Feedback-->
     <div class="row">
       <?php echo $column_left; ?>
       <?php if ($column_left && $column_right) { ?>

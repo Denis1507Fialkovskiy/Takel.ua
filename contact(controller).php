@@ -42,14 +42,24 @@ class ControllerInformationContact extends Controller {
 
 		$data['heading_title'] = $this->language->get('heading_title');
 
-		$data['text_location'] = $this->language->get('text_location');
-		$data['text_store'] = $this->language->get('text_store');
-		$data['text_contact'] = $this->language->get('text_contact');
-		$data['text_address'] = $this->language->get('text_address');
-		$data['text_telephone'] = $this->language->get('text_telephone');
-		$data['text_fax'] = $this->language->get('text_fax');
-		$data['text_open'] = $this->language->get('text_open');
-		$data['text_comment'] = $this->language->get('text_comment');
+		$data['text_location']      = $this->language->get('text_location');
+		$data['text_store']         = $this->language->get('text_store');
+		$data['text_contact']       = $this->language->get('text_contact');
+		$data['text_address']       = $this->language->get('text_address');
+		$data['text_telephone']     = $this->language->get('text_telephone');
+		$data['text_fax']           = $this->language->get('text_fax');
+		$data['text_open']          = $this->language->get('text_open');
+		$data['text_comment']       = $this->language->get('text_comment');
+        $data['text_show_map']      = $this->language->get('text_show_map');
+        $data['text_call_site']     = $this->language->get('text_call_site');
+        $data['text_e_mail']        = $this->language->get('text_e_mail');
+        $data['text_city']          = $this->language->get('text_city');
+        $data['text_street']        = $this->language->get('text_street');
+        $data['text_phone_1']       = $this->language->get('text_phone_1');
+        $data['text_phone_2']       = $this->language->get('text_phone_2');
+        $data['text_phone_3']       = $this->language->get('text_phone_3');
+        $data['text_mail_contact']  = $this->language->get('text_mail_contact');
+        $data['text_feedback']      = $this->language->get('text_feedback');
 
 		$data['entry_name'] = $this->language->get('entry_name');
 		$data['entry_email'] = $this->language->get('entry_email');
