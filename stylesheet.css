@@ -49,6 +49,9 @@ h1, h2, h3, h4, h5, h6 {
 .fa, .fa-angle-right {
 	font-size: 14px;
 }
+.fa-download {
+	float: right;
+}
 .link_model a {
 	color: #2e578e;
     font-weight: bold;
@@ -134,6 +137,9 @@ input[type="tel"].form-control {
 .price-view {
 	display:none;
 }
+.content-row {
+	min-height: 140vh;
+}
 .input-group .input-group-addon {
 	font-size: 12px;
 	height: 30px;
@@ -142,10 +148,23 @@ input[type="tel"].form-control {
     content: '';
     display: block;
 }
+.block_dowload {
+	/*padding-right: 0px;
+    padding-left: 0px;*/
+	width: auto!important;
+}
 .block_newrec {
 	padding-right: 0px;
     padding-left: 0px;
     margin-top: -15px;
+}
+.download_catalog{
+	height: auto;
+    /*width: 76vw;
+    margin-top: 20px;*/
+    border: 2px solid #434242;
+    border-radius: 5px;
+    background-color: #2e578e;
 }
 .novinki {
 	height: calc(37vw*(9/16));
@@ -164,6 +183,9 @@ input[type="tel"].form-control {
     -webkit-background-size: 100%; /* Safari 3.1+ Рё Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     /* background-size: 100%;*/
+}
+#oct-menu-box {
+	width: 100%;
 }
 #text_block {	
 	position: absolute;
@@ -202,6 +224,40 @@ input[type="tel"].form-control {
 	background: -webkit-gradient(linear, left top, left bottom, from(#b4b4b4), to(#e4e4e4));
 	background: -moz-linear-gradient(top,  #b4b4b4,  #e4e4e4);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4b4b4', endColorstr='#e4e4e4');
+}
+#text_block2{
+	margin: 15px;
+}
+#text_block2 .message_1{
+	font-size: 1.8em;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.8em;
+}
+#text_block2 .message_2{
+	font-size: 1.3em;
+    text-align: left;
+    color: #ffffff;
+    line-height: 2em;
+    float: left;
+    max-width: 40%;
+    margin-left: 30%;
+}
+#text_block2 .button-download {
+	height: 3.8em;
+    width: auto;
+    color: #343434;
+    border: solid 0px #fff;
+    background-color: #ffffff;
+    margin: 8px 20px;
+}
+#text_block2 .button-download .message_3 {
+	margin-top: 8px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #2e578e;
 }
 /* Fix some bootstrap issues */
 span.hidden-xs, span.hidden-sm, span.hidden-md, span.hidden-lg {
@@ -1274,7 +1330,7 @@ footer .actions button span {
 	padding: 8px 14px 8px 14px;
 }
 .content-row {
-	background: #fff;
+	background: #f3f3f3;;
 	margin-top: 16px;
 	margin-bottom: 16px;
 }
@@ -1293,7 +1349,7 @@ footer .actions button span {
 	background: transparent;
 }
 .breadcrumb {
-	background: #fff;
+	background: #f3f3f3;
 	display: inline-block;
 	margin: 0;
 	padding: 4px 10px 4px 0;
@@ -1324,6 +1380,12 @@ h1.cat-header {
 	text-transform: uppercase;
 	color: #434242;
 }
+#ec-description {
+	background: #ffffff;
+	padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #4e4e4e;
+}
 .subcat-header {
 	text-transform: uppercase;
 	font-size: 18px;
@@ -1332,13 +1394,30 @@ h1.cat-header {
 	color: #434242;
 }
 #subcats .subcat-box {
+	background: #ffffff;
 	padding: 10px;
-	margin: 0px 10px 10px 10px;
-	text-align: center;
+	margin-top: 15px;	
+	margin-bottom: 15px;
+    position: relative;	
+    height: calc(13.801466vw/1.5 + 131px);
+	text-align: left;
 	transition-duration: .2s;
 	transition-property: all;
-	border: 1px solid rgba(0,0,0,.075);
-	box-shadow: 1px 1px 10px rgba(7,7,7,0.3);
+    border-radius: 5px;
+	border: 2px solid #4e4e4e;
+	/*box-shadow: 1px 1px 10px rgba(7,7,7,0.3);*/
+}
+#subcats .subcat-box:nth-child(n+1):nth-child(-n+5) {
+	margin-right: 30px;
+}
+#subcats .subcat-box:nth-child(n+7):nth-child(-n+11) {
+	margin-right: 30px;
+}
+#subcats .subcat-box:nth-child(n+13):nth-child(-n+17) {
+	margin-right: 30px;
+}
+#subcats .subcat-box:nth-child(n+19):nth-child(-n+23) {
+	margin-right: 30px;
 }
 #subcats .subcat-box:hover {
 	transition-duration: .2s;
@@ -3172,9 +3251,9 @@ header .dropdown-menu {
 }
 .cat-desc-box img {
 	float: left;
-	margin: 4px 40px 0 0;
-	border-radius: 3px;
-	border: 1px solid rgba(0, 0, 0, .08);
+	margin: 0px 30px 0 0;
+	border-radius: 5px;
+	border: 2px solid #4e4e4e;
 }
 .pagination {
 	border-radius: 3px;
@@ -4955,9 +5034,11 @@ textarea.form-control {
 }
 #subcats .subcat-box a span {
 	display: block;
-	height: 46px;
-	overflow: hidden;
-	line-height: 16px;
+    height: 65px;
+    overflow: hidden;
+    line-height: 16px;
+    position: absolute;
+    bottom: 15px;
 }
 .review-table tbody {
     padding-left: 15px;
