@@ -554,6 +554,8 @@ $data['text_w1_d']		   		= $this->language->get('text_w1_d');
 $data['text_w2_d1']		   		= $this->language->get('text_w2_d1');
 $data['text_w1']		   		= $this->language->get('text_w1');
 
+
+
 $table_items = $this->model_catalog_category->getTableCategory($category_id);
 	foreach ($table_items as $key=>$table_item) {
 		$table_items[$key]['href'] = $this->url->link('product/product', '&product_id=' . $table_item['product_id']);
@@ -1608,7 +1610,8 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 
 	<file path="catalog/view/theme/oct_techstore/template/product/category.tpl">
 		<operation>
-			<search><![CDATA[    <?php foreach ($products as $product) { ?>]]></search>
+			<!--<search><![CDATA[    <?php // foreach ($products as $product) { ?>]]></search>-->
+			<search><![CDATA[    <?php if (!$categories && !$products) { ?>]]></search>
 			<add offset="0" position="before" index="1"><![CDATA[
 							<div  class="table-responsive" id="table-category">
 								<table class=" table table-responsive table-bordered table-striped table-hover">
@@ -1764,9 +1767,9 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 
 <?php if ($show_table389) { ?>
 	<th><?php echo $text_modeles ?></th>
-	<th><?php echo $text_name_short ?></th>
-	<th><?php echo $text_norma ?></th>
+	<!--?php echo $text_name_short ?-->
 	<th><?php echo $text_size ?></th>
+	<th><?php echo $text_norma ?></th>
 	<th><?php echo $text_coating ?></th>
 	<th><?php echo $text_oe ?></th>
 	<th><?php echo $text_obd ?></th>
@@ -4389,9 +4392,9 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
 <?php if ($show_table389) { ?>
 	<td class="link_model"><a href="<?php echo $models['href'];?>">
 	<?php echo $models['model'];?></a></td>
-	<td><?php echo $models['name_short'];?></td>
+	<th><?php echo $models['size'];?></th>
+	<!--?php echo $models['name_short'];?-->
 	<td><?php echo $models['norma'];?></td>
-	<td><?php echo $models['size'];?></td>
  	<td><?php echo $models['upc'];?></td>
 	<td><?php echo $models['oe'];?></td>
  	<td><?php echo $models['obd'];?></td>
@@ -7016,20 +7019,11 @@ if((int)$this->model_catalog_category->getTotalCategoriesByCategoryId($category_
  	<td><?php echo $models['isbn'];?></td>
  	<td><?php echo $models['norma'];?></td>
 <?php } ?>
-
 			</tr>
 		<?php } ?>
 	</table>
 </div>
-<?php //if($_SERVER["REMOTE_ADDR"]=='146.120.248.1'){ ?>
-<?php // echo var_dump($tools); ?><br>
-<?php //echo var_dump($model_tools); ?>
-<?php //$arr = explode(",",$model_tools['0']['models_tools']); ?>
-<?php // echo var_dump($arr); ?><br><br>
-<?php // foreach ($model_products as $product_id){ foreach ($product_id as $model){ echo "$model\n";}}; ?><br><br><br>
-<?php //echo var_dump($model); ?><br>
-<br>
-<?php //} ?>
+
 	 ]]></add>
 		</operation>
 	</file>
