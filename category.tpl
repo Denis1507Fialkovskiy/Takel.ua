@@ -107,13 +107,27 @@
 				<?php  if(isset($thumb_draw)){ ?>
 					<div class ="drawing">
 						<?php if ($thumb_draw) { ?>
-						<img src="<?php echo $thumb_draw; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="img-thumbnail" />
+						<button id="showContent" style="display: block;">
+							<img src="<?php echo $thumb_draw; ?>"  class="img-thumbnail" />
+							<i class="fas fa-search-plus"></i>
+						</button>
 						<?php } ?>
 					</div>
 			  	<?php } ?>
 			  </div>
-        
         <?php } ?>
+			  <?php  if(isset($drawing)){ ?>
+			  <div class="row">
+				  <div id="content1" style="display:none; margin-left: 0px;">
+					  <?php if ($drawing) { ?>
+					  <button id="hideContent" style="display: none;">
+						  <img src="<?php echo $drawing; ?>"  class="img-thumbnail" />
+						  <i class="fas fa-search-minus"></i>
+					  </button>
+					  <?php } ?>
+				  </div>
+			  </div>
+			  <?php } ?>
 <!-- Переносим плитки категорий -->		
 			<?php if ($categories && $oct_techstore_data['cat_show_subcat'] == 'on') { ?>
 			<!--<h3 class="subcat-header"><?php //echo $oct_choose_subcategory; ?></h3>-->
@@ -275,6 +289,7 @@
           </div>
         </div>-->
         <?php //} ?>
+
         <?php if (!$categories && !$products) { ?>
         <p class="text-left empty-text"><?php echo $text_empty; ?></p>
         <div class="buttons">
@@ -301,4 +316,21 @@
 	});
 </script>
 <?php } ?>
+<script>
+	let content = document.getElementById("content1")
+	let show = document.getElementById("showContent")
+	let hide = document.getElementById("hideContent")
+
+	show.addEventListener("click", () => {
+		content.style.display = "block";
+		showContent.style.display = "none";
+		hideContent.style.display = "block"
+	})
+
+	hide.addEventListener("click", () => {
+		content.style.display = "none";
+		showContent.style.display = "block";
+		hideContent.style.display = "none"
+	})
+</script>
 <?php echo $footer; ?>
