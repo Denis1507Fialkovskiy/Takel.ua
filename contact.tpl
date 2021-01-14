@@ -37,16 +37,21 @@
 <!-- Create block Contacts data -->
     <div class="row">
         <div class="col-sm-4 col-xs-12 contacts-data map-address">
-            <div class="icon-contact">
-                <i class="fas fa-map-marked-alt"></i>
-            </div>
-            <div class="text-address">
-                <p><?php echo $text_city; ?></p>
-                <p><?php echo $text_street; ?></p>
-                <p></p>
-            </div>
-            <div class="text-bottom">
-                <a><?php echo $text_show_map; ?></a>
+            <div class="row">
+                <div class="icon-contact">
+                    <i class="fas fa-map-marked"></i>
+                </div>
+                <div class="text-address">
+                    <p><?php echo $text_city; ?></p>
+                    <p><?php echo $text_street; ?></p>
+                    <p></p>
+                </div>
+                <div class="text-bottom">
+                    <!--<a><?php echo $text_show_map; ?></a>-->
+                    <button id="showContent" style="display: block;"><?php echo $text_show_map; ?></button>
+                    <button id="hideContent" style="display: none;"><?php echo $text_hide_map; ?></button>
+
+                </div>
             </div>
         </div>
         <div class="col-sm-4 col-xs-12 contacts-data phone-number">
@@ -54,28 +59,37 @@
                 <i class="far fa-address-book"></i>
             </div>
             <div class="text-address">
-                <p><?php echo $text_phone_1; ?></p>
-                <p><?php echo $text_phone_2; ?></p>
-                <p><?php echo $text_phone_3; ?></p>
+                <li><a href="tel:<?php echo $text_phone_1; ?>"><?php echo $text_phone_1; ?></a></li>
+                <li><a href="tel:<?php echo $text_phone_2; ?>"><?php echo $text_phone_2; ?></a></li>
+                <li><a href="tel:<?php echo $text_phone_3; ?>"><?php echo $text_phone_3; ?></a></li>
             </div>
             <div class="text-bottom">
-                <a><?php echo $text_call_site; ?></a>
+                <!--<a><?php echo $text_call_site; ?></a>-->
             </div>
         </div>
         <div class="col-sm-4 col-xs-12 contacts-data letter-mail">
             <div class="icon-contact">
-                <i class="far fa-envelope"></i>
+                <i class="fas fa-at"></i>
             </div>
-            <div class="text_address">
-                <p><?php echo $text_mail_contact; ?></p>
-                <p></p>
-                <p></p>
+            <div class="text-address">
+                <li><a href="mailto:<?php echo $text_mail_contact; ?>"><?php echo $text_mail_contact; ?></a></li>
+                <!--<li><p></p></li>
+                <li><p></p></li>-->
             </div>
             <div class="text-bottom">
-                <a><?php echo $text_e_mail; ?></a>
+                <!--<a><?php echo $text_e_mail; ?></a>-->
             </div>
         </div>
     </div>
+    <div class="row">
+        <div id="content" style="display:none; margin-left: 0px;">
+             <?php if ($oct_techstore_cont_contactmap != '') { ?>
+                <div class="map-box">
+                    <?php echo html_entity_decode($oct_techstore_cont_contactmap, ENT_QUOTES, 'UTF-8'); ?>
+                </div>
+             <?php } ?>
+        </div>
+    </div> 
 <!-- Create title Feedback -->
     <div class="row">
       <div class="col-sm-12">
@@ -148,15 +162,27 @@
             <?php if ($oct_techstore_cont_contacthtml != '') { ?><div class="contacthtml-box"><?php echo $oct_techstore_cont_contacthtml; ?></div><?php } ?>
           </div>
         </div>
-        <div class="row map-box-row">
-          <div class="col-sm-12">
-            <?php if ($oct_techstore_cont_contactmap != '') { ?><div class="map-box"><?php echo html_entity_decode($oct_techstore_cont_contactmap, ENT_QUOTES, 'UTF-8'); ?></div><?php } ?>
-          </div>
-        </div>
       </div>
       <?php echo $column_right; ?>
     </div>
   </div>
   <?php echo $content_bottom; ?>
 </div>
+<script>
+    let content = document.getElementById("content")
+    let show = document.getElementById("showContent")
+    let hide = document.getElementById("hideContent")
+
+    show.addEventListener("click", () => {
+        content.style.display = "block";
+        showContent.style.display = "none";
+        hideContent.style.display = "block"
+    })
+
+    hide.addEventListener("click", () => {
+        content.style.display = "none";
+        showContent.style.display = "block";
+        hideContent.style.display = "none"
+    })
+</script>
 <?php echo $footer; ?>
