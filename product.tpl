@@ -41,12 +41,15 @@
       <div id="content" class="<?php echo $class; ?>"<?php if ($tech_pr_micro == "on") { ?> itemscope itemtype="https://schema.org/Product"<?php } ?>>
         <?php if ($tech_pr_micro == "on") { ?><span class="micro-name" itemprop="name"><?php echo $heading_title; ?></span><?php } ?>
         <div class="row">
+          <h1 class="product-header"><?php echo $heading_title; ?></h1>
           <?php if ($column_left || $column_right) { ?>
-          <?php $class = 'col-sm-6'; ?>
+          <?php $class = 'col-sm-4'; ?>
           <?php } else { ?>
-          <?php $class = 'col-sm-6'; ?>
+          <?php $class = 'col-sm-4'; ?>
           <?php } ?>
+<!-- First block left-->
           <div class="<?php echo $class; ?> left-info">
+            <div class="prod-img">
             <?php if ($thumb || $images) { ?>
             <ul>
               <?php if ($special) { ?>
@@ -63,6 +66,7 @@
               </li>
               <?php } ?>
               <?php if ($thumb) { ?>
+<!-- product picture -->
               <li class="image thumbnails-one thumbnail">
                 <a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" <?php if ($check_zoom) { ?>data-fancybox="images" <?php } else { ?>onclick="funcyFirst(); return false;"<?php } ?> class='cloud-zoom' id='zoom1' data-index="0">
                 <img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" class="img-responsive" alt="<?php echo $heading_title; ?>" />
@@ -102,36 +106,167 @@
                 })
             </script>
             <?php } ?>
+            </div>
    <!--Creat drawing -->
             <?php  if(isset($thumb_draw)){ ?>
-            <div class ="drawing">
+            <div class ="prod-drawing">
               <?php if ($thumb_draw) { ?>
-              <button id="showContent" style="display: block;"><img src="<?php echo $thumb_draw; ?>"  class="img-thumbnail" /><i class="fas fa-search-plus"></i></button>
+              <button id="showContentP" style="display: block;"><img src="<?php echo $thumb_draw; ?>"  class="img-thumbnail" style="border: 0px solid #ddd;border-radius: 0px;" /><i class="fas fa-search-plus"></i></button>
               <?php } ?>
+
             </div>
             <?php } ?>
-            <?php  if(isset($drawing)){ ?>
-            <div class="row">
-              <div id="content1" style="display:none; margin-left: 0px;">
-                <?php if ($drawing) { ?>
-                <button id="hideContent" style="display: none;">
-                  <img src="<?php echo $drawing; ?>"  class="img-thumbnail" />
-                  <i class="fas fa-search-minus"></i>
-                </button>
-                <?php } ?>
-              </div>
-            </div>
-            <?php } ?>
-          </div>
 
           </div>
+<!-- End First block -->
+
           <?php if ($column_left || $column_right) { ?>
-          <?php $class = 'col-sm-6'; ?>
+          <?php $class = 'col-sm-8'; ?>
           <?php } else { ?>
-          <?php $class = 'col-sm-6'; ?>
+          <?php $class = 'col-sm-8'; ?>
           <?php } ?>
           <div id="product-info-right" class="<?php echo $class; ?>">
-            <h1 class="product-header"><?php echo $heading_title; ?></h1>
+
+<!-- Table attributes -->
+            <div class="tab-content">
+ <!--          <div class="tab-pane active" id="tab-description">
+                <?php if ($tech_pr_micro == "on") { ?>
+                <div itemprop="description"><?php } ?>
+                  <?php echo $description; ?>
+                  <?php if ($tech_pr_micro == "on") { ?>
+                </div>
+                <?php } ?>
+              </div>-->
+              <?php if ($attribute_groups) { ?>
+              <div class="tab-pane active" id="tab-specification">
+                <div class="oct-specification">
+                  <!--
+                                    <div class="table table-responsive table-striped table-hover">
+                                      <?php //foreach ($attribute_groups as $attribute_group) { ?>
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <div class="head-td"><strong><?php //echo $attribute_group['name']; ?></strong></div>
+                                        </div>
+                                      </div>
+                                      <?php //foreach ($attribute_group['attribute'] as $attribute) { ?>
+                                      <div  class="row">
+                                        <div class="col-xs-5">
+                                          <div class="attr-td"><b><?php //echo $attribute['name']; ?></b></div>
+                                        </div>
+                                        <div class="col-xs-7">
+                                          <div class="attr-td"><?php //echo $attribute['text']; ?></div>
+                                        </div>
+                                      </div>
+                                      <?php //} ?>
+                                      <?php //} ?>
+                                    </div>
+                   -->
+                  <table class="table table-striped table-hover" style="width: 100%">
+                    <thead>
+                    <?php foreach ($attribute_groups as $attribute_group) { ?>
+                    <tr>
+                      <th style="display:none; width: 40%;"><strong><?php /* echo $attribute_group['name']; */?></strong></th>
+                      <th style="display:none; width: 60%;"></th>
+                    </tr>
+                    <?php /*} */?>
+                    </thead>
+                    <tbody>
+                    <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
+                    <tr>
+                      <td><strong><?php echo $attribute['name']; ?></strong></td>
+                      <td><?php echo $attribute['text']; ?></td>
+                    </tr>
+                    <?php } ?>
+                    </tbody>
+                    <?php } ?>
+                  </table>
+                </div>
+              </div>
+              <?php } ?>
+              <?php if ($review_status) { ?>
+              <div class="tab-pane" id="tab-review">
+                <form class="form-horizontal" id="form-review">
+                  <div id="review"></div>
+                  <h2 class="scrolled"><?php echo $text_write; ?></h2>
+                  <?php if ($review_guest) { ?>
+                  <div class="form-group required">
+                    <div class="col-sm-12">
+                      <label class="control-label" for="input-name"><?php echo $entry_name; ?></label>
+                      <input type="text" name="name" value="<?php echo $customer_name; ?>" id="input-name" class="form-control" />
+                    </div>
+                  </div>
+                  <?php if (isset($oct_product_reviews_data['status']) && $oct_product_reviews_data['status']) { ?>
+                  <div class="col-sm-6">
+                    <div class="form-group positive-text-box">
+                      <label class="control-label" for="input-positive_text"><?php echo $entry_positive_text; ?></label>
+                      <textarea name="positive_text" rows="4" id="input-positive_text" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group  negative-text-box">
+                      <label class="control-label" for="input-negative_text"><?php echo $entry_negative_text; ?></label>
+                      <textarea name="negative_text" rows="4" id="input-negative_text" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <input type="hidden" name="where_bought" value="1" />
+                  <?php } ?>
+                  <div class="form-group required">
+                    <div class="col-sm-12">
+                      <label class="control-label" for="input-review"><?php echo $entry_review; ?></label>
+                      <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
+                      <div class="help-block"><?php echo $text_note; ?></div>
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-1"><?php echo $entry_rating; ?></label>
+                    <div class="col-sm-11">
+                      <select id="ratingme" name="rating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                      <script>
+                        $(function() {
+                          $('#ratingme').barrating({
+                            theme: 'fontawesome-stars'
+                          });
+                        });
+                      </script>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <?php echo $captcha; ?>
+                  <?php if ($text_terms) { ?>
+                  <div>
+                    <?php echo $text_terms; ?> <input type="checkbox" name="terms" value="1" style="width:auto;height:auto;display:inline-block;margin: 0;" />
+                  </div>
+                  <?php } ?>
+                  <div class="buttons clearfix">
+                    <div class="pull-left">
+                      <button type="button" id="button-review" data-loading-text="<?php echo $text_loading; ?>" class="oct-button"><?php echo $button_continue; ?></button>
+                    </div>
+                  </div>
+                  <?php } else { ?>
+                  <?php echo $text_login; ?>
+                  <?php } ?>
+                </form>
+              </div>
+              <?php } ?>
+              <?php if ($oct_product_extra_tabs) { ?>
+              <?php $tab_i=0; foreach ($oct_product_extra_tabs as $product_extra_tab) { ?>
+              <div class="tab-pane" id="tab-extra-<?php echo $tab_i; ?>"><?php echo $product_extra_tab['text']; ?></div>
+              <?php $tab_i++; } ?>
+              <?php } ?>
+              <?php if ($oct_pr_additional_tab) { ?>
+              <div class="tab-pane" id="tab-oct_pr_additional_tab">
+                <?php echo $oct_pr_additional_tab['text']; ?>
+              </div>
+              <?php } ?>
+            </div>
+          </div>
+        </div>
 <!--        <div class="row after-header-row">
               <div class="col-sm-4 col-xs-12" style="display: none">
                 <div class="after-header-item">
@@ -608,169 +743,57 @@
         </div>
         <div class="row product-tabs-row">
           <div class="col-sm-12">
-            <ul class="nav nav-tabs">
-			<?php if (strlen($description)) { ?>
-			  <li><a href="#tab-description" data-toggle="tab"><?php echo $tab_description; ?></a></li>
-			<?php } ?>
-              <?php if ($attribute_groups) { ?>
-              <li class="active"><a href="#tab-specification" data-toggle="tab"><?php echo $tab_attribute; ?></a></li>
-              <?php } ?>
-              <?php if ($review_status) { ?>
+
+            <?php  if(isset($drawing)){ ?>
+            <div class="row">
+              <div id="content1" style="display:none; margin-left: 0px;">
+                <?php if ($drawing) { ?>
+                <div class="prod-drawing-xl">
+                  <button id="hideContentP" style="display: none;">
+                    <img src="<?php echo $drawing; ?>"  class="img-thumbnail" />
+                    <i class="fas fa-search-minus"></i>
+                  </button>
+                </div>
+                <?php } ?>
+              </div>
+            </div>
+            <?php } ?>
+
+            <div class="tab-pane active" id="tab-description">
+              <?php if ($tech_pr_micro == "on") { ?>
+              <div itemprop="description"><?php } ?>
+                <?php echo $description; ?>
+              </div>
+            </div>
+
+            <!-- Tabs buttons OFF
+                        <ul class="nav nav-tabs">
+                        <?php if (strlen($description)) { ?>
+                          <li><a href="#tab-description" data-toggle="tab"><?php echo $tab_description; ?></a></li>
+                        <?php } ?>
+                          <?php if ($attribute_groups) { ?>
+                          <li class="active"><a href="#tab-specification" data-toggle="tab"><?php echo $tab_attribute; ?></a></li>
+                          <?php } ?>
+                          <?php if ($review_status) { ?> -->
 <!--          <li><a href="#tab-review" data-toggle="tab"><?php echo $tab_review; ?></a></li> -->
-              <?php } ?>
+<!--         <?php } ?>
               <?php if ($oct_product_extra_tabs) { ?>
               <?php $tab_i=0; foreach ($oct_product_extra_tabs as $product_extra_tab) { ?>
 <!--          <li><a href="#tab-extra-<?php echo $tab_i; ?>" data-toggle="tab"><?php echo $product_extra_tab['title']; ?></a></li> -->
-              <?php $tab_i++; } ?>
+<!--          <?php $tab_i++; } ?>
               <?php } ?>
               <?php if ($oct_pr_additional_tab) { ?>
 <!--          <li><a href="#tab-oct_pr_additional_tab" class="scrolled" data-toggle="tab"><?php echo $oct_pr_additional_tab['heading']; ?></a></li> -->
-              <?php } ?>
-            </ul>
-            <div class="tab-content">
-				<div class="tab-pane" id="tab-description">
-                <?php if ($tech_pr_micro == "on") { ?>
-                <div itemprop="description"><?php } ?>
-                  <?php echo $description; ?>
-                  <?php if ($tech_pr_micro == "on") { ?>
-                </div>
-                <?php } ?>
-              </div>
-              <?php if ($attribute_groups) { ?>
-              <div class="tab-pane active" id="tab-specification">
-                <div class="oct-specification">
-<!-- 				
-                  <div class="table table-responsive table-striped table-hover">
-                    <?php //foreach ($attribute_groups as $attribute_group) { ?>
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="head-td"><strong><?php //echo $attribute_group['name']; ?></strong></div>
-                      </div>
-                    </div>
-                    <?php //foreach ($attribute_group['attribute'] as $attribute) { ?>
-                    <div  class="row">
-                      <div class="col-xs-5">
-                        <div class="attr-td"><b><?php //echo $attribute['name']; ?></b></div>
-                      </div>
-                      <div class="col-xs-7">
-                        <div class="attr-td"><?php //echo $attribute['text']; ?></div>
-                      </div>
-                    </div>
-                    <?php //} ?>
-                    <?php //} ?>
-                  </div>
- -->				 
-					<table class="table table-striped table-hover" style="width: 100%">
-					  <thead>
-					    <?php foreach ($attribute_groups as $attribute_group) { ?>					  
-						<tr>
-						  <th style="display:none; width: 40%;"><strong><?php /* echo $attribute_group['name']; */?></strong></th>
-						  <th style="display:none; width: 60%;"></th>
-						</tr>
-						<?php /*} */?>
-					  </thead>
-					  <tbody>
-					  <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
-						<tr>
-							<td><strong><?php echo $attribute['name']; ?></strong></td>
-							<td><?php echo $attribute['text']; ?></td>
-						</tr>
-					  <?php } ?>
-					  </tbody>	
-                <?php } ?>
-					</table>					
-                </div>
-              </div>
-              <?php } ?>
-              <?php if ($review_status) { ?>
-              <div class="tab-pane" id="tab-review">
-                <form class="form-horizontal" id="form-review">
-                  <div id="review"></div>
-                  <h2 class="scrolled"><?php echo $text_write; ?></h2>
-                  <?php if ($review_guest) { ?>
-                  <div class="form-group required">
-                    <div class="col-sm-12">
-                      <label class="control-label" for="input-name"><?php echo $entry_name; ?></label>
-                      <input type="text" name="name" value="<?php echo $customer_name; ?>" id="input-name" class="form-control" />
-                    </div>
-                  </div>
-                  <?php if (isset($oct_product_reviews_data['status']) && $oct_product_reviews_data['status']) { ?>
-                  <div class="col-sm-6">
-                    <div class="form-group positive-text-box">
-                      <label class="control-label" for="input-positive_text"><?php echo $entry_positive_text; ?></label>
-                      <textarea name="positive_text" rows="4" id="input-positive_text" class="form-control"></textarea>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group  negative-text-box">
-                      <label class="control-label" for="input-negative_text"><?php echo $entry_negative_text; ?></label>
-                      <textarea name="negative_text" rows="4" id="input-negative_text" class="form-control"></textarea>
-                    </div>
-                  </div>
-                  <input type="hidden" name="where_bought" value="1" />
-                  <?php } ?>
-                  <div class="form-group required">
-                    <div class="col-sm-12">
-                      <label class="control-label" for="input-review"><?php echo $entry_review; ?></label>
-                      <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
-                      <div class="help-block"><?php echo $text_note; ?></div>
-                    </div>
-                  </div>
-                  <div class="form-group required">
-                    <label class="col-sm-1"><?php echo $entry_rating; ?></label>
-                    <div class="col-sm-11">
-                      <select id="ratingme" name="rating">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                      </select>
-                      <script>
-                        $(function() {
-                          $('#ratingme').barrating({
-                            theme: 'fontawesome-stars'
-                          });
-                        });
-                      </script>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                  <?php echo $captcha; ?>
-                  <?php if ($text_terms) { ?>
-                  <div>
-                    <?php echo $text_terms; ?> <input type="checkbox" name="terms" value="1" style="width:auto;height:auto;display:inline-block;margin: 0;" />
-                  </div>
-                  <?php } ?>
-                  <div class="buttons clearfix">
-                    <div class="pull-left">
-                      <button type="button" id="button-review" data-loading-text="<?php echo $text_loading; ?>" class="oct-button"><?php echo $button_continue; ?></button>
-                    </div>
-                  </div>
-                  <?php } else { ?>
-                  <?php echo $text_login; ?>
-                  <?php } ?>
-                </form>
-              </div>
-              <?php } ?>
-              <?php if ($oct_product_extra_tabs) { ?>
-              <?php $tab_i=0; foreach ($oct_product_extra_tabs as $product_extra_tab) { ?>
-              <div class="tab-pane" id="tab-extra-<?php echo $tab_i; ?>"><?php echo $product_extra_tab['text']; ?></div>
-              <?php $tab_i++; } ?>
-              <?php } ?>
-              <?php if ($oct_pr_additional_tab) { ?>
-              <div class="tab-pane" id="tab-oct_pr_additional_tab">
-                <?php echo $oct_pr_additional_tab['text']; ?>
-              </div>
-              <?php } ?>
-            </div>
+<!--              <?php } ?>
+            </ul>-->
+
           </div>
         </div>
         <?php if ($oct_rel_view === false) { ?>
             <div id="autoreleted"></div>
         <?php } ?>
         <?php if ($products && $oct_rel_view) { ?>
-        <div class="oct-carousel-row oct-related-row">
+<!--   <div class="oct-carousel-row oct-related-row" style="display: none!important;>
           <div class="oct-carousel-box">
             <div class="oct-carousel-header"><?php echo $text_related; ?></div>
             <div id="oct-related" class="owl-carousel owl-theme">
@@ -840,7 +863,7 @@
               <?php } ?>
             </div>
           </div>
-        </div>
+        </div>-->
         <script>
 		$(function() {
 			<?php if (isset($oct_lazyload) && $oct_lazyload) { ?>
@@ -1516,21 +1539,22 @@ $.ajax({
 });
 </script>
 <?php } ?>
+
 <script>
   let content = document.getElementById("content1")
-  let show = document.getElementById("showContent")
-  let hide = document.getElementById("hideContent")
+  let show = document.getElementById("showContentP")
+  let hide = document.getElementById("hideContentP")
 
   show.addEventListener("click", () => {
     content.style.display = "block";
-    showContent.style.display = "none";
-    hideContent.style.display = "block"
+    showContentP.style.display = "none";
+    hideContentP.style.display = "block"
   })
 
   hide.addEventListener("click", () => {
     content.style.display = "none";
-    showContent.style.display = "block";
-    hideContent.style.display = "none"
+    showContentP.style.display = "block";
+    hideContentP.style.display = "none"
   })
 </script>
 <?php echo $footer; ?>

@@ -33,13 +33,13 @@ class ControllerProductProduct extends Controller {
                 $category_draw = $this->model_catalog_category->getCategoryDrawing($category_id);
                 $drawing = explode(",",$category_draw['0']['drawing']);
                 if ($drawing['0']) {
-                    $data['thumb_draw'] = $this->model_tool_image->resize($drawing['0'], 312, 100);
+                    $data['thumb_draw'] = $this->model_tool_image->resize($drawing['0'], 625, 200);
                     $this->document->setOgImage($data['thumb_draw']);
                 } else {
                     $data['thumb_draw'] = '';
                 }
                 if ($drawing['0']) {
-                    $data['drawing'] = $this->model_tool_image->resize($drawing['0'], 1200, 350);
+                    $data['drawing'] = $this->model_tool_image->resize($drawing['0'], 1920, 560);
                     $this->document->setOgImage($data['drawing']);
                 } else {
                     $data['drawing'] = '';
