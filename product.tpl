@@ -163,7 +163,6 @@
                    -->
                   <table class="table table-striped table-hover" style="width: 100%">
                     <thead>
-                    <?php foreach ($attribute_groups as $attribute_group) { ?>
                     <tr>
                       <th style="display:none; width: 40%;"><strong><?php /* echo $attribute_group['name']; */?></strong></th>
                       <th style="display:none; width: 60%;"></th>
@@ -171,14 +170,31 @@
                     <?php /*} */?>
                     </thead>
                     <tbody>
-                    <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
+                    <?php if ($sku) { ?>
                     <tr>
-                      <td><strong><?php echo $attribute['name']; ?></strong></td>
-                      <td><?php echo $attribute['text']; ?></td>
+                      <td><strong><?php echo $text_sku; ?></strong></td>
+                      <?php if ($oct_advanced_options_settings_data['allow_sku']) { ?>
+                      <td><strong><?php echo $sku; ?><?php } else { ?>
+                          <?php echo $sku; ?>
+                          <?php } ?></strong></td>
                     </tr>
                     <?php } ?>
-                    </tbody>
+                    <?php if ($manufacturer) { ?>
+                    <tr>
+                      <td><strong><?php echo $text_manufacturer; ?></strong></td>
+                      <td><a href="<?php echo $manufacturers; ?>"><span itemprop="brand"><?php echo $manufacturer; ?></span></a></td>
+                    </tr>
                     <?php } ?>
+
+                    <?php foreach ($attribute_groups as $attribute_group) { ?>
+                    <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
+                      <tr>
+                        <td><strong><?php echo $attribute['name']; ?></strong></td>
+                        <td><?php echo $attribute['text']; ?></td>
+                      </tr>
+                      <?php } ?>
+                      </tbody>
+                      <?php } ?>
                   </table>
                 </div>
               </div>
@@ -267,6 +283,29 @@
             </div>
           </div>
         </div>
+      <div class="draw-description">
+        <?php  if(isset($drawing)){ ?>
+        <div class="row">
+          <div id="content1" style="display:none; margin-left: 0px;">
+            <?php if ($drawing) { ?>
+            <div class="prod-drawing-xl">
+              <button id="hideContentP" style="display: none;">
+                <img src="<?php echo $drawing; ?>"  class="img-thumbnail" />
+                <i class="fas fa-search-minus"></i>
+              </button>
+            </div>
+            <?php } ?>
+          </div>
+        </div>
+        <?php } ?>
+
+        <div class="tab-pane active" id="tab-description">
+          <?php if ($tech_pr_micro == "on") { ?>
+          <div itemprop="description"><?php } ?>
+            <?php echo $description; ?>
+          </div>
+        </div>
+      </div>
 <!--        <div class="row after-header-row">
               <div class="col-sm-4 col-xs-12" style="display: none">
                 <div class="after-header-item">
@@ -299,7 +338,8 @@
                 </div>
               </div>
             </div> -->
-            <div id="product">
+<!-- Block product options -OFF -->
+<!--        <div id="product">
               <?php if ($options) { ?>
               <hr>
               <h3 class="options-header"><?php echo $text_option; ?></h3>
@@ -633,7 +673,8 @@
                   <?php } ?>
                 </div>
               </div>
-              <?php } ?>
+              <?php } ?> -->
+<!-- Block product options -OFF -->
               <?php if ($minimum > 1) { ?>
               <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
               <input type="hidden" id="minimumval" value="<?php echo $minimum; ?>">
@@ -662,20 +703,21 @@
               <?php if ($oct_techstore_pr_social_button_script) { ?>
               <?php echo $oct_techstore_pr_social_button_script; ?>
               <?php } ?>
-              <div class="row">
-                <div class="col-sm-12">
-                  <hr class="product-hr">
-                </div>
-              </div>
-              <ul class="list-unstyled product-info-ul">
-                <?php if ($manufacturer) { ?>
-                <li class="product-info-li"><span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php if ($tech_pr_micro == "on") { ?><span itemprop="brand"><?php } ?><?php echo $manufacturer; ?><?php if ($tech_pr_micro == "on") { ?></span><?php } ?></a></li>
-                <?php } ?>
-				<li class="product-info-li main-product-model"><span><?php echo $text_model; ?></span> <?php if ($oct_advanced_options_settings_data['allow_model']) { ?><strong id="main-product-model" style="font-weight: normal;"<?php if ($tech_pr_micro == "on") { ?> itemprop="model"<?php } ?>><?php echo $model; ?></strong><?php } else { ?><?php if ($tech_pr_micro == "on") { ?><span itemprop="model"><?php } ?><?php echo $model; ?><?php if ($tech_pr_micro == "on") { ?></span><?php } } ?></li>
-                <?php if ($sku) { ?>
-                <li class="product-info-li main-product-sku"><span><?php echo $text_sku; ?></span> <?php if ($oct_advanced_options_settings_data['allow_sku']) { ?><strong id="main-product-sku" style="font-weight: normal;"><?php echo $sku; ?></strong><?php } else { ?><?php echo $sku; ?><?php } ?></li>
-                <?php } ?>
-              </ul>
+<!--          <div class="row">
+              <div class="col-sm-12">
+                        <hr class="product-hr">
+                      </div>
+                    </div>-->
+      <!-- Block with manufacturer, model & SKU
+                    <ul class="list-unstyled product-info-ul">
+                      <?php if ($manufacturer) { ?>
+                      <li class="product-info-li"><span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php if ($tech_pr_micro == "on") { ?><span itemprop="brand"><?php } ?><?php echo $manufacturer; ?><?php if ($tech_pr_micro == "on") { ?></span><?php } ?></a></li>
+                      <?php } ?>
+                      <li class="product-info-li main-product-model"><span><?php echo $text_model; ?></span> <?php if ($oct_advanced_options_settings_data['allow_model']) { ?><strong id="main-product-model" style="font-weight: normal;"<?php if ($tech_pr_micro == "on") { ?> itemprop="model"<?php } ?>><?php echo $model; ?></strong><?php } else { ?><?php if ($tech_pr_micro == "on") { ?><span itemprop="model"><?php } ?><?php echo $model; ?><?php if ($tech_pr_micro == "on") { ?></span><?php } } ?></li>
+                      <?php if ($sku) { ?>
+                      <li class="product-info-li main-product-sku"><span><?php echo $text_sku; ?></span> <?php if ($oct_advanced_options_settings_data['allow_sku']) { ?><strong id="main-product-sku" style="font-weight: normal;"><?php echo $sku; ?></strong><?php } else { ?><?php echo $sku; ?><?php } ?></li>
+                      <?php } ?>
+                    </ul>-->
               <?php if ($recurrings) { ?>
               <hr>
               <h3><?php echo $text_payment_recurring; ?></h3>
@@ -689,83 +731,59 @@
                 <div class="help-block" id="recurring-description"></div>
               </div>
               <?php } ?>
-              <?php if ($garanted_text) { ?>
-              <hr>
-              <div class="product-advantages-box" style="display: none">
-                <div class="row">
-                  <?php foreach ($garanted_text as $garanted) { ?>
-                  <div class="col-xs-6 col-sm-6 col-md-3 product-advantages-item">
-                    <a href="<?php echo ($garanted['popup'] == 'on' && $garanted['link'] && $garanted['link'] != '#') ? 'javascript:;' : $garanted['link']; ?>" <?php if ($garanted['popup'] == 'on' && $garanted['link'] && $garanted['link'] != '#') { ?>id="open-popup-garanted-<?php echo $garanted['id']; ?>"<?php } ?>>
-                    <?php if ($garanted['icon']) { ?>
-                    <i class="<?php echo $garanted['icon']; ?>" aria-hidden="true"></i>
-                    <?php } ?>
-                    <span><?php echo $garanted['name']; ?></span>
-                    </a>
-                    <?php if ($garanted['popup'] == 'on' && $garanted['link'] && $garanted['link'] != '#') { ?>
-                    <script>
-                      $(document).delegate('#open-popup-garanted-<?php echo $garanted['id']; ?>', 'click', function(e) {
-                        e.preventDefault();
+<!--          <?php if ($garanted_text) { ?>
+                <hr>
+                    <div class="product-advantages-box" style="display: none">
+                      <div class="row">
+                        <?php foreach ($garanted_text as $garanted) { ?>
+                        <div class="col-xs-6 col-sm-6 col-md-3 product-advantages-item">
+                          <a href="<?php echo ($garanted['popup'] == 'on' && $garanted['link'] && $garanted['link'] != '#') ? 'javascript:;' : $garanted['link']; ?>" <?php if ($garanted['popup'] == 'on' && $garanted['link'] && $garanted['link'] != '#') { ?>id="open-popup-garanted-<?php echo $garanted['id']; ?>"<?php } ?>>
+                          <?php if ($garanted['icon']) { ?>
+                          <i class="<?php echo $garanted['icon']; ?>" aria-hidden="true"></i>
+                          <?php } ?>
+                          <span><?php echo $garanted['name']; ?></span>
+                          </a>
+                          <?php if ($garanted['popup'] == 'on' && $garanted['link'] && $garanted['link'] != '#') { ?>
+                          <script>
+                            $(document).delegate('#open-popup-garanted-<?php echo $garanted['id']; ?>', 'click', function(e) {
+                              e.preventDefault();
 
-                        var element = this;
+                              var element = this;
 
-                        $.ajax({
-                          url: '<?php echo str_replace('&amp;','&',$garanted['link']); ?>',
-                          type: 'get',
-                          dataType: 'html',
-                          success: function(data) {
-                            $.magnificPopup.open({
-                              tLoading: '<img src="catalog/view/theme/oct_techstore/image/ring-alt.svg" />',
-                              items: {
-                                src:  '<div id="service-popup" class="white-popup mfp-with-anim narrow-popup">'+
-                                        '<h2 class="popup-header">' + $(element).text() + '</h2>'+
-                                        '<div class="popup-text service-popup-text">'+
-                                          '<p>' + data + '</p>'+
-                                        '</div>'+
-                                      '</div>',
-                                type: 'inline'
-                              },
-                              showCloseBtn: true,
-                              midClick: true,
-                              removalDelay: 200
+                              $.ajax({
+                                url: '<?php echo str_replace('&amp;','&',$garanted['link']); ?>',
+                                type: 'get',
+                                dataType: 'html',
+                                success: function(data) {
+                                  $.magnificPopup.open({
+                                    tLoading: '<img src="catalog/view/theme/oct_techstore/image/ring-alt.svg" />',
+                                    items: {
+                                      src:  '<div id="service-popup" class="white-popup mfp-with-anim narrow-popup">'+
+                                              '<h2 class="popup-header">' + $(element).text() + '</h2>'+
+                                              '<div class="popup-text service-popup-text">'+
+                                                '<p>' + data + '</p>'+
+                                              '</div>'+
+                                            '</div>',
+                                      type: 'inline'
+                                    },
+                                    showCloseBtn: true,
+                                    midClick: true,
+                                    removalDelay: 200
+                                  });
+                                }
+                              });
                             });
-                          }
-                        });
-                      });
-                    </script>
-                    <?php } ?>
-                  </div>
-                  <?php } ?>
-                </div>
-              </div>
+                          </script>
+                          <?php } ?>
+                        </div>
+                        <?php } ?>
+                      </div>
+                    </div> -->
               <?php } ?>
             </div>
           </div>
         </div>
-        <div class="row product-tabs-row">
-          <div class="col-sm-12">
-
-            <?php  if(isset($drawing)){ ?>
-            <div class="row">
-              <div id="content1" style="display:none; margin-left: 0px;">
-                <?php if ($drawing) { ?>
-                <div class="prod-drawing-xl">
-                  <button id="hideContentP" style="display: none;">
-                    <img src="<?php echo $drawing; ?>"  class="img-thumbnail" />
-                    <i class="fas fa-search-minus"></i>
-                  </button>
-                </div>
-                <?php } ?>
-              </div>
-            </div>
-            <?php } ?>
-
-            <div class="tab-pane active" id="tab-description">
-              <?php if ($tech_pr_micro == "on") { ?>
-              <div itemprop="description"><?php } ?>
-                <?php echo $description; ?>
-              </div>
-            </div>
-
+<!--    <div class="row product-tabs-row"> -->
             <!-- Tabs buttons OFF
                         <ul class="nav nav-tabs">
                         <?php if (strlen($description)) { ?>
@@ -785,10 +803,8 @@
               <?php if ($oct_pr_additional_tab) { ?>
 <!--          <li><a href="#tab-oct_pr_additional_tab" class="scrolled" data-toggle="tab"><?php echo $oct_pr_additional_tab['heading']; ?></a></li> -->
 <!--              <?php } ?>
-            </ul>-->
-
-          </div>
-        </div>
+            </ul>
+        </div>-->
         <?php if ($oct_rel_view === false) { ?>
             <div id="autoreleted"></div>
         <?php } ?>

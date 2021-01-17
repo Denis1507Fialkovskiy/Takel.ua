@@ -11,6 +11,11 @@ body {
 	width: 100%;
 	background-color: #f3f3f3;
 	position: relative;
+	/* for sticky footer */
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #444;
@@ -144,7 +149,7 @@ input[type="tel"].form-control {
 	display:none;
 }
 .content-row {
-	min-height: 140vh;
+	/*min-height: 140vh;*/
 }
 .input-group .input-group-addon {
 	font-size: 12px;
@@ -1127,11 +1132,16 @@ header {
 }
 /* footer */
 footer {
-	margin-top: 16px;
-	padding-top: 20px;
+	/*margin-top: 16px;
 	background-color: #434242;
 	color: #f5f5f6;
-	margin-bottom: 49px;
+	margin-bottom: 49px;*/
+	padding: 15px 0px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 3;
 }
 footer hr {
 	border-top: none;
@@ -1398,11 +1408,13 @@ footer .actions button span {
 	margin-top: 16px;
 	margin-bottom: 16px;
 	width: 100%;
+	/* for sticky footer */
+	flex-grow: 1;
 }
 .product-content-row {
-	margin-bottom: 32px;
 	margin-top: 0px;
-	/*margin-top: 16px;*/
+	/*margin-top: 16px;
+	margin-bottom: 32px;*/
 }
 .content-row + .oct-carousel-row .oct-carousel-box {
     margin-top: 0;
@@ -4340,6 +4352,17 @@ ul.account-ul li a span {
 #main-product-you-save + .product-sticker-box {
 	top: 40px;
 }
+#tab-description {
+	margin-top: 10px;
+	padding: 15px;
+	background-color: #fff;
+	border: 1px solid #d5d9dd;
+	border-radius: 5px;
+}
+.draw-description {
+	/*padding: 15px;*/
+	margin: 0px 10px;
+}
 .product-header {
 	margin: -15px 10px 10px;
 	background-color: #fff;
@@ -4361,9 +4384,9 @@ ul.account-ul li a span {
 	display: inline-block;
 }
 .prod-drawing-xl {
-	border: 1px solid #d5d9dd;
-	border-radius: 5px;
-	margin: 15px;
+	/*border: 1px solid #d5d9dd;
+	border-radius: 5px;*/
+	margin: 10px 0px;
 	display: inline-block;
 }
 .fa-search-plus {
@@ -4386,13 +4409,13 @@ ul.account-ul li a span {
 	padding: 0px;
 	border: 0px;
 	position: relative;
-	z-index: 99;
+	z-index: 1;
 }
 #hideContentP {
 	padding: 0px;
 	border: 0px;
 	position: relative;
-	z-index: 99;
+	z-index: 1;
 }
 .tab-content {
 	border: 1px solid #d5d9dd;
@@ -4400,6 +4423,7 @@ ul.account-ul li a span {
 	margin: 10px;
 	background-color: #fff;
 	padding: 15px;
+	min-height: calc(23vw*15/10);
 }
 .content-row .left-info .thumbnail {
 	border: 0;
