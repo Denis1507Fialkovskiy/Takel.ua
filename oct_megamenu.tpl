@@ -145,6 +145,7 @@
               <?php #start menu type - information ?>
               <li class="dropdown oct-mm-info">
                 <a href="<?php echo $item['href']; ?>" class="dropdown-toggle" data-toggle="dropdown" <?php echo ($item['open_link_type']) ? 'target="_blank"' : ''; ?>><i class="fas fa-building"></i><?php echo " ".$item['title']; ?></a><?php if(count($item['children'])){ ?><a class="parent-title-toggle dropdown-toggle dropdown-img megamenu-toggle-a" data-toggle="dropdown"></a><?php } ?>
+                <? //echo var_dump($a); ?>
                 <div class="dropdown-menu">
                   <div class="dropdown-inner">
                     <ul class="list-unstyled">
@@ -168,22 +169,28 @@
                   </div>
                 </div>
               </li>
-              <?php #end menu type - custom html ?>     
+              <?php #end menu type - custom html ?>
               <?php } else { ?>
               <?php #start menu type - link ?>
               <li><a href="<?php echo $item['href']; ?>" <?php echo ($item['open_link_type']) ? 'target="_blank"' : ''; ?>><i class="fas fa-map-marked-alt"></i><?php echo " ".$item['title']; ?></a></li>
               <?php #end menu type - link ?>
-			  <?php #start menu type -support ?>
-              <li class="dropdown oct-mm-info">
+              <?php #start menu type -support ?>
+              <li class="dropdown oct-mm-simplecat">
                 <a href="<?php //echo $item['href']; ?>" class="dropdown-toggle" data-toggle="dropdown" <?php //echo ($item['open_link_type']) ? 'target="_blank"' : ''; ?>><i class="fas fa-wrench"></i><?php echo $text_support; ?></a><?php //if(count($item['children'])){ ?><!--<a class="parent-title-toggle dropdown-toggle dropdown-img megamenu-toggle-a" data-toggle="dropdown"></a>--><?php //} ?>
                 <div class="dropdown-menu">
                   <div class="dropdown-inner">
                     <ul class="list-unstyled">
                       <?php //foreach ($item['children'] as $children) { ?>
-                      <li class="second-level-li"><a href="#<?php //echo $children['href']; ?>">Submenu_1<?php //echo $children['title']; ?></a></li>
-					  <li class="second-level-li"><a href="#<?php //echo $children['href']; ?>">Submenu_2<?php //echo $children['title']; ?></a></li>
-					  <li class="second-level-li"><a href="#<?php //echo $children['href']; ?>">Submenu_3<?php //echo $children['title']; ?></a></li>
-					  <li class="second-level-li"><a href="#<?php //echo $children['href']; ?>">Submenu_4<?php //echo $children['title']; ?></a></li>
+                      <li class="second-level-li"><a href="<?php echo $link_dowload_cat; ?>" download title='<?php echo $text_dowload_cat."PDF"; ?>'><?php echo $text_dowload_cat." "; ?><i class="fas fa-download"></i></a></li>
+                      <li class="second-level-li has-child"><a><?php echo $text_submenu2; ?></a><span class="angle-right"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                        <ul class="megamenu-ischild">
+                          <li><a class="dropdown-toggle" href="<?php echo $info_href_1 ; ?>"><?php echo $info_title_1; ?></a></li>
+                          <li><a class="dropdown-toggle" href="<?php echo $info_href_2 ; ?>"><?php echo $info_title_2; ?></a></li>
+                          <li><a class="dropdown-toggle" href="<?php echo $info_href_3 ; ?>"><?php echo $info_title_3; ?></a></li>
+                        </ul>
+                      </li>
+<!--Временно отключено доп меню <li class="second-level-li"><a href="#<?php //echo $children['href'] ['10']; ?>">Submenu_3<?php //echo $children['title'] ['10']; ?></a></li>
+                      <li class="second-level-li"><a href="#<?php //echo $children['href']; ?>">Submenu_4<?php //echo $children['title']; ?></a></li>-->
                       <?php //} ?>
                     </ul>
                   </div>
@@ -191,7 +198,7 @@
               </li>
               <?php #end menu type - suport ?>
               <?php } ?>
-              <?php } ?>	
+              <?php } ?>
               <?php } ?>
             </ul>
           </div>
