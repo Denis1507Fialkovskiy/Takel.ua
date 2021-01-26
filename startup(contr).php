@@ -51,7 +51,7 @@ class ControllerStartupStartup extends Controller {
 		}
 		
 		// Language Detection
-		if (!empty($this->request->server['HTTP_ACCEPT_LANGUAGE']) && !array_key_exists($code, $languages)) {
+		/*if (!empty($this->request->server['HTTP_ACCEPT_LANGUAGE']) && !array_key_exists($code, $languages)) {
 			$detect = '';
 			
 			$browser_languages = explode(',', $this->request->server['HTTP_ACCEPT_LANGUAGE']);
@@ -82,7 +82,7 @@ class ControllerStartupStartup extends Controller {
 			}
 			
 			$code = $detect ? $detect : '';
-		}
+		}*/
 		
 		if (!array_key_exists($code, $languages)) {
 			$code = $this->config->get('config_language');
