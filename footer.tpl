@@ -1,8 +1,8 @@
 <footer>
 	<?php if (isset($oct_popup_call_phone_data['status']) && $oct_popup_call_phone_data['status'] == 1) { ?>
-		<a class="field-tip" onclick="get_oct_popup_call_phone();" id="uptocall-mini"><div class="uptocall-mini-phone"><i class="fa fa-phone" aria-hidden="true"></i></div><span class="tip-content"><?php echo $popup_call_phone_text['call_back']; ?></span></a>
+		<a class="field-tip" onclick="get_oct_popup_call_phone();" id="uptocall-mini"><div class="uptocall-mini-phone"><i class="fas fa-phone-volume" aria-hidden="true"></i></div><span class="tip-content"><?php echo $popup_call_phone_text['call_back']; ?></span></a>
 	<?php } ?>
-  <div class="container">
+  <div class="container footer-mobi">
 		<?php if ($garanted_text) { ?>
 			<div class="row second-row" style="display: none">
 				<div class="footer-advantages-box">
@@ -97,8 +97,8 @@
 			<hr>
 			<?php } ?>
 		  <?php if ($oct_techstore_data['foot_show_contact_link'] == 'on') { ?>	
-		  <div class="row third-row" style="height: 180px;">		    	    		    
-		    <div class="col-sm-3 footer-contacts">
+		  <div class="row third-row" style="/*height: 180px;*/">		    	    		    
+		    <div class="col-xs-3 col-sm-3 footer-contacts">
 				<div class="h5"><i class="fa fa-phone"> </i><?php echo $text_contact_foot; ?> <a class="f-acc-toggle"></a></div>
 				<ul class="footer-contacts-ul">
 					<?php if ($oct_techstore_cont_adress) { ?>
@@ -117,7 +117,7 @@
 					<?php } ?>
 				</ul>
 			</div>
-			<div class="col-sm-3 footer-shedule">
+			<div class="col-xs-3 col-sm-3 footer-shedule">
 				<div class="h5"><i class="fa fa-clock-o"> </i><?php echo $text_shedule; ?> <a class="f-acc-toggle"></a></div>
 				<ul class="footer-contacts-ul">
 					<?php if ($oct_techstore_cont_clock) { ?>
@@ -273,21 +273,24 @@
 <?php if (!$oct_page_bar) { ?>
 <style>
 footer {
-	margin-bottom:0 !important;
-	background-image: url(../image/catalog/silver-min.jpg);
+	margin: 0 -15%!important;
+	background-image: url(../image/catalog/silver-min1.jpg);
     background-repeat: no-repeat;
 }
 footer .footer-contacts ul li i {
-    color: #000000 !important;
+    color: #434242 !important;
 }
 footer h5, footer .h5, footer a, footer a:visited, footer .third-row ul li {
-    color: #000000 !important;
+    color: #434242 !important;
 }
 footer a:hover {
-    color: #919191 !important;
+    color: #434242 !important;
+}
+.footer-contacts{
+	margin-left: 15%;
 }
 .phoneclick a, .phoneclick a:visited {
-    color: #000000 !important;
+    color: #434242 !important;
 }
 </style>
 <?php } ?>
@@ -321,6 +324,23 @@ $(document).ajaxSuccess(function(event, xhr, settings) {
 <p id="back-top">
   <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 </p>
-<div class="menu-bckgr"></div>	
+<div class="menu-bckgr"></div>
+<script>
+	let content = document.getElementById("content1")
+	let show = document.getElementById("showContent")
+	let hide = document.getElementById("hideContent")
+
+	show.addEventListener("click", () => {
+		content.style.display = "block";
+		showContent.style.display = "none";
+		hideContent.style.display = "block"
+	})
+
+	hide.addEventListener("click", () => {
+		content.style.display = "none";
+		showContent.style.display = "block";
+		hideContent.style.display = "none"
+	})
+</script>
 </body>
 </html>
