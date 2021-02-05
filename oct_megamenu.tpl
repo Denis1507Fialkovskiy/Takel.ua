@@ -66,8 +66,8 @@
                         <a href="<?php echo $children['href']; ?>"><?php echo $children['name']; ?></a> <span class="angle-right"><i class="fa fa-angle-right" aria-hidden="true"></i></span><?php if(count($children['children'])){ ?><a class="parent-title-toggle"></a><?php } ?>
                         <ul class="megamenu-ischild">
                           <?php foreach ($children['children'] as $child) { ?>
-                          <li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a>
-                            <?php } ?>
+                          <li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a></li><!-- create </li> -->
+                            <?php } ?>						
                         </ul>
                       </li>
                       <?php } else { ?>
