@@ -176,18 +176,120 @@ class ControllerProductCategory extends Controller {
 			}
 
 //Creat module "Tools for Category"			
-			$tools_ids = $this->model_catalog_category->getCategoryToolsId($category_id);
+		$data['tools_ids'] = $this->model_catalog_category->getCategoryToolsId($category_id);
+		
+			//$data['tools'] = $tools_ids;
 			
-			$data['tools'] = $tools_ids;
+			$explodes =  $this->model_catalog_category->getCategoryModels($category_id);
+			$explode = explode(";",$explodes['0']['models_tools']);	
+		
+			/*foreach ($explode as $key=>$result) {
+				echo $result.",";
+			}
+			echo var_dump($tools_ids);*/
+			$prod_mod = $this->model_catalog_category->getProductByModel();
 			
-			$models_tools = $this->model_catalog_category->getCategoryModels($category_id);
+//if($_SERVER["REMOTE_ADDR"]=='146.120.248.1'){						
+				for ($row = 0; $row < count($prod_mod); $row++) {						
+					if (isset ($explode['0'])){
+						if ($prod_mod[$row]['model'] == $explode['0']){
+							$prod_1= $prod_mod[$row]['product_id'];
+							//echo "<br>".$prod_1;
+						}
+					}
+					if (isset ($explode['1'])){
+						if ($prod_mod[$row]['model'] == $explode['1']){
+						$prod_2= $prod_mod[$row]['product_id'];
+						//echo ",".$prod_2;
+						}
+					}
+					if (isset ($explode['2'])){
+						if ($prod_mod[$row]['model'] == $explode['2']){
+						$prod_3= $prod_mod[$row]['product_id'];
+						//echo ",".$prod_3;
+						}
+					}
+				
+				}
+				if (isset ($prod_1)){
+					$prods = array (
+					'0' => $prod_1
+					);
+				} 
+				if (isset ($prod_2)){
+				$prods = array (
+					'0' => $prod_1,
+					'1' => $prod_2
+				);
+				}
+				if (isset ($prod_3)){
+				$prods = array (
+					'0' => $prod_1,
+					'1' => $prod_2,
+					'2' => $prod_3
+				);
+				}
+//echo var_dump ($prods);				
+		$data['model_tools'] = array ();		
+		//$product_id = $prod_1;
+		if (isset ($prods)){
+		foreach ($prods as $elem){
+		$product_id = $elem;
+		$product_info = $this->model_catalog_product->getProduct($product_id);
+		$this->load->model('tool/image');
+			$image_width  = '250';
+			$image_height = '250';
+		$data['model_tools'][] = array(
+			'product_id' 	=> $product_id,
+			'product_name' 	=> $product_info['name'],
+			'product_href' 	=> $this->url->link('product/product', '&product_id=' . $product_id),
+			'thumb55' => $this->model_tool_image->resize($product_info['image'], $image_width, $image_height),
+			'thumb00' => $this->model_tool_image->resize("placeholder.png", $image_width, $image_height)
+			);
 			
-			$data['model_tools'] = $models_tools;
 
-			$data['model_products'] = $this->model_catalog_product->getProductByModel();			
-			
-			//$arr = explode(";",$model_tools['0']['models_tools']);
-			//$product_id_model = $this->model_catalog_category->getProductByModel($arr);
+		
+		/*if (in_array((int)$this->customer->getGroupId(),$this->config->get('config_price_customer_group'))) {
+			                
+                $data['price'] = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+            } else {
+                $data['price'] = false;
+            }
+
+            if ((float) $product_info['special']) {
+                $data['special'] = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+            } else {
+                $data['special'] = false;
+            }
+
+            if ((float) $product_info['special']) {
+                $data['economy'] = round((($product_info['price'] - $product_info['special']) / ($product_info['price'] + 0.01)) * 100, 0);
+            } else {
+                $data['economy'] = false;
+            }
+
+            if ($this->config->get('config_tax')) {
+                $data['tax'] = $this->currency->format((float) $product_info['special'] ? $product_info['special'] : $product_info['price'], $this->session->data['currency']);
+            } else {
+                $data['tax'] = false;
+            }*/
+
+            //$data['points'] = $product_info['points'];
+
+            //$discounts = $this->model_catalog_product->getProductDiscounts($product_id);
+
+            //$data['discounts'] = array();
+
+            /*foreach ($discounts as $discount) {
+                $data['discounts'][] = array(
+                    'quantity' => $discount['quantity'],
+                    'price' => $this->currency->format($this->tax->calculate($discount['price'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency'])
+                );
+            }*/
+			//);
+		}
+		}
+//}
 			
 //End creat module "Tools for Category"	
 
@@ -252,7 +354,6 @@ class ControllerProductCategory extends Controller {
 				} else {
 					$rating = false;
 				}
-
 				$data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
