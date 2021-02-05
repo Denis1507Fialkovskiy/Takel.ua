@@ -214,9 +214,9 @@ if (!isset($oct_techstore_status) || !$oct_techstore_status) {
 		                  <li><a onclick="get_oct_popup_login();"><?php echo $text_login; ?></a></li>
 	                  <?php } ?>
 	                </ul>
-	              </li>-->
+	              </li>
 	            </ul>
-	          </div>
+	          </div>-->
 	        </div>
 	      </div>
 	    </div>
@@ -242,34 +242,12 @@ if (!isset($oct_techstore_status) || !$oct_techstore_status) {
 <!-- create menu products -->				  
 				  <div class="col-sm-2 top-box hidden-xs hidden-sm">
 					<p id="products-top" class="menu-prod-hide">
-						<a class="field-tip show-phones" onclick="#"><i class="fas fa-cog" aria-hidden="true"></i>						
-								<span style="color: #666;font-size: 14px;"><?php echo "Продукция"; ?></span></a>
-<!--					 	<li class="dropdown oct-mm-simplecat">
-								<a href="<?php echo $item['href']; ?>" class="dropdown-toggle" data-toggle="dropdown" <?php echo ($item['open_link_type']) ? 'target="_blank"' : ''; ?>><i class="fas fa-cog"></i><?php echo " ".$item['title']; ?></a><?php if(count($item['children'])){ ?><a class="parent-title-toggle dropdown-toggle dropdown-img megamenu-toggle-a" data-toggle="dropdown"></a><?php } ?>
-								<div class="dropdown-menu">
-								  <div class="dropdown-inner">
-									<ul class="list-unstyled">
-									  <?php foreach ($item['children'] as $children) { ?>
-									  <?php if ($children['children']) { ?>
-									  <li class="second-level-li has-child">
-										<a href="<?php echo $children['href']; ?>"><?php echo $children['name']; ?></a> <span class="angle-right"><i class="fa fa-angle-right" aria-hidden="true"></i></span><?php if(count($children['children'])){ ?><a class="parent-title-toggle"></a><?php } ?>
-											<ul class="megamenu-ischild">
-											  <?php foreach ($children['children'] as $child) { ?>
-											  <li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a>
-												<?php } ?>
-											</ul>
-									  </li>
-									  <?php } else { ?>
-									  <li class="second-level-li"><a href="<?php echo $children['href']; ?>"><?php echo $children['name']; ?></a></li>
-									  <?php } ?>
-									  <?php } ?>
-									</ul>
-								  </div>
-								</div>
-							</li>	-->							
+						<a class="field-tip show-phones" onclick="#">
+							<i class="fas fa-cog" aria-hidden="true"></i>						
+							<span style="color: #434242;font-size: 14px;"><?php echo $button_prod; ?></span>
+						</a>							
 					</p>
-				  </div>
-				  
+				  </div>				  
 				  <div class="col-sm-2 top-box hidden-xs hidden-sm">
 						<ul class="list-inline">
 							<div class="callback-phones">
