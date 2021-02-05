@@ -106,14 +106,59 @@
 <!--Creat drawing -->
 				<?php  if(isset($thumb_draw)){ ?>
 					<div class ="drawing">
+					<?php if($_SERVER["REMOTE_ADDR"]=='146.120.248.1'){ ?>
+						<p><? //echo var_dump ($models); ?></p><br>
+						<? //$arr = ['0'=>'11111', '1'=>'22222']; ?>
+						<p><? //echo var_dump ($arr); ?></p><br>
+						<? //foreach ($arr as $elem){ ?>
+						<? //echo $elem.","; ?>
+						<? //} ?>
+					<?php } ?>
 						<?php if ($thumb_draw) { ?>
-						<img src="<?php echo $thumb_draw; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="img-thumbnail" />
+						<button id="showContent" style="display: block;">
+							<img src="<?php echo $thumb_draw; ?>"  class="img-thumbnail" />
+							<i class="fas fa-search-plus"></i>
+						</button>
 						<?php } ?>
 					</div>
 			  	<?php } ?>
 			  </div>
-        
         <?php } ?>
+<!-- Insert block Instruments -->
+<? if($_SERVER["REMOTE_ADDR"]=='146.120.248.1'){ ?>	
+		<? //echo var_dump($model_tools); ?>
+<? } ?>			
+	<? if ($tools_ids['0']['tools_id'] == 1){ ?>
+			<h1>Instruments</h1>
+			<? for ($row = 0; $row < count($model_tools); $row++) { ?>
+	<div id="subcats">		
+		<div class="wall col-md-2 col-sm-3 col-xs-6">
+			<div class="item subcat-box">
+				<div class="row">
+					<a href="<?php echo $model_tools[$row]['product_href']; ?>" title="<?php echo $model_tools[$row]['product_name']; ?>">
+					  <img class="img-responsive" src="<?php echo $model_tools[$row]['thumb55']; ?>" alt="<?php echo $model_tools[$row]['product_name']; ?>" />
+					  <span style="/*margin-left: -7.5px;padding-right: 2.5px;*/"><?php echo $model_tools[$row]['product_name']; ?></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<? } ?>
+	<? } ?>
+
+<!-- Insert block Instruments -->		
+			  <?php  if(isset($drawing)){ ?>
+			  <div class="row">
+				  <div id="content1" style="display:none; margin-left: 0px;">
+					  <?php if ($drawing) { ?>
+					  <button id="hideContent" style="display: none;">
+						  <img src="<?php echo $drawing; ?>"  class="img-thumbnail" />
+						  <i class="fas fa-search-minus"></i>
+					  </button>
+					  <?php } ?>
+				  </div>
+			  </div>
+			  <?php } ?>
 <!-- Переносим плитки категорий -->		
 			<?php if ($categories && $oct_techstore_data['cat_show_subcat'] == 'on') { ?>
 			<!--<h3 class="subcat-header"><?php //echo $oct_choose_subcategory; ?></h3>-->
@@ -275,6 +320,7 @@
           </div>
         </div>-->
         <?php //} ?>
+
         <?php if (!$categories && !$products) { ?>
         <p class="text-left empty-text"><?php echo $text_empty; ?></p>
         <div class="buttons">
@@ -301,4 +347,5 @@
 	});
 </script>
 <?php } ?>
+
 <?php echo $footer; ?>
