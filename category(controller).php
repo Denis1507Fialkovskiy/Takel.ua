@@ -183,9 +183,7 @@ class ControllerProductCategory extends Controller {
 			$models_tools = $this->model_catalog_category->getCategoryModels($category_id);
 			
 			$data['model_tools'] = $models_tools;
-			
-			
-			
+
 			$data['model_products'] = $this->model_catalog_product->getProductByModel();			
 			
 			//$arr = explode(";",$model_tools['0']['models_tools']);
