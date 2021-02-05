@@ -574,7 +574,7 @@ header {
 #oct-menu-box .col-sm-12 {
 	background-image: url(../image/catalog/silver-min1.jpg);
     background-repeat: no-repeat;
-	overflow: visible;
+	/*overflow: visible;*/
 }
 .menu-row {
 	background: #fff;
@@ -1132,15 +1132,15 @@ header {
 }
 /* footer */
 footer {
+	padding: 5px 0px;
 	/*margin-top: 16px;
 	background-color: #434242;
 	color: #f5f5f6;
-	margin-bottom: 49px;*/
-	padding: 15px 0px;
+	margin-bottom: 49px;
 	position: fixed;
 	left: 0;
 	bottom: 0;
-	width: 100%;
+	width: 100%;*/
 	z-index: 3;
 }
 footer hr {
@@ -1340,7 +1340,7 @@ footer .second-row .about-text p {
 }
 footer .third-row h5,
 footer .third-row .h5 {
-	margin-bottom: 24px;
+	margin-bottom: 15px;
 }
 footer .third-row ul li {
 	line-height: 18px;
@@ -3333,6 +3333,7 @@ header .dropdown-menu {
 .cat-desc-box img {
 	float: left;
 	margin: 0px 30px 0 0;
+	padding: 0px;
 	border-radius: 5px;
 	border: 1px solid #d5d9dd;
 }
