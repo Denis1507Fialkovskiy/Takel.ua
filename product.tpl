@@ -113,10 +113,8 @@
               <?php if ($thumb_draw) { ?>
               <button id="showContentP" style="display: block;"><img src="<?php echo $thumb_draw; ?>"  class="img-thumbnail" style="border: 0px solid #ddd;border-radius: 0px;" /><i class="fas fa-search-plus"></i></button>
               <?php } ?>
-
             </div>
             <?php } ?>
-
           </div>
 <!-- End First block -->
 
