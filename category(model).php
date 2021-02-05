@@ -18,29 +18,42 @@ class ModelCatalogCategory extends Model {
         return $query->rows;
     }
 
-    public function getCategoryDrawing($category_id) {
+    public function getCategoryDrawing($category_id) {				
         $query = $this->db->query("SELECT drawing FROM " . DB_PREFIX . "category WHERE category_id = '" . (int)$category_id . "'");
-
+				
         return $query->rows;
     }
 
     public function getCategoryModels($category_id) {
+		
 		$query = $this->db->query("SELECT models_tools FROM " . DB_PREFIX . "category WHERE category_id = '" . (int)$category_id . "'");
-
+		
 		return $query->rows;
 	}
-	public function getModelsProduct($query) {
-		$model_query = $this->db->query("SELECT product_id, model FROM " . DB_PREFIX . "product");
-
-				foreach ($model_query->rows as $models) {
-					$models_data[] = array(
-						'product_id' => $models['product_id'],
-						'model'      => $models['model']
-					);
-				}
+	
+	public function getProductByModel() {
+		$query = $this->db->query("SELECT DISTINCT product_id, model FROM " . DB_PREFIX . "product ");
 
 		return $query->rows;
 	}	
+
+	/*public function getProductsByModels($category_id) {
+				
+			$query = $this->db->query("SELECT DISTINCT p.product_id FROM " . DB_PREFIX . "product p INNER JOIN " . DB_PREFIX . "category c ON p.model = '". implode(';', $result) ."'");
+				}
+				//foreach ($explodes as $explode) {
+					
+						//}
+				//$model_query = $this->db->query("SELECT product_id, model FROM " . DB_PREFIX . "product");
+				
+					//$models_data[] = array(
+					//	'product_id' => $models['product_id'],
+					//	'model'      => $models['model']
+					//);
+				
+		
+		return $query->rows;
+	}*/	
 	public function getCategoryFilters($category_id) {
 		$implode = array();
 
