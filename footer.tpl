@@ -342,5 +342,22 @@ $(document).ajaxSuccess(function(event, xhr, settings) {
 		hideContent.style.display = "none"
 	})
 </script>
+<script>
+	let plug = document.getElementById("plug")
+	let see = document.getElementById("seeContent")
+	let stop = document.getElementById("stopContent")
+
+	see.addEventListener("click", () => {
+		plug.style.display = "block";
+		seeContent.style.display = "none";
+		stopContent.style.display = "block"
+	})
+
+	stop.addEventListener("click", () => {
+		plug.style.display = "none";
+		seeContent.style.display = "block";
+		stopContent.style.display = "none"
+	})
+</script>
 </body>
 </html>
