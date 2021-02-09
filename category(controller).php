@@ -125,8 +125,9 @@ class ControllerProductCategory extends Controller {
 			$data['text_refine'] = $this->language->get('text_refine');
 			$data['text_empty'] = $this->language->get('text_empty');
 			$data['text_quantity'] = $this->language->get('text_quantity');
-			$data['text_manufacturer'] = $this->language->get('text_manufacturer');
-			$data['text_model'] = $this->language->get('text_model');
+			$data['text_related_goods'] = $this->language->get('text_related_goods');
+            $data['text_manufacturer'] = $this->language->get('text_manufacturer');
+            $data['text_model'] = $this->language->get('text_model');
 			$data['text_price'] = $this->language->get('text_price');
 			$data['text_tax'] = $this->language->get('text_tax');
 			$data['text_points'] = $this->language->get('text_points');
@@ -190,7 +191,7 @@ class ControllerProductCategory extends Controller {
 			$prod_mod = $this->model_catalog_category->getProductByModel();
 			
 //if($_SERVER["REMOTE_ADDR"]=='146.120.248.1'){						
-				for ($row = 0; $row < count($prod_mod); $row++) {						
+				for ($row = 0; $row < count($prod_mod); $row++) {
 					if (isset ($explode['0'])){
 						if ($prod_mod[$row]['model'] == $explode['0']){
 							$prod_1= $prod_mod[$row]['product_id'];
@@ -209,7 +210,24 @@ class ControllerProductCategory extends Controller {
 						//echo ",".$prod_3;
 						}
 					}
-				
+                    if (isset ($explode['3'])){
+                        if ($prod_mod[$row]['model'] == $explode['3']){
+                            $prod_4= $prod_mod[$row]['product_id'];
+                            //echo ",".$prod_4;
+                        }
+                    }
+                    if (isset ($explode['4'])){
+                        if ($prod_mod[$row]['model'] == $explode['4']){
+                            $prod_5= $prod_mod[$row]['product_id'];
+                            //echo ",".$prod_5;
+                        }
+                    }
+                    if (isset ($explode['5'])){
+                        if ($prod_mod[$row]['model'] == $explode['5']){
+                            $prod_6= $prod_mod[$row]['product_id'];
+                            //echo ",".$prod_6;
+                        }
+                    }
 				}
 				if (isset ($prod_1)){
 					$prods = array (
@@ -229,6 +247,33 @@ class ControllerProductCategory extends Controller {
 					'2' => $prod_3
 				);
 				}
+                if (isset ($prod_4)){
+                    $prods = array (
+                        '0' => $prod_1,
+                        '1' => $prod_2,
+                        '2' => $prod_3,
+                        '3' => $prod_4
+                    );
+                }
+                if (isset ($prod_5)){
+                    $prods = array (
+                        '0' => $prod_1,
+                        '1' => $prod_2,
+                        '2' => $prod_3,
+                        '3' => $prod_4,
+                        '4' => $prod_5
+                    );
+                }
+                if (isset ($prod_6)){
+                    $prods = array (
+                        '0' => $prod_1,
+                        '1' => $prod_2,
+                        '2' => $prod_3,
+                        '3' => $prod_4,
+                        '4' => $prod_5,
+                        '5' => $prod_6
+                    );
+                }
 //echo var_dump ($prods);				
 		$data['model_tools'] = array ();		
 		//$product_id = $prod_1;
