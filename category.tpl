@@ -122,6 +122,11 @@
 						<?php } ?>
 					</div>
 			  	<?php } ?>
+				  <? if ($tools_ids['0']['tools_id'] == 1){ ?>
+					  <button id="seeContent" style="display: block;">
+						  <h3><?php echo $text_related_goods; ?></h3>
+					  </button>
+				  <? } ?>
 			  </div>
         <?php } ?>
 <!-- Insert block Instruments -->
@@ -129,21 +134,25 @@
 		<? //echo var_dump($model_tools); ?>
 <? } ?>			
 	<? if ($tools_ids['0']['tools_id'] == 1){ ?>
-			<h1>Instruments</h1>
+	 <div id="plug" style="display:none;">
+		 <button id="stopContent" style="display: none;">
+			<h3><?php echo $text_related_goods; ?></h3>
 			<? for ($row = 0; $row < count($model_tools); $row++) { ?>
-	<div id="subcats">		
-		<div class="wall col-md-2 col-sm-3 col-xs-6">
-			<div class="item subcat-box">
-				<div class="row">
-					<a href="<?php echo $model_tools[$row]['product_href']; ?>" title="<?php echo $model_tools[$row]['product_name']; ?>">
-					  <img class="img-responsive" src="<?php echo $model_tools[$row]['thumb55']; ?>" alt="<?php echo $model_tools[$row]['product_name']; ?>" />
-					  <span style="/*margin-left: -7.5px;padding-right: 2.5px;*/"><?php echo $model_tools[$row]['product_name']; ?></span>
-					</a>
+				<div id="subcats">
+					<div class="wall col-md-2 col-sm-3 col-xs-6">
+						<div class="item subcat-box">
+							<div class="row">
+								<a href="<?php echo $model_tools[$row]['product_href']; ?>" title="<?php echo $model_tools[$row]['product_name']; ?>">
+								  <img class="img-responsive" src="<?php echo $model_tools[$row]['thumb55']; ?>" alt="<?php echo $model_tools[$row]['product_name']; ?>" />
+								  <span style="/*margin-left: -7.5px;padding-right: 2.5px;*/"><?php echo $model_tools[$row]['product_name']; ?></span>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<? } ?>
+		 	<? } ?>
+		 </button>
+	 </div>
 	<? } ?>
 
 <!-- Insert block Instruments -->		
